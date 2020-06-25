@@ -18,3 +18,5 @@ at [git.beauhilton.com](https://git.beauhilton.com).
 If you would like to get in touch,
 email me:
 cbeauhilton@gmail.com.
+
+Here's my [RSS feed](/rss.xml).
