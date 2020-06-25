@@ -3,7 +3,8 @@
 How's it going?
 
 I am migrating from my old, fancy blog style
-to a simpler one that will be easier to maintain,
+to a simpler one that will be
+easier to maintain,
 as well as more useful.
 
 The old site is available [here](https://cbeauhilton.github.io).
