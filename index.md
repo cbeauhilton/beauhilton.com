@@ -16,4 +16,5 @@ and a few other things
 at [git.beauhilton.com](https://git.beauhilton.com).
 
 If you would like to get in touch,
-email me: cbeauhilton@gmail.com.
+email me:
+cbeauhilton@gmail.com.
