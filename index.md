@@ -7,7 +7,8 @@ to a simpler one that will be
 easier to maintain,
 as well as more useful.
 
-The old site is available [here](https://cbeauhilton.github.io).
+The old site is available
+[here](https://cbeauhilton.github.io).
 
 If you'd like,
 check out my old blog posts in raw form,
