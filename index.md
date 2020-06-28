@@ -4,7 +4,7 @@ I'm a husband, father, physician, and data scientist.
 ## [Now](/now.html)
 What I'm up to at the moment.
 
-##[Memex](https://memex.beauhilton.com)
+## [Memex](https://memex.beauhilton.com)
 Notes on things.
 
 ## [Git](https://git.beauhilton.com)
