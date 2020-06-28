@@ -141,6 +141,10 @@ section#masthead h1 a{
 	color:#000
 }
 
+h2,h3{
+	margin-top:2em
+}
+
 @media screen and (max-width: 440px){
 	section#masthead h1{
 		font-size:2em
