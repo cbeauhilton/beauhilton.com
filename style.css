@@ -94,7 +94,7 @@
 
 body {
 	max-width:40em;
-	margin: auto;
+	margin:0 auto;
 	padding: 5px;
         font-size:20px;
         line-height:30px;
