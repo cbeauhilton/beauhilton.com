@@ -1,5 +1,3 @@
-Title: What I'm doing now | beau hilton
-
 This is a [now page](https://nownownow.com/about).
 
 # Starting Residency
