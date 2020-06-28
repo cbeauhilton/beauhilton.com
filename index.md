@@ -1,24 +1,22 @@
-# Hi!
+# beau hilton
 
-How's it going?
+I'm a husband, father, physician, and data scientist.
 
-I am migrating from my old, fancy blog style
-to a simpler one that will be
-easier to maintain,
-as well as more useful.
+This site has five main parts:
 
-The old site is available
-[here](https://cbeauhilton.github.io).
-
-If you'd like,
-check out my old blog posts in raw form,
-and a few other things
-at [git.beauhilton.com](https://git.beauhilton.com).
-
-I also have a memex, forever in-progress, [here](https://memex.beauhilton.com).
+- A [now page](/now.html) shows what I'm up to at the moment.
+- Writing, posts linked individually farther down the page (when I finish migrating old posts from [here](https://cbeauhilton.github.io) and writing new ones.)
+- [Notes](https://memex.beauhilton.com) on things, in memex form.
+- [Software repositories](https://git.beauhilton.com).
+- Hidden files at unlisted links for my convenience, and yours if we're [chums](https://www.etymonline.com/word/chum).
 
 If you would like to get in touch,
 email me:
 cbeauhilton@gmail.com.
 
-Here's my [RSS feed](/rss.xml).
+Here's the [RSS feed](/rss.xml) for this page.
+
+- - -
+
+## Posts
+
