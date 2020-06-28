@@ -1,4 +1,4 @@
-## Me
+## [Me](/about.html)
 I'm a husband, father, physician, and data scientist.
 
 ## [Now](/now.html)
@@ -8,21 +8,19 @@ What I'm up to at the moment.
 Notes on things.
 
 ## [Git](https://git.beauhilton.com)
-Software repositories
+Software repositories.
 
-## [RSS feed](/rss.xml)
-for this page.
-
-- - -
-
+## [Contact](/contact.html)
 If you would like to get in touch,
 email me:
 cbeauhilton@gmail.com.
 
+## [RSS](/rss.xml)
+Feed for this page.
 
 - - -
 
 ## Posts
 
-* Forthcoming. Check out the[memex](https://memex.beauhilton.com) in the meantime.
+* Forthcoming. Check out the [memex](https://memex.beauhilton.com) in the meantime.
 - See old posts [here](https://cbeauhilton.github.io).
