@@ -1,7 +1,3 @@
-Title: beau hilton
-
-# beau hilton
-
 I'm a husband, father, physician, and data scientist.
 
 This site has five main parts:
