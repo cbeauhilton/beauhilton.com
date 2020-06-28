@@ -158,10 +158,6 @@ section#masthead h1 a{
 		color:#b9b9b9
 	}
 
-	a{
-		color:#368aeb
-	}
-
 	a:hover{
 		color:#70b433
 	}
@@ -171,6 +167,9 @@ section#masthead h1 a{
 	}
 	.response{
 		background-color:#444
+	}
+	h1,h1 a,h2,h2 a,h3,h3 a,section#masthead h1 a{
+		color:#368aeb
 	}
 }
 
