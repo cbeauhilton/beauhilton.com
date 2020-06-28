@@ -96,6 +96,8 @@ body {
 	max-width:40em;
 	margin: auto;
 	padding: 5px;
+        font-size:20px;
+        line-height:30px;
 	color: #474747;
 	background-color: #ffffff;
 	font-family: IBM Plex Serif;
