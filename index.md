@@ -10,7 +10,8 @@ Notes on things.
 ## [Git](https://git.beauhilton.com)
 Software repositories
 
-## [RSS feed](/rss.xml) for this page.
+## [RSS feed](/rss.xml)
+for this page.
 
 - - -
 
