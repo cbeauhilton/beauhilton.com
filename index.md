@@ -10,11 +10,14 @@ Notes on things.
 ## [Git](https://git.beauhilton.com)
 Software repositories
 
+## [RSS feed](/rss.xml) for this page.
+
+- - -
+
 If you would like to get in touch,
 email me:
 cbeauhilton@gmail.com.
 
-Here's the [RSS feed](/rss.xml) for this page.
 
 - - -
 
