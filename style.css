@@ -125,7 +125,9 @@ table td {
 td.num {
 	text-align: right;
 }
-
+section{
+	margin-bottom:4em
+}
 section#masthead{
 	margin-bottom:1em
 }
