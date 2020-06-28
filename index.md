@@ -1,5 +1,5 @@
 ## [Me](/about.html)
-I'm a husband, father, physician, and data scientist.
+I'm a husband, father, physician, educator, and data scientist.
 
 ## [Now](/now.html)
 What I'm up to at the moment.
