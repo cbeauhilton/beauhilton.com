@@ -1,3 +1,5 @@
+Title: beau hilton
+
 # beau hilton
 
 I'm a husband, father, physician, and data scientist.
@@ -20,3 +22,4 @@ Here's the [RSS feed](/rss.xml) for this page.
 
 ## Posts
 
+* Forthcoming. Check out the[memex](https://memex.beauhilton.com) in the meantime.

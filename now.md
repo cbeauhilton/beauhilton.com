@@ -1,3 +1,5 @@
+Title: What I'm doing now | beau hilton
+
 This is a [now page](https://nownownow.com/about).
 
 # Starting Residency
@@ -19,3 +21,7 @@ and started learning how to fish.
 Our oldest is 7, youngest is 4 months.
 There are 11 X chromosomes in the family.
 Everyone is well and cantankerous.
+
+- - -
+
+last updated: 2020-06-28
