@@ -186,5 +186,9 @@ h2,h3{
 	h1,h1 a,h2,h2 a,h3,h3 a,section#masthead h1 a{
 		color:#dedede
 	}
+        section#masthead h1 a:visited{
+                color:#dedede;
+                text-decoration:none;
+        }
 }
 
