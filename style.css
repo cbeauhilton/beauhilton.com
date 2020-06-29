@@ -105,6 +105,7 @@ body {
 
 a{
 	color:#0064e4;
+        text-decoration:none;
 }
 
 a:hover{
