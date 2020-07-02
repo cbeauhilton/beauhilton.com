@@ -22,3 +22,5 @@ Machine learning and data science approaches to
 diagnosis and prognosis of blood cancers;
 healthcare disparities in hospital medicine;
 predictive modeling of hospital readmissions and length of stay.
+
+[Google Scholar profile](https://scholar.google.com/citations?user=Ng5AgXAAAAAJ)
