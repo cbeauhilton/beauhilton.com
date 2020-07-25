@@ -142,6 +142,10 @@ section#masthead h1 a{
         text-decoration:none;
 }
 
+section#masthead h1 a:hover{
+	color:#70b433;
+}
+
 section#masthead h1 a:visited{
 	color:#000;
         text-decoration:none;
