@@ -6,7 +6,17 @@ matched into internal medicine residency
 and hematology-oncology (blood cancer) fellowship
 at Vanderbilt University Medical Center in the [Harrison Society](https://medicine.vumc.org/harrison-society).
 
-I start July 1st.
+I started July 1st.
+
+So far I've done an inpatient cancer rotation
+(solid tumors, rather than leukemias or other blood cancers),
+and an emergency department rotation.
+
+I really like taking care of people
+who are at the borders of life and death,
+whether that's due to their cancer,
+or psychiatric disease
+that's making them homicidal or suicidal.
 
 # TN
 Vanderbilt is in Tennessee.
@@ -22,4 +32,4 @@ Everyone is well and cantankerous.
 
 - - -
 
-last updated: 2020-06-28
+last updated: 2020-07-24
