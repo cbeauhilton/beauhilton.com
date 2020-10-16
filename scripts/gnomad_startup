@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pip uninstall -y enum34
+pip install gnomad
