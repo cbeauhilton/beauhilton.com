@@ -171,16 +171,19 @@ the one a Pharisee,
 the other a tax-collector.
 The Pharisee stood up straight
 and prayed these things about himself:
+
 'God, I thank you that
 I am not like the rest of mankind
 --rapacious, unjust, adulterous --
 or even like this tax-collector;
 I fast twice a week and
 tithe from everything whatsoever that I earn.'
+
 But the tax-collector, standing a good distance off,
 would not lift his eyes to heaven,
 but beat upon his breast, saying,
 'God, grant mercy to me, a sinner.'
+
 I tell you, the latter rather than the former
 went down to his house vindicated,
 because everyone who exalts himself
@@ -198,7 +201,9 @@ but the idea is to address
 the listener (Jesus),
 ask for mercy,
 and acknowledge our own fallen state.
+
 'God, grant mercy to me, a sinner.'
+
 The trick is to repeat it enough to mean each part,
 and repeat it with the goal of
 getting closer to God
@@ -217,6 +222,7 @@ not in that the prayer is communal,
 but in that the motivation behind humility
 all over the scriptures is to
 help us all just get along.
+
 Think about the ways we might be exalting
 ourselves above others,
 seeing only our own strengths
