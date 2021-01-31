@@ -25,7 +25,8 @@ from PIE root _dhghem-_
 So, to be humble is, literally,
 to be "down to earth."
 
-## What is humility good for? James 4
+## What is humility good for?
+### James 4
 
 Humility is useful for many ends,
 but consistently in scripture it is
@@ -63,6 +64,10 @@ And then immediately,
 who art thou that judgest another?"
 
 ### Purify your hearts, ye double minded
+
+A little more on being double minded and purifying our hearts,
+and the processing of becoming lifted up in the Lord
+via affliction, mourning, and weeping.
 
 "If only it were all so simple!
 If only there were evil people somewhere insidiously committing evil deeds,
@@ -106,6 +111,16 @@ and see where Nephi's heart is hard,
 his anger hot,
 his will and commitment struggling.
 
+We'll read part of his psalm, because it's great,
+and because it's the one part where Nephi identifies
+himself as the villain in the story.
+Then, when rereading the Nephis or any other scripture,
+see if we can identify lessons by
+seeing to the hearts of the villains,
+and then finding our own hearts within them.
+What would the Psalm of Laman look like?
+What would our own psalms look like?
+
 "Nevertheless, notwithstanding the great goodness of the Lord,
 in showing me his great and marvelous works,
 my heart exclaimeth: O wretched man that I am!
@@ -143,8 +158,9 @@ wilt thou not shut the gates of thy righteousness before me,
 that I may walk in the path of the low valley...
 O Lord,
 I have trusted in thee, and I will trust in thee forever.
-I will not put my trust in the art of flesh..."
+I will not put my trust in the arm of flesh..."
 
+## Practice 01: try out the Jesus Prayer
 ## Luke 18:9-18
 
 And he also spoke this parable to certain persons
@@ -173,8 +189,6 @@ and whoever humbles himself will be exalted.
 
 - David Bentley Hart, _The New Testament: A Translation_, pp 149-150
 
-## Practice 01: try out the Jesus Prayer
-
 One of the oldest Christian traditions
 is the prayer typically called, in English anyway,
 "The Jesus Prayer."
@@ -184,6 +198,7 @@ but the idea is to address
 the listener (Jesus),
 ask for mercy,
 and acknowledge our own fallen state.
+'God, grant mercy to me, a sinner.'
 The trick is to repeat it enough to mean each part,
 and repeat it with the goal of
 getting closer to God
@@ -207,9 +222,11 @@ ourselves above others,
 seeing only our own strengths
 and others' weaknesses,
 and how being delivered into mercy
-is a delivery into compassion,
-so that by loving others as much as ourselves,
+is a delivery into compassion.
+By loving others as much as ourselves,
+by seeing how we are debased and full of pride,
 so we can get over our silly quarrels,
+give mercy to those who are just as imperfect as ourselves,
 and release our silly pride
 into the freedom that comes from relying
 on God rather than the arm of flesh.
