@@ -209,13 +209,12 @@ and repeat it with the goal of
 getting closer to God
 by getting farther from our own pride.
 It's close to the simplest possible Christian meditation,
-next to the _kyrie_,
-which just uses the middle part of the prayer,
-asking for mercy,
-because that encapsulates the rest
+next to the _kyrie_, "Lord,"
+abstracted from "_kyrie eleison_",
+"Lord, have mercy.
 (we know to whom we are talking,
-and if we are asking for mercy
-it is only ever because we are inadequate on our own).
+and if we are talking to him we are asking for mercy
+and if we need mercy it is only ever because we are inadequate on our own).
 
 Another recommendation is to keep it social,
 not in that the prayer is communal,
