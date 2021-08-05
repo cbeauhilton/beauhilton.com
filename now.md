@@ -1,4 +1,3 @@
-This is a [now page](https://nownownow.com/about).
 
 # Residency, Second Year
 In 2020 I finished [medical school](https://portals.clevelandclinic.org/cclcm/),
@@ -17,4 +16,4 @@ Fellowship starts around this time next year.
 Our oldest is 8, youngest is 18 months.
 Everyone remains well and cantankerous.
 - - -
-last updated: 2021-08-05
+This is a [now page](https://nownownow.com/about). It was last updated 2021-08-05.
