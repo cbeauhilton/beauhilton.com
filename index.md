@@ -22,6 +22,6 @@ Feed for this page.
 
 ## Posts
 
-[Morning Report 08/2021](/mr-2021.html)
+[Morning Report 08/2021](posts/mr-2021.html)
 
 See old posts [here](https://cbeauhilton.github.io)
