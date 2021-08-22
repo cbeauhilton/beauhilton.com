@@ -22,5 +22,6 @@ Feed for this page.
 
 ## Posts
 
-* Forthcoming. Check out the [memex](https://memex.beauhilton.com) in the meantime.
-- See old posts [here](https://cbeauhilton.github.io).
+[Morning Report 08/2021](/mr-2021.html)
+
+See old posts [here](https://cbeauhilton.github.io)
