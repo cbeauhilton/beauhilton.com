@@ -184,7 +184,7 @@ There's a chance it's not even needed?
 The specification no longer supports 
 adding a client cert field
 in the file. 
-At any rate, this set up is working now 
+At any rate, this setup is working now 
 and I won't futz with it further 
 until something breaks.
 
