@@ -37,7 +37,7 @@ of greatest beauty
 on Linux
 at this point is:
 
-`iwd` + `systemd-networkd` + `systemd-resolved`.
+`systemd-networkd` +`systemd-resolved` + `iwd`
 
 Disable and delete `NetworkManager` 
 and other such nonsense,
