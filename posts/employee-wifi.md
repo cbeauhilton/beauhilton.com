@@ -1,8 +1,9 @@
-# Using VUMCEmployee Wifi  on Arch Linux
+# Using VUMCEmployee Wifi on Arch Linux
 
 This was a little tricky to get working, 
 but very worth it,
-so here's a brief outline mostly for my own later benefit.
+so here's a brief outline 
+mostly for my own later benefit.
 
 Similar steps should be applicable for other enterprise wifi users,
 though this post will unquestionably be out of date before long.
@@ -15,13 +16,14 @@ to use all the HIPAA-compliant things.
 
 ## VUMCEmployee is better
 
-I'll probably put a screenshot here at some point comparing
-speedtest scores. 
-VUMCEmployee gives over 
-100 Mbps down, 
+I'll probably put a screenshot here at some point 
+comparing speedtest scores. 
+VUMCEmployee gives 
+over 100 Mbps down, 
 and around 100 up.
 
-It's also more stable, and latency is around 10ms.
+It's also more stable, 
+and latency is around 10ms.
 
 ## Backend
 
@@ -32,7 +34,10 @@ at this point is:
 
 `iwd` + `systemd-networkd` + `systemd-resolved`.
 
-Disable and delete `NetworkManager` and other such nonsense.
+Disable and delete `NetworkManager` 
+and other such nonsense,
+if you are unwise like me 
+and installed conflicting and useless things.
 
 If you'd like a GUI, [iwgtk](https://github.com/J-Lentz/iwgtk) is nice,
 but the CLI shipped with `iwd` (`iwctl`) 
@@ -77,7 +82,9 @@ which was an added bonus
 (I'm honestly not sure about the 
 sarcasm:sincerity ratio in the previous sentence).
 
-Download the `PEM` files listed under Steps 1 and 2.
+Download the `PEM` files listed under 
+Steps 1 (root certificate) and 
+2 (client certificate).
 
 ## Make your own `iwd` profile
 
@@ -156,9 +163,9 @@ AND since you did it all yourself
 you know there was no funny business
 coming from a black-box installer.
 
-## The other certificate
+## The other certificate (Client)
 
-I can't remember what I had to do with the non-root cert,
+I can't remember what I had to do with the client cert,
 probably added using the Chrome/Firefox certificate
 managers.
 
@@ -167,4 +174,12 @@ the Arch Wiki comes through again with an article on
 [Common Access Cards](https://wiki.archlinux.org/title/Common_Access_Card)
 that includes instructions on adding certs to browsers.
 
-## ~~Profit~~ Prosper
+There's a chance it's not even needed? 
+The specification no longer supports 
+adding a client cert field
+in the file. 
+At any rate, this set up is working now 
+and I won't futz with it further 
+until something breaks.
+
+## -> ~~Profit~~ Prosper
