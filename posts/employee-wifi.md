@@ -1,4 +1,4 @@
-# Using VUMCEmployee Wifi on Arch Linux
+# Using VUMCEmployee Wifi<br>on Arch Linux
 
 This was a little tricky to get working, 
 but very worth it,
@@ -29,6 +29,7 @@ The personal networking stack
 of greatest beauty
 on Linux
 at this point is:
+
 `iwd` + `systemd-networkd` + `systemd-resolved`.
 
 Disable and delete `NetworkManager` and other such nonsense.
@@ -68,7 +69,7 @@ the process must be complicated,
 and repackaging things from Debian-based systems
 for Arch-based systems is easy enough.
 The repackaged version of the installer 
-worked well enough at first, 
+was decent at first,
 but it turns out that 
 the manual process is easier and more reliable.
 I also learned more about enterprise networks in the process,
@@ -88,7 +89,7 @@ sensitive info redacted,
 then we'll go through some of the key parts
 and one nicety.
 
-```toml # toml is not "desktop-entry-spec", but close enough
+```toml
 [IPv6]
 Enabled=true
 
@@ -124,8 +125,10 @@ Put in your own username and password.
 
 My favorite trick in this file is 
 directly embedding the root certificate
-in the line `EAP-PEAP-CACert=`
-with the syntax `embed:root_cert` 
+in the line 
+`EAP-PEAP-CACert=`
+with the syntax 
+`embed:root_cert` 
 (any name is fine, 
 doesn't have to be `root_cert`, 
 it's just a pointer).
@@ -164,4 +167,4 @@ the Arch Wiki comes through again with an article on
 [Common Access Cards](https://wiki.archlinux.org/title/Common_Access_Card)
 that includes instructions on adding certs to browsers.
 
-## ~~profit~~ Prosper
+## ~~Profit~~ Prosper
