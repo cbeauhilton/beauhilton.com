@@ -160,7 +160,8 @@ you don't need to point to the root certificate file
 or keep it around at all.
 
 Needless to say, 
-this is a sensitive file and should be protected appropriately.
+`VUMCEmployee.8021x` 
+is a sensitive file and should be protected appropriately.
 However, this file or a version of it 
 is what the automated tools would have made anyway,
 so there's no special risk here - 
