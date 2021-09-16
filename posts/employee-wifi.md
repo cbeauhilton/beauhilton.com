@@ -1,4 +1,4 @@
-# Using VUMCEmployee Wifi<br>on Arch Linux
+# Using VUMCEmployee Wifi  on Arch Linux
 
 This was a little tricky to get working, 
 but very worth it,
