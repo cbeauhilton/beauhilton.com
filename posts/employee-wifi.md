@@ -30,6 +30,17 @@ and around 100 up.
 It's also more stable, 
 and latency is around 10ms.
 
+Most practical gain, 
+other than faster everything:
+When I use VUMCGuest, 
+the keyboard shortcut I use to 
+launch and automatically login to Epic
+only works intermittently.
+On VUMCEmployee, it works reliably. 
+No more typing! 
+It's faster and, again, more reliable 
+than tapping the badge-readers at the VUMC workstations.
+
 ## Backend
 
 The personal networking stack 
