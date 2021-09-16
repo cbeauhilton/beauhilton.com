@@ -1,16 +1,21 @@
-# Using VUMCEmployee Wifi on Arch Linux
+# Set Up Enterprise Wifi on Arch Linux
 
-This was a little tricky to get working, 
+This was a little tricky to get working
 but very worth it,
-so here's a brief outline 
+so here's an outline,
 mostly for my own later benefit.
 
+This post is specific to [VUMC](https://www.vumc.org), 
+with the VUMCEmployee network.
+
 Similar steps should be applicable for other enterprise wifi users,
-though this post will unquestionably be out of date before long.
+though this post will unquestionably be out of date before long,
+and the intricacies of enterprise wifi are infinite.
 
 ## VUMCGuest is fine
 
-Just a little slow and finicky,
+As with other public networks at large institutions,
+VUMCGuest is just a little slow and finicky,
 and it's annoying to have to re-authenticate repeatedly
 to use all the HIPAA-compliant things.
 
