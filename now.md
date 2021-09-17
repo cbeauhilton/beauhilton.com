@@ -10,6 +10,8 @@ and started year two on July 1st, 2021.
 
 All the things they say about residency training are true.
 
+Also, the worst thing about the board exams is the opportunity cost.
+
 Fellowship starts around this time next year.
 
 # Family
