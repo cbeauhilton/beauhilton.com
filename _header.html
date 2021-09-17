@@ -8,13 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#70b433"/>
   <title id="title">.</title>
-  <script type="text/javascript">
-      var url = window.location.pathname; // gets the pathname of the file
-      var str = url.substring(url.lastIndexOf('/')+1); // removes everything before the filename
-      str = str.substring(0, str.length - 5); // removes the extension
-      var filename = str.replace(/%20/g, " "); // if the filename has multiple words separated by spaces, browsers do not like that and replace each space with a %20. This replace %20 with a space.
-      document.getElementById("title").innerHTML = filename;
-  </script>
 </head>
 <body id="home">
 <section id="masthead">
