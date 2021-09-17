@@ -137,7 +137,8 @@ AutoConnect=true
 Most of these options are outlined in 
 Step 3 from the VUMCEmployeeSetup,
 cross-referenced against the Arch Wiki page on `iwd`, 
-subsection [Network configuration](https://wiki.archlinux.org/title/Iwd#EAP-PEAP).
+subsection [Network configuration](https://wiki.archlinux.org/title/Iwd#EAP-PEAP),
+and the [`iwd` wiki proper](https://iwd.wiki.kernel.org/networkconfigurationsettings).
 
 An easy-to-miss step: 
 The `EAP-PEAP-Phase2-Method` requirement for `MSCHAPV2` 
@@ -192,9 +193,13 @@ the Arch Wiki comes through again with an article on
 that includes instructions on adding certs to browsers.
 
 There's a chance it's not even needed? 
-The specification no longer supports 
+The [specification](https://iwd.wiki.kernel.org/networkconfigurationsettings) 
+no longer supports 
 adding a client cert field
-in the file. 
+without a key,
+which I don't have,
+and do not, apparently, need 
+(see the section "EAP-PEAP with tunneled EAP-MSCHAPV2").
 At any rate, this setup is working now 
 and I won't futz with it further 
 until something breaks.
