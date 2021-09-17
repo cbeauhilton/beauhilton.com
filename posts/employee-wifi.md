@@ -163,7 +163,7 @@ via copy-paste or `cat`, etc.
 
 Easiest method, as root:
 
-```
+```shell
 cat /home/beau/dl/root_cert.PEM >> /var/lib/iwd/VUMCEmployee.8021x
 ```
 
