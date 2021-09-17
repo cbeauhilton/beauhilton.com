@@ -11,9 +11,7 @@ Notes on things.
 Software repositories.
 
 ## [Contact](/contact.html)
-If you would like to get in touch,
-email me:
-cbeauhilton@gmail.com.
+If you'd like to get in touch.
 
 ## [RSS](/rss.xml)
 Feed for this page.
