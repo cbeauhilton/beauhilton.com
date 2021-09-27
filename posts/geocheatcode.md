@@ -15,7 +15,9 @@ quickly and reliably.
 But what if you would like to map 90,000 things
 whose locations you don't yet know?
 
-Google and OpenStreetMap, 
+[Google](https://developers.google.com/maps) 
+and 
+[OpenStreetMap](https://www.openstreetmap.org/), 
 as well as others,
 provide mapping services
 you can call programmatically from your software.
@@ -25,9 +27,16 @@ and they return information
 relevant to that query,
 such as street address and 
 latitude and longitude.
+Up to a certain number of queries per day or hour, 
+the services are free, 
+and since my work is academic,
+rather than real-time mapping for some
+for-profit app, 
+I am happy to send in small batches
+to stay under the limits in the free tier.
 
 I've used these services to make large maps,
-and they work pretty well.
+and they work pretty well. 
 
 *Pretty* well.
 
@@ -125,14 +134,16 @@ Google is *really* good at search.
 ## How does the code work?
 
 If you inspect the HTML on the Google Maps website 
-after you search for something 
+after you search for [something](https://www.google.com/maps?q=something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine&um=1&ie=UTF-8&sa=X&ved=2ahUKEwid2curm6DzAhVgRzABHfTcDloQ_AUoAXoECAEQAw)
 and it centers the map on its best guess, and you scroll way on down,
 you'll find `APP_INITIALIZATION_STATE`, which contains
 latitude and longitude for the place the map centered on.
 (For some reason it puts it in "longitude, latitude" order
 instead of "latitude, longitude," but that's easily overcome.)
 
-I use the lovely `requests-html` library
+I use the lovely 
+[`requests-html`](https://docs.python-requests.org/projects/requests-html/en/latest/) 
+Python library
 to send the query to Google,
 receive the response,
 and search through the response for the part I want to extract.
@@ -147,7 +158,7 @@ and work instead on formatting the queries properly
 before sending them to Google/OSM.
 This trick is good for going leisurely,
 but automatically,
-through a list of things you scraped from somewhere.
+through a pre-made list of things.
 
 Also, if you try to map too many things too quickly,
 Google will shut you out after a little while.
