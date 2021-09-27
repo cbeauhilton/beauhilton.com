@@ -1,4 +1,5 @@
-# GeoCheatCode
+
+# geocheatcode
 
 ## Map All the Things
 
@@ -72,7 +73,7 @@ in a scalable way.
 
 Turns out there is, and it's pretty easy.
 
-## `GeoCheatCode.py`
+## `geocheatcode.py`
 
 ```python
 
