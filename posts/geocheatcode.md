@@ -120,12 +120,16 @@ query = extraneous + relevant
 lat, lon = google_lat_lon(query)
 
 print(
-       "Hello."
-       "My name is Google."
-       "I am really good at guessing what you meant."
-      f"Your query was {query}."
-       "Here are the coordinates you probably wanted."
-      f"The latitude is {lat}, and the longitude is {lon}."
+       "Hello. "
+       "My name is Google. "
+       "I am really good at guessing what you meant. "
+      f"Your query was '{query}'. "
+       "Here are the coordinates you probably wanted. "
+      f"The latitude is {lat}, and the longitude is {lon}. "
+       "Don't believe me? "
+       "Here it is again, in a format you can paste into the search bar: \n"
+      f"{lat}, {lon} \n"
+       "Told ya. "
 )
 
 ```
