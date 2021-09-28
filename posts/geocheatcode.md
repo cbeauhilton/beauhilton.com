@@ -143,7 +143,7 @@ Google is *really* good at search.
 
 ## How does the code work?
 
-If you inspect the source HTML  
+If you inspect the source HTML
 on the Google Maps website 
 after you search for something
 and it centers the map on its best guess, 
