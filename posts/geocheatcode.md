@@ -1,18 +1,24 @@
 
 # geocheatcode
 
-## Map All the Things
+Here is background and code
+for a trick I use to get
+Google to give me best-in-class guesses 
+for latitude and longitude,
+despite goofy and/or downright bad location searches.
+
+## Map all the things
 
 I love maps.
 
 Several of my projects involve mapping things at scale.
 
 When you want to map a few things,
-you type your searches into Google Maps
+you type searches into Google Maps
 and get addresses and/or latitudes and longitudes
 quickly and reliably.
 
-But what if you would like to map 90,000 things
+But what if you'd like to map 90,000 things
 whose locations you don't yet know?
 
 [Google](https://developers.google.com/maps) 
@@ -40,30 +46,29 @@ and they work pretty well.
 
 *Pretty* well.
 
-## But Mapping is Hard
+## But mapping is hard
 
-The main issues I ran into with these services were:
+Problems with these services:
 
 1. they expected well-formed and reasonable queries
-2. if they didn't know the answer, the guesses were often pretty wildly off, or they would refuse to guess at all
+2. if they didn't know the answer, the guesses were often wildly off, or they would refuse to guess at all
 
 If I'm mapping 90,000 things,
-I am going to write some code 
+I'm going to write some code 
 to go through each of those 90,000 things
 and ask the mapping services 
-to kindly tell me what I want to know for each one.
-Though I write sanitation code to clean up the 90,000 things
-before sending each request,
+to kindly tell me what I want to know.
+Though I write sanitation code to clean up the 90,000 things,
 I'm not going to quality check each of those 90,000 things.
 Sometimes things among the 90,000 things are kinda nuts
 (misspelled, inclusive of extraneous data, oddly formatted),
 in idiosyncratic ways that are impossible to completely cover,
 no matter how much code I write to catch the weird cases.
 
-I would like my solution to be fairly tolerant of weirdnesses,
-and to make good guesses.
+I would like a solution that is fairly tolerant of weirdnesses,
+and makes good guesses.
 
-## Google is Really Good at search
+## Google is really good at search
 
 I noticed that when I manually typed things 
 into the Google Maps search bar,
@@ -80,7 +85,7 @@ success rates nearing 100%.
 I thought there must be a way to repeat this process with code,
 in a scalable way.
 
-Turns out there is, and it's pretty easy.
+Turns out there is, and it's easy.
 
 ## `geocheatcode.py`
 
@@ -138,8 +143,6 @@ after you search for [something](https://www.google.com/maps?q=something+whose+l
 and it centers the map on its best guess, and you scroll way on down,
 you'll find `APP_INITIALIZATION_STATE`, which contains
 latitude and longitude for the place the map centered on.
-(For some reason it puts it in "longitude, latitude" order
-instead of "latitude, longitude," but that's easily overcome.)
 
 I use the lovely 
 [`requests-html`](https://docs.python-requests.org/projects/requests-html/en/latest/) 
