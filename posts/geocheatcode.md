@@ -152,7 +152,7 @@ you'll find `APP_INITIALIZATION_STATE`, which contains
 latitude and longitude for the place the map centered on.
 
 - [example search](https://www.google.com/maps?q=something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine)
-- [example source](view-source:https://www.google.com/maps/search/something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine/)
+- [example source](view-source:https://www.google.com/maps/search/something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine/) (you have to copy and paste this link into a new tab manually, clicking won't work)
 
 I use the lovely 
 [`requests-html`](https://docs.python-requests.org/projects/requests-html/en/latest/) 
