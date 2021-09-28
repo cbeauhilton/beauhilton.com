@@ -143,9 +143,11 @@ Google is *really* good at search.
 
 ## How does the code work?
 
-If you inspect the HTML on the Google Maps website 
-after you search for [something](https://www.google.com/maps?q=something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine&um=1&ie=UTF-8&sa=X&ved=2ahUKEwid2curm6DzAhVgRzABHfTcDloQ_AUoAXoECAEQAw)
-and it centers the map on its best guess, and you scroll way on down,
+If you [inspect the source HTML](view-source:https://www.google.com/maps/search/something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine/)  
+on the Google Maps website 
+after you search for [something](https://www.google.com/maps?q=something+whose+latitude+and+longitude+you+would+like+to+know,+maybe+VUMC+Internal+Medicine)
+and it centers the map on its best guess, 
+and you scroll way on down (or Ctrl-F search for it)
 you'll find `APP_INITIALIZATION_STATE`, which contains
 latitude and longitude for the place the map centered on.
 
