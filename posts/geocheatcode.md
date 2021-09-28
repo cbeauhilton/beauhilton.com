@@ -163,17 +163,22 @@ and search through the response for the part I want to extract.
 Then I use a little standard Python 
 to parse the extracted part and save the important bits.
 
-PSA: don't go crazy with this. 
+## With great power...
+
+Don't go crazy with this. 
+
+The trick is good for 
+leisurely automation 
+of location retrieval
+when you have squirrelly queries.
+
 If you need real-time mapping of many things,
 you don't want this solution.
 Use the actual APIs, 
 and work instead on formatting the queries properly
 before sending them to Google/OSM.
-This trick is good for going leisurely,
-but automatically,
-through a pre-made list of things.
 
-Also, if you try to map too many things too quickly,
+Also, if you try to query too much/too quickly,
 Google will shut you out after a little while.
 Put a few seconds of delay between each request 
 and run it overnight and/or in automated batches.
