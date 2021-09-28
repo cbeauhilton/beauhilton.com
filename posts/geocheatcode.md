@@ -127,7 +127,8 @@ print(
        "Here are the coordinates you probably wanted. "
       f"The latitude is {lat}, and the longitude is {lon}. "
        "Don't believe me? "
-       "Here it is again, in a format you can paste into the search bar: \n"
+       "Here it is again, "
+       "in a format you can paste into the search bar: \n"
       f"{lat}, {lon} \n"
        "Told ya. "
 )
