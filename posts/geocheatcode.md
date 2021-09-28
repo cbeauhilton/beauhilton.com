@@ -112,7 +112,7 @@ def google_lat_lon(query: str):
     return lat, lon
 
 
-extraneous = "something whose latitude and longitude you would like to know, maybe"
+extraneous = "something whose latitude and longitude you would like to know, maybe "
 relevant = "VUMC Internal Medicine"
 
 query = extraneous + relevant
