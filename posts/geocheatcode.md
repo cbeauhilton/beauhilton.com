@@ -155,7 +155,7 @@ Python library
 to send the query to Google,
 receive the response,
 and search through the response for the part I want to extract.
-Then I use a little bit of standard Python 
+Then I use a little standard Python 
 to parse the extracted part and save the important bits.
 
 PSA: don't go crazy with this. 
