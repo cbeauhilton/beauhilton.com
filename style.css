@@ -3,6 +3,7 @@
 
 body {
 	max-width:40em;
+  width:70vw;
 	margin:0 auto;
 	padding: 5px;
   font-size:calc(16px + 1vw);
