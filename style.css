@@ -97,8 +97,8 @@ body {
 	max-width:40em;
 	margin:0 auto;
 	padding: 5px;
-  font-size:calc(1.25rem + 1vw);
-  line-height:30px;
+  font-size:calc(16px + 1vw);
+  line-height:calc(1.1em + 0.5vw);
 	color: #474747;
 	background-color: #ffffff;
 	font-family: IBM Plex Serif;
