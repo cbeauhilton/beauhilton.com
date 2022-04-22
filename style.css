@@ -2,15 +2,14 @@
 @import "fonts.css";
 
 body {
-	max-width:40em;
-  width:50vw;
-	margin:0 auto;
-	padding: 0.5em;
-  font-size:calc(1em + 1vw);
-  line-height:calc(1.1em + 0.5vw);
+	font-family: IBM Plex Serif;
 	color: #474747;
 	background-color: #ffffff;
-	font-family: IBM Plex Serif;
+  font-size:calc(1em + 1vw);
+  line-height:calc(1.1em + 0.5vw);
+	margin:0 auto;
+	padding: 0.5em;
+	max-width:40em
 }
 
 a{
@@ -47,7 +46,8 @@ section#masthead h1{
 	margin:0;
   margin-top:2em;
   font-size:calc(3em + 3vw);
-  line-height:calc(3em + 1.5vw)
+  line-height:calc(1.5em + 1.5vw);
+  max-width:50em
 }
 section#masthead h1 a{
 	color:#000;
@@ -72,11 +72,8 @@ h2,h3{
 @media screen and (max-width: 800px){
 	section#masthead h1{
 		font-size:3em;
-    font-size:calc(3em + 3vw)
+    font-size:calc(3em + 3vw);
 	}
-  body {
-    width:90vw;
-  }
 	div.presentation_summary img{
 		display:block
 	}
@@ -86,9 +83,6 @@ h2,h3{
 		font-size:3em;
     font-size:calc(3em + 3vw)
 	}
-  body {
-    width:90vw;
-  }
 	div.presentation_summary img{
 		float:right
 	}
