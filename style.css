@@ -7,7 +7,7 @@ body {
 	background-color: #ffffff;
   line-height: 1.45;
   font-size: 106.3%;
-	margin: 0.5em;
+	margin: 0 auto;
 	padding: 0.5em;
 	max-width: 40em
 }
@@ -42,7 +42,7 @@ section#masthead{
 }
 
 section#masthead h1{
-	margin:2em;
+	margin:1em;
   margin-top:1em;
   font-size:3em;
   line-height:1.5em;
