@@ -5,8 +5,8 @@ body {
 	max-width:40em;
   width:50vw;
 	margin:0 auto;
-	padding: 5px;
-  font-size:calc(12px + 1vw);
+	padding: 0.5em;
+  font-size:calc(1em + 1vw);
   line-height:calc(1.1em + 0.5vw);
 	color: #474747;
 	background-color: #ffffff;
@@ -47,6 +47,7 @@ section#masthead h1{
 	margin:0;
   margin-top:2em;
   font-size:calc(3em + 3vw)
+  line-height:calc(3em + 1.5vw);
 }
 section#masthead h1 a{
 	color:#000;
@@ -85,6 +86,9 @@ h2,h3{
 		font-size:3em;
     font-size:calc(3em + 3vw)
 	}
+  body {
+    width:90vw;
+  }
 	div.presentation_summary img{
 		float:right
 	}
