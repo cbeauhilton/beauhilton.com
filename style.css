@@ -46,8 +46,8 @@ section#masthead{
 section#masthead h1{
 	margin:0;
   margin-top:2em;
-  font-size:calc(3em + 3vw)
-  line-height:calc(3em + 1.5vw);
+  font-size:calc(3em + 3vw);
+  line-height:calc(3em + 1.5vw)
 }
 section#masthead h1 a{
 	color:#000;
@@ -69,7 +69,7 @@ h2,h3{
   line-height:calc(1.5em + 1vw)
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 800px){
 	section#masthead h1{
 		font-size:3em;
     font-size:calc(3em + 3vw)
@@ -81,7 +81,7 @@ h2,h3{
 		display:block
 	}
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 800px){
 	section#masthead h1{
 		font-size:3em;
     font-size:calc(3em + 3vw)
