@@ -112,8 +112,13 @@ def google_lat_lon(query: str):
     return lat, lon
 
 
-extraneous = "something whose latitude and longitude you would like to know, maybe "
-relevant = "VUMC Internal Medicine"
+extraneous = """ something something
+                 the earth is banana shaped
+                 latitude and longitude 
+                 wouldn't you like to know, maybe """
+
+relevant = """ Vanderbilt University Medical Center 
+               Internal Medicine """
 
 query = extraneous + relevant
 
