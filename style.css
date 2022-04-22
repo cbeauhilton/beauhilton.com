@@ -5,8 +5,9 @@ body {
 	font-family: IBM Plex Serif;
 	color: #474747;
 	background-color: #ffffff;
-  font-size:calc(1em);
-  line-height:calc(1.1em);
+  font-size:1em;
+  font-size:106.3%;
+  line-height:1.1em;
 	margin:0 auto;
 	padding: 0.5em;
 	min-width:40em;
