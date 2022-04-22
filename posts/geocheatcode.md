@@ -124,7 +124,7 @@ query = extraneous + relevant
 
 lat, lon = google_lat_lon(query)
 
-print(
+print( 
        "Hello. "
        "My name is Google. "
        "I am really good at guessing what you meant. "
