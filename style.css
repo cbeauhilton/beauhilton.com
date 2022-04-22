@@ -5,11 +5,12 @@ body {
 	font-family: IBM Plex Serif;
 	color: #474747;
 	background-color: #ffffff;
-  font-size:calc(1em + 1vw);
-  line-height:calc(1.1em + 0.5vw);
+  font-size:calc(1em);
+  line-height:calc(1.1em);
 	margin:0 auto;
 	padding: 0.5em;
-	max-width:40em
+	min-width:40em;
+	max-width:50em
 }
 
 a{
@@ -45,8 +46,8 @@ section#masthead{
 section#masthead h1{
 	margin:0;
   margin-top:2em;
-  font-size:calc(3em + 3vw);
-  line-height:calc(1.5em + 1.5vw);
+  font-size:calc(3em);
+  line-height:calc(1.5em);
   max-width:50em
 }
 section#masthead h1 a{
@@ -65,14 +66,14 @@ section#masthead h1 a:visited{
 
 h2,h3{
 	margin-top:2em;
-  font-size:calc(1.5em + 2vw);
-  line-height:calc(1.5em + 1vw)
+  font-size:calc(1.5em);
+  line-height:calc(1.5em)
 }
 
 @media screen and (max-width: 800px){
 	section#masthead h1{
 		font-size:3em;
-    font-size:calc(3em + 3vw);
+    font-size:calc(3em);
 	}
 	div.presentation_summary img{
 		display:block
@@ -81,7 +82,7 @@ h2,h3{
 @media screen and (min-width: 800px){
 	section#masthead h1{
 		font-size:3em;
-    font-size:calc(3em + 3vw)
+    font-size:calc(3em)
 	}
 	div.presentation_summary img{
 		float:right
