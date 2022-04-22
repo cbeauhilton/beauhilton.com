@@ -1,25 +1,24 @@
+# family
 
-# Residency, Second Year
-In 2020 I finished [medical school](https://portals.clevelandclinic.org/cclcm/),
-matched into internal medicine residency
-and hematology/oncology (cancer and blood disorders) fellowship
-at Vanderbilt University Medical Center in the [Harrison Society](https://medicine.vumc.org/harrison-society).
-
-I completed my first year of internal medicine residency training, 
-and started year two on July 1st, 2021.
-
-All the things they say about residency training are true.
-
-Also, the worst thing about the board exams is the opportunity cost.
-
-Fellowship starts around this time next year.
-
-# Family
-Our oldest is 8, youngest is 18 months.
+Our oldest is 8, youngest is 2.
 Everyone remains well and cantankerous.
 
+# work
+
+I'm an internal medicine doctor at Vanderbilt University Medical Center.
+
+In July I'll start cancer fellowship, 
+here as well, 
+as a member of the [Harrison Society](https://medicine.vumc.org/harrison-society).
+
+# other
+
+Ted Hawkins' song "[Sorry You're Sick](https://youtu.be/jTO-zb6XTzg)" 
+reminds me of the book 
+[*One Day in the Life of Ivan Denisovich*](https://en.wikipedia.org/wiki/One_Day_in_the_Life_of_Ivan_Denisovich)
+by Aleksandr Solzhenitsyn,
+and the uncomfortable and sublime truth that all medicine is palliative medicine.
 
 - - -
 
-
-This is a [now page](https://nownownow.com/about). It was last updated 2021-08-05.
+This [now page](https://nownownow.com/about) was last updated 2022-04-22.
