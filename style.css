@@ -97,8 +97,8 @@ body {
 	max-width:40em;
 	margin:0 auto;
 	padding: 5px;
-        font-size:20px;
-        line-height:30px;
+  font-size:calc(1.25rem + 1vw);
+  line-height:30px;
 	color: #474747;
 	background-color: #ffffff;
 	font-family: IBM Plex Serif;
@@ -136,7 +136,8 @@ section#masthead{
 }
 section#masthead h1{
 	margin:0;
-        margin-top:2em;
+  margin-top:2em;
+  font-size:calc(3em + 3vw)
 }
 section#masthead h1 a{
 	color:#000;
@@ -153,12 +154,14 @@ section#masthead h1 a:visited{
 }
 
 h2,h3{
-	margin-top:2em
+	margin-top:2em;
+  font-size:calc(1.5em + 2vw)
 }
 
 @media screen and (max-width: 440px){
 	section#masthead h1{
-		font-size:2em
+		font-size:3em;
+    font-size:calc(3em + 3vw)
 	}
 	div.presentation_summary img{
 		display:block
@@ -166,7 +169,8 @@ h2,h3{
 }
 @media screen and (min-width: 440px){
 	section#masthead h1{
-		font-size:3em
+		font-size:3em;
+    font-size:calc(3em + 3vw)
 	}
 	div.presentation_summary img{
 		float:right
