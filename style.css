@@ -3,7 +3,7 @@
 
 body {
 	max-width:40em;
-  width:60vw;
+  width:50vw;
 	margin:0 auto;
 	padding: 5px;
   font-size:calc(12px + 1vw);
@@ -68,16 +68,19 @@ h2,h3{
   line-height:calc(1.5em + 1vw)
 }
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 480px){
 	section#masthead h1{
 		font-size:3em;
     font-size:calc(3em + 3vw)
 	}
+  body {
+    width:90vw;
+  }
 	div.presentation_summary img{
 		display:block
 	}
 }
-@media screen and (min-width: 440px){
+@media screen and (min-width: 480px){
 	section#masthead h1{
 		font-size:3em;
     font-size:calc(3em + 3vw)
