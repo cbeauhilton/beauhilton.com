@@ -2,11 +2,11 @@
 @import "fonts.css";
 
 body {
-	font-family: IBM Plex Serif;
+	font-family: "IBM Plex Sans", sans-serif;
 	color: #474747;
 	background-color: #ffffff;
-  font-size:1.563em;
-  line-height:1.1em;
+  line-height: 1.45;
+  font-size: 106.3%;
 	margin:0 auto;
 	padding: 0.5em;
 	max-width:40em
@@ -86,6 +86,76 @@ h2,h3{
 	div.presentation_summary img{
 		float:right
 	}
+}
+@media (min-width: 400px) {
+    body {
+        font-size: 118.8%;
+    }
+}
+@media (min-width: 500px) {
+    body {
+        font-size: 118.8%;
+        line-height: 1.55;
+    }
+}
+@media (min-width: 600px) {
+    body {
+        font-size: 118.8%;
+        line-height: 1.66;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        font-size: 131.3%;
+    }
+}
+@media (min-width: 1030px) {
+    body {
+        font-size: 137.5%;
+    }
+}
+@media (min-width: 1250px) {
+    body {
+        font-size: 143.8%;
+    }
+}
+@media (min-width: 1920px) {
+    body {
+        font-size: 1.563em;
+    }
+}
+.container,
+.postheader {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1360px;
+}
+.container--wide {
+    max-width: 1600px;
+}
+.container:after,
+.centered:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.centered {
+    max-width: 34em;
+    margin: 0 auto;
+    clear: both;
+    width: 90%;
+}
+@media (min-width: 600px) {
+    .centered {
+        width: 84%;
+    }
+}
+.centered.wider {
+    max-width: calc(34em + 2em);
+}
+.centered-block {
+    display: block;
+    overflow: hidden;
 }
 @media(prefers-color-scheme:dark){
 	body{
