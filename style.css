@@ -3,10 +3,10 @@
 
 body {
 	max-width:40em;
-  width:70vw;
+  width:60vw;
 	margin:0 auto;
 	padding: 5px;
-  font-size:calc(16px + 1vw);
+  font-size:calc(12px + 1vw);
   line-height:calc(1.1em + 0.5vw);
 	color: #474747;
 	background-color: #ffffff;
