@@ -2,7 +2,8 @@
 ##### [now](/now.html)
 <!-- ## [info](/info.html) -->
 ##### [posts](/posts.html)
-##### [memex](https://memex.beauhilton.com)
+##### [notes](https://notes.beauhilton.com)
+##### [talks](https://talks.beauhilton.com)
 ##### [git](https://git.beauhilton.com)
 ##### [contact](/contact.html)
 ##### [RSS](/rss.xml)
