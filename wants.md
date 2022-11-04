@@ -1,7 +1,7 @@
 # Wishlist
 
 While there are always 
-(ten thousand material things)[https://rosewhitemusic.com/piano/writings/ten-thousand-things/#:~:text=%E2%80%9CThe%20Ten%20Thousand%20Things%E2%80%9D%20is,The%20One%20produced%20the%20two.]
+(ten thousand material things)[https://rosewhitemusic.com/piano/writings/ten-thousand-things/]
 I want,
 some of which are in the Amazon Wishlist below,
 I'm more into digital capability these days.
