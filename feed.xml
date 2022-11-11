@@ -11,6 +11,13 @@
     <webMaster>beau@beauhilton.com (Beau Hilton)</webMaster>
     <lastBuildDate>2022-11-11T00:00:01Z</lastBuildDate>
 		<item>
+			<title>upgrade old OpenBSD installs</title>
+      <link>https://beauhilton.com/ugbsd.html</link>
+			<guid>https://beauhilton.com/ugbsd.html</guid>
+			<pubDate>2022-11-11T13:04:26Z</pubDate>
+      <description>Upgrade (possibly very) old versions of OpenBSD by finding a generous mirror.</description>
+		</item>
+		<item>
 			<title>geocheatcode</title>
       <link>https://beauhilton.com/geocheatcode.html</link>
 			<guid>https://beauhilton.com/geocheatcode.html</guid>
