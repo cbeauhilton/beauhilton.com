@@ -3,11 +3,12 @@
   <channel>
     <title>beauhilton.com</title>
     <link>https://beauhilton.com/</link>
+    <atom:link href="http://beauhilton.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>beau's personal site.</description>
     <language>en-us</language>
     <generator>my own two hands</generator>
-    <managingEditor>beau@beauhilton.com</managingEditor>
-    <webMaster>beau@beauhilton.com</webMaster>
+    <managingEditor>beau@beauhilton.com (Beau Hilton)</managingEditor>
+    <webMaster>beau@beauhilton.com (Beau Hilton)</webMaster>
     <lastBuildDate>2022-11-11T00:00:01Z</lastBuildDate>
 		<item>
 			<title>geocheatcode</title>
