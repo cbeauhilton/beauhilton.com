@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
-	<title>beauhilton.com</title>
-	<subtitle>beau's personal site</subtitle>
-	
-	<link href="https://beauhilton.com/feed/" rel="self"/>
-	<link href="https://beauhilton.com"/>
-	<updated>2022-11-11T00:00:01Z</updated>
-	<id>https://beauhilton.com</id>
-	<author>
-		<name>beau</name>
-	</author>
-		
-		<entry>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beauhilton.com</title>
+    <link>https://beauhilton.com/</link>
+    <description>beau's personal site.</description>
+    <language>en-us</language>
+    <generator>my own two hands</generator>
+    <managingEditor>beau@beauhilton.com</managingEditor>
+    <webMaster>beau@beauhilton.com</webMaster>
+    <lastBuildDate>2022-11-11T00:00:01Z</lastBuildDate>
+		<item>
 			<title>geocheatcode</title>
-      <link href="https://beauhilton.com/geocheatcode.html"/>
-			<updated>2022-04-22T18:04:26Z</updated>
-			<id>https://beauhilton.com/geocheatcode.html</id>
-			
-		</entry>
-		
-		<entry>
+      <link>https://beauhilton.com/geocheatcode.html</link>
+			<guid>https://beauhilton.com/geocheatcode.html</guid>
+			<pubDate>2022-04-22T18:04:26Z</pubDate>
+      <description>Get the latitude and longitude of badly formatted search strings using Google Maps and regex.</description>
+		</item>
+    <item>
 			<title>Set up enterprise wifi on Arch Linux</title>
-			<link href="https://beauhilton.com/employee-wifi.html"/>
-			<updated>2021-09-17T18:04:26Z</updated>
-			<id>https://beauhilton.com/employee-wifi.html</id>
-			
-		</entry>
-		
-</feed>
+      <link>https://beauhilton.com/employee-wifi.html</link>
+			<guid>https://beauhilton.com/employee-wifi.html</guid>
+			<pubDate>2021-09-17T18:04:26Z</pubDate>
+      <description>Almost works sometimes.</description>
+		</item>
+  </channel>	
+</rss>
