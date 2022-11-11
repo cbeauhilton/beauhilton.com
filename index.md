@@ -6,4 +6,4 @@
 ##### [talks](https://talks.beauhilton.com)
 ##### [git](https://git.beauhilton.com)
 ##### [contact](/contact.html)
-##### [RSS](/rss.xml)
+##### [RSS](/feed.xml)
