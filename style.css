@@ -64,7 +64,7 @@ section#masthead h1 a:visited{
         text-decoration:none;
 }
 
-h2,h3,h4{
+h1, h2,h3,h4{
 	margin-top:2em;
   font-size:1.5em;
   line-height:1.5em;
@@ -165,6 +165,13 @@ h5{ /* used only for the index page */
 		background-color:#181818;
 		color:#b9b9b9
 	}
+
+  code{
+    font-size:.8em;
+    background: #111;
+    padding: 0 2px;
+    border-radius: 4px
+  }
 
   a{
 		color:#368aeb
