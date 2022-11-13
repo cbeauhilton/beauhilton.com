@@ -71,9 +71,11 @@ OpenBSD has an internal MIME declaration file you can link to from within `httpd
 Here's the relevant bit, just chuck this on the end of the conf file:
 
 ```
+
 types {
     include "/usr/share/misc/mime.types"
 }
+
 ```
 
 And reload `httpd(8)`.
