@@ -9,7 +9,14 @@
     <generator>my own two hands</generator>
     <managingEditor>beau@beauhilton.com (Beau Hilton)</managingEditor>
     <webMaster>beau@beauhilton.com (Beau Hilton)</webMaster>
-    <lastBuildDate>2022-11-11T00:00:01Z</lastBuildDate>
+    <lastBuildDate>2022-11-13T00:00:01Z</lastBuildDate>
+		<item>
+			<title>fix MIME Types to unbreak RSS feeds served by OpenBSD's httpd(8)</title>
+      <link>https://beauhilton.com/posts/mime.html</link>
+      <guid>https://beauhilton.com/posts/mime.html</guid>
+			<pubDate>2022-11-13T15:04:26Z</pubDate>
+      <description>Add more MIME Types to `httpd(8)` so RSS feed readers know what they're getting into.</description>
+		</item>
 		<item>
 			<title>upgrade old OpenBSD installs</title>
       <link>https://beauhilton.com/posts/ugbsd.html</link>

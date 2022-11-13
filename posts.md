@@ -1,5 +1,7 @@
 # Posts
 
+## [fix MIME Types to unbreak RSS feeds served by OpenBSD's httpd(8)](posts/mime.html)
+
 ## [upgrade old OpenBSD installs](posts/ugbsd.html)
 
 ## [geocheatcode](posts/geocheatcode.html)
