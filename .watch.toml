@@ -1,0 +1,24 @@
+[[watch]]
+name = "build site on content change"
+path = "site"
+command = "rm -rf build && soupault"
+
+[[watch]]
+name = "build site on config change"
+path = "./soupault.toml"
+command = "rm -rf build && soupault"
+
+[[watch]]
+name = "build site on template change"
+path = "templates"
+command = "rm -rf build && soupault"
+
+[[watch]]
+name = "build site on plugin change"
+path = "plugins"
+command = "rm -rf build && soupault"
+
+# [[watch]]
+# name = "serve site on rebuild"
+# path = "build/*"
+# command = "./stop 8000 && python3 -m http.server --directory build"
