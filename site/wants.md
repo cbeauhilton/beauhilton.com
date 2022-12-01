@@ -16,6 +16,7 @@ E.g. Visa or MasterCard.
 
 I'm trying to be less reliant on "free" services, such as Google, 
 and using an independent email client is a big part of that. 
+
 They charge money because 
 they're *not* doing all the stuff Google does to keep their products free,
 namely, using your info for ad targeting.
