@@ -1,0 +1,28 @@
+#!/bin/sh -e
+
+title='Beau Hilton'
+url='https://beauhilton.com'
+
+dst="/var/www/htdocs/www.beauhilton.com"
+raw="$dst/raw"
+src="$dst/src"
+
+if test -z "${PWD##*.git}"
+        then repo="$PWD"
+        else repo="$PWD/.git"
+fi
+
+rm -rf "${dst:?}/.files"
+rm -rf "$raw"
+rm -rf "$src:?"
+
+mkdir -p "$raw"
+echo "${title}" > "$repo/owner"
+git clone "$repo" "$raw"
+(cd "$raw/.git" && git update-server-info)
+
+"$HOME/bin/ssg6" "$raw" "$dst" "$title" "$url" > /dev/null
+
+mkdir -p "$src"
+(cd "$src" && stagit "$repo")
+cp -f "$src/log.html" "$src/index.html"
