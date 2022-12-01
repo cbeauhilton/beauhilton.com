@@ -12,6 +12,7 @@ E.g. Visa or MasterCard.
 ## beau@beauhilton.com
 
 [fastmail](https://www.fastmail.com/) is a delightful mail service. 
+
 I'm trying to be less reliant on Google, 
 and using an independent email client is a big part of that. 
 They charge money because 
