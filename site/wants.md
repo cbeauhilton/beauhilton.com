@@ -20,7 +20,8 @@ They charge money because
 they're *not* doing all the stuff Google does to keep their products free,
 namely, using your info for ad targeting.
 
-It's $5 a month. I got a few months for free, and really like it. 
+It's $5 a month. 
+I got a few months for free, and really like it. 
 In addition to not selling your data, 
 they have a good facility for having your own email extension (provided you own your domain), 
 so I got `beau@beauhilton.com`.
