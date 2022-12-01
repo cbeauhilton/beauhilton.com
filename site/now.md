@@ -5,11 +5,8 @@ Everyone remains well and cantankerous.
 
 # work
 
-I'm an internal medicine doctor at Vanderbilt University Medical Center.
+I'm an oncology fellow at Vanderbilt University Medical Center.
 
-In July I'll start cancer fellowship, 
-here as well, 
-as a member of the [Harrison Society](https://medicine.vumc.org/harrison-society).
 
 # other
 
