@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cstyle%3E %23m %7B opacity:0; %7D%0A@media (prefers-color-scheme: dark) %7B %23m %7B opacity:1; %7D %23e %7B opacity:0 %7D%0A%7D %3C/style%3E%3Ctext id='m' y='.9em' font-size='90'%3E🏕️%3C/text%3E%3Ctext id='e' y='.9em' font-size='90'%3E🌞%3C/text%3E%3C/svg%3E">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/feed.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     Set Up Enterprise Wifi on Arch Linux
+    </h1>
+    <p>
+     <time id="post-date">2021-09-17</time>
+    </p>
+    <p id="post-excerpt">
+     Most big institutions have guest and employee wifi networks.
+Guest wifi is usually fine, fast enough for the basics,
+but far inferior to employee wifi.
+On a custom-built OS, such as a fairly minimalist Linux distribution, 
+getting the employee wifi to work
+can be a beast.
+    </p>
+    <p>
+     This was a little tricky to get working but very worth it, so here’s
+an outline, mostly for my own later benefit.
+    </p>
+    <p></p>
+    <p>
+     This post is specific to <a href="https://www.vumc.org">VUMC</a>,
+with the VUMCEmployee network.
+    </p>
+    <p>
+     Similar steps should be applicable for other enterprise wifi users,
+though this post will unquestionably be out of date before long, and the
+intricacies of enterprise wifi are infinite.
+    </p>
+    <h2>
+     VUMCGuest is fine
+    </h2>
+    <p>
+     As with other public networks at large institutions, VUMCGuest is
+just a little slow and finicky, and it’s annoying to have to
+re-authenticate repeatedly to use all the HIPAA-compliant things.
+    </p>
+    <h2>
+     VUMCEmployee is better
+    </h2>
+    <p>
+     I’ll probably put a screenshot here at some point comparing speedtest
+scores. VUMCEmployee gives over 100 Mbps down, and around 100 up.
+    </p>
+    <p>
+     It’s also more stable, and latency is around 10ms.
+    </p>
+    <p>
+     Most practical gain, other than faster everything: When I use
+VUMCGuest, the keyboard shortcut I use to launch and automatically login
+to Epic only works intermittently. On VUMCEmployee, it works reliably.
+No more typing! It’s faster and, again, more reliable than tapping the
+badge-readers at the VUMC workstations.
+    </p>
+    <h2>
+     Backend
+    </h2>
+    <p>
+     The personal networking stack of greatest beauty on Linux at this
+point is:
+    </p>
+    <p>
+     <code>systemd-networkd</code> +<code>systemd-resolved</code> +
+<code>iwd</code>
+    </p>
+    <p>
+     Disable and delete <code>NetworkManager</code> and other such
+nonsense, if you are unwise like me and installed conflicting and
+useless things.
+    </p>
+    <p>
+     If you’d like a GUI, <a href="https://github.com/J-Lentz/iwgtk">iwgtk</a> is nice, but the CLI
+shipped with <code>iwd</code> (<code>iwctl</code>) is intuitive,
+friendly, and well-documented. I keep the GUI version around for quickly
+checking on things via a keyboard shortcut, but use the CLI for any
+heavy lifting, which has thankfully become rare since landing on this
+setup.
+    </p>
+    <h2>
+     Start with VUMCEmployeeSetup
+    </h2>
+    <p>
+     First, log on to the VUMCEmployeeSetup wifi. Then navigate to one of
+my favorite websites, <a href="http://neverssl.com/">http://neverssl.com/</a>. This will force
+the redirect to the VUMCEmployee enrollment page (I also use this site
+for connecting to public wifi at airports, libraries, coffee shops,
+etc.). Agree to the terms and conditions. Then click the “Show all
+operating systems” link at the bottom, followed by the “Other Operating
+Systems” tab that pops up at the bottom of the list.
+    </p>
+    <p>
+     The “Other Operating Systems” tab has three steps listed, which are
+simply the pieces that the various installers put together for you. The
+first two are downloads for certificates, and the third is a
+template.
+    </p>
+    <p>
+     Finding this tab was the gold mine - initially I repackaged one of
+the other Linux installers for Arch, because I thought that (since there
+was an installer) the process must be complicated, and repackaging
+things from Debian-based systems for Arch-based systems is easy enough.
+The repackaged version of the installer was decent at first, but it
+turns out that the manual process is easier and more reliable. I also
+learned more about enterprise networks in the process, which was an
+added bonus (I’m honestly not sure about the sarcasm:sincerity ratio in
+the previous sentence).
+    </p>
+    <p>
+     Download the <code>PEM</code> files listed under Steps 1 (root
+certificate) and 2 (client certificate).
+    </p>
+    <h2>
+     Make your own <code>iwd</code> profile
+    </h2>
+    <p>
+     Here’s where it goes:
+<code>/var/lib/iwd/VUMCEmployee.8021x</code>
+    </p>
+    <p>
+     Below are the contents, sensitive info redacted, then we’ll go
+through some of the key parts and one nicety.
+    </p>
+    <pre tabindex="0"><code class="language-toml"><span class="hl kwa">[IPv6]</span>
+<span class="hl kwb">Enabled</span><span class="hl opt">=</span><span class="hl kwd">true</span>
+
+<span class="hl kwa">[Security]</span>
+<span class="hl kwb">EAP-Method</span><span class="hl opt">=</span>PEAP
+<span class="hl kwb">EAP-Identity</span><span class="hl opt">=</span>username
+<span class="hl kwb">EAP-PEAP-CACert</span><span class="hl opt">=</span>embed<span class="hl opt">:</span>root_cert
+<span class="hl kwb">EAP-PEAP-ServerDomainMask</span><span class="hl opt">=*</span>.radius.service.vumc.org
+<span class="hl kwb">EAP-PEAP-Phase2-Method</span><span class="hl opt">=</span>MSCHAPV2
+<span class="hl kwb">EAP-PEAP-Phase2-Identity</span><span class="hl opt">=</span>username
+<span class="hl kwb">EAP-PEAP-Phase2-Password</span><span class="hl opt">=</span>password
+
+<span class="hl kwa">[Settings]</span>
+<span class="hl kwb">AutoConnect</span><span class="hl opt">=</span><span class="hl kwd">true</span>
+
+<span class="hl kwa">[@pem@root_cert]</span>
+<span class="hl opt">-----</span>BEGIN CERTIFICATE<span class="hl opt">-----</span>
+<span class="hl opt">*</span>lots of gobbledigook goes here<span class="hl opt">*</span>
+<span class="hl opt">-----</span>END CERTIFICATE<span class="hl opt">-----</span>
+</code></pre>
+    <p>
+     Most of these options are outlined in Step 3 from the
+VUMCEmployeeSetup, cross-referenced against the Arch Wiki page on
+<code>iwd</code>, subsection <a href="https://wiki.archlinux.org/title/Iwd#EAP-PEAP">Network
+configuration</a>, and the <a href="https://iwd.wiki.kernel.org/networkconfigurationsettings"><code>iwd</code>
+wiki proper</a>.
+    </p>
+    <p>
+     An easy-to-miss step: The <code>EAP-PEAP-Phase2-Method</code>
+requirement for <code>MSCHAPV2</code> leads to another required install,
+check the wiki for current instructions.
+    </p>
+    <p>
+     Put in your own username and password.
+    </p>
+    <p>
+     My favorite trick in this file is directly embedding the root
+certificate in the line <code>EAP-PEAP-CACert=</code> with the syntax
+<code>embed:root_cert</code> (any name is fine, doesn’t have to be
+<code>root_cert</code>, it’s just a pointer). Then you add a definition
+of <code>root_cert</code> in a <code>[@pem@root_cert]</code> section.
+Insert the contents of the root certificate directly via copy-paste or
+<code>cat</code>, etc.
+    </p>
+    <p>
+     Easiest method, as root:
+    </p>
+    <pre tabindex="0"><code class="language-shell">cat /home/beau/dl/root_cert.PEM &gt;&gt; /var/lib/iwd/VUMCEmployee.8021x
+</code></pre>
+    <p>
+     With the direct embed method, you don’t need to point to the root
+certificate file or keep it around at all.
+    </p>
+    <p>
+     Needless to say, <code>VUMCEmployee.8021x</code> is a sensitive file
+and should be protected appropriately. However, this file or a version
+of it is what the automated tools would have made anyway, so there’s no
+special risk here - AND since you did it all yourself you know there was
+no funny business coming from a black-box installer.
+    </p>
+    <h2>
+     The other certificate (Client)
+    </h2>
+    <p>
+     I can’t remember what I had to do with the client cert, probably
+added using the Chrome/Firefox certificate managers.
+    </p>
+    <p>
+     I had to do this before when getting set up for VA remote access, the
+Arch Wiki comes through again with an article on <a href="https://wiki.archlinux.org/title/Common_Access_Card">Common Access
+Cards</a> that includes instructions on adding certs to browsers.
+    </p>
+    <p>
+     There’s a chance it’s not even needed? The <a href="https://iwd.wiki.kernel.org/networkconfigurationsettings">specification</a>
+no longer supports adding a client cert field without a key, which I
+don’t have, and do not, apparently, need (see the section “EAP-PEAP with
+tunneled EAP-MSCHAPV2”). At any rate, this setup is working now and I
+won’t futz with it further until something breaks.
+    </p>
+    <h2>
+     -&gt; ~~Profit~~ Prosper
+    </h2>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>
