@@ -6,7 +6,7 @@ I want,
 some of which are in the Amazon Wishlist below,
 I'm more into digital capability these days.
 
-Probably digital, use-anywhere gift cards are the way to go.
+Digital, use-anywhere gift cards are the way to go.
 E.g. Visa or MasterCard.
 
 ## beau@beauhilton.com
