@@ -18,4 +18,4 @@ and the uncomfortable and sublime truth that all medicine is palliative medicine
 
 - - -
 
-This [now page](https://nownownow.com/about) was last updated 2022-04-22.
+This [now page](https://nownownow.com/about) was last updated 2022-12-01.
