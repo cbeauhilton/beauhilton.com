@@ -1,6 +1,6 @@
-#!/bin/zsh -e
+#!/bin/zsh
 
-title='beau hilton'
+title='Beau Hilton'
 url='https://beauhilton.com'
 
 dst="/var/www/htdocs/www.beauhilton.com"
@@ -12,6 +12,8 @@ if test -z "${PWD##*.git}"
         else repo="$PWD/.git"
 fi
 
+echo $PWD
+
 rm -rf "${dst:?}/.files"
 rm -rf "$raw"
 rm -rf "$src:?"
@@ -21,7 +23,7 @@ echo "${title}" > "$repo/owner"
 git clone "$repo" "$raw"
 (cd "$raw/.git" && git update-server-info)
 
-cp -r "$raw/build" "$dst"
+cp -r $raw/build/** "$dst"
 
 mkdir -p "$src"
 (cd "$src" && stagit "$repo")
