@@ -1,6 +1,6 @@
 #!/bin/sh
 
-title='beauhilton '
+title=' beauhilton '
 url='https://beauhilton.com'
 
 dst="/var/www/htdocs/www.beauhilton.com"
