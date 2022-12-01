@@ -1,0 +1,145 @@
+[settings]
+strict = true
+verbose = true
+debug = false
+site_dir = "site"
+build_dir = "build"
+default_template_file = "templates/main.html"
+plugin_discovery = true
+plugin_dirs = ["plugins"]
+page_file_extensions = ["html", "md"]
+ignore_extensions = ["draft"]
+pretty_print_html = true
+clean_urls = true
+
+# Treat files as content to insert in the template,
+# unless they have an <html> element in them.
+generator_mode = true
+complete_page_selector = "html"
+
+# The content will be inserted into its <main> element,
+# after its last already existing child.
+default_content_selector = "main"
+default_content_action = "append_child"
+
+# Set the document type to HTML5, unless the page already has
+# a doctype declaration.
+doctype = "<!DOCTYPE html>"
+keep_doctype = true
+
+[preprocessors]
+md = 'pandoc -f commonmark+smart -t html --no-highlight --lua-filter=helpers/cmark-code-blocks.lua'
+
+[custom_options]
+site_url = "https://soupault.app"
+
+[index]
+index = true
+sort_descending = true
+sort_by = "date"
+strip_tags = false
+dump_json = "index.json"
+section = "posts"
+date_formats = ["%F"]
+
+
+[index.fields.title]
+selector = ["h1"]
+
+[index.fields.date]
+selector = ["time#post-date", "time"]
+extract_attribute = "datetime"
+fallback_to_content = true
+
+[index.fields.excerpt]
+selector = ["p#post-excerpt", "p"]
+
+[index.views.posts]
+index_selector = "#posts-index"
+sort_by = "date"
+sort_type = "calendar"
+
+paginate = true
+items_per_page = 5
+
+page_navigation_template = """
+  <hr>
+  {% if prev_url %}
+    <a href="{{prev_url}}">← newer</a>
+  {% endif %}
+  {# There may not be a next page #} 
+  {% if next_url %}
+    <a href="{{next_url}}">older →</a>
+  {% endif %}
+  </div>
+  """
+page_navigation_selector = "#page-navigation"
+
+index_template = """
+  {% for e in entries %}
+    <h2><a href="{{e.url}}">{{e.title}}</a></h2>
+    <p><strong>Last update:</strong> {{e.date}}.</p>
+    <p>{{e.excerpt}}</p>
+    <a href="{{e.url}}">Read more</a>
+  {% endfor %}
+  """
+
+[widgets.escape-html-in-pre]
+widget = "escape-html"
+selector = ".raw-html"
+
+[widgets.highlight]
+after = "escape-html-in-pre"
+widget = "preprocess_element"
+selector = '*[class^="language-"]'
+command = 'highlight -O html -f --syntax=$(echo $ATTR_CLASS | sed -e "s/language-//")'
+
+# Add tabindex="0" to code snippets to aid keyboard, screen reader navigation
+[widgets.set-tab-index-for-code-snippets]
+widget = "set-tab-index"
+selectors = ["pre"]
+tab_index = 0
+
+[widgets.footnotes]
+widget = "footnotes"
+selector = "div#footnotes"
+footnote_selector = ["fn", ".footnote"]
+footnote_link_class = "footnote"
+back_links = true
+link_id_prepend = "footnote-"
+back_link_id_append = "-ref"
+
+[widgets.header]
+widget = "include"
+file = "templates/header.html"
+selector = "head"
+
+[widgets.nav]
+widget = "include"
+file = "templates/nav.html"
+selector = "nav"
+
+[widgets.footer]
+  widget = "include"
+  file = "templates/footer.html"
+  selector = "footer"
+
+[widgets.highlight-active-link]
+  after = ["footer"]
+  widget = "section-link-highlight"
+  selector = "nav"
+  active_link_class = "nav-active"
+
+[widgets.atom]
+widget = "atom"
+page = "posts/index.html"
+use_section = "posts"
+
+delete_elements = [".footnote", "a"]
+
+feed_file = "atom.xml"
+feed_author = "beau hilton"
+feed_author_email = "beau@beauhilton.com"
+feed_title = "beauhilton"
+feed_subtitle = "beau's website"
+feed_logo = "🏕️"

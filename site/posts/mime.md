@@ -1,6 +1,9 @@
 # fix MIME Types to unbreak RSS feeds served by OpenBSD's httpd(8)
 
 
+<time id="post-date">2022-11-13</time>
+
+
 ## RSS is life - but mine was broken
 
 
@@ -10,8 +13,11 @@ an OpenBSD server hosted at [vultr](https://vultr.com).
 It's great, delightfully simple and low-resource,
 robust, extendable, low-maintenance.
 
+<p id="post-excerpt">
 I've been getting back into RSS lately.
 Turns out, my own RSS feed was broken.
+</p>
+
 I knew it was janky, but would have had no idea how broken it was
 if not for the great folks
 on the [datasette](https://datasette.io) Discord,
@@ -26,7 +32,8 @@ and now I had a good reason.
 ## fixing the file itself
 
 
-I ended up tearing out my previous RSS solution, [`rssg`](https://romanzolotarev.com/rssg.html),which is great but made some assumptions about my site's layout that aren't true.
+I ended up tearing out my previous RSS solution, [`rssg`](https://romanzolotarev.com/rssg.html),
+which is great but made some assumptions about my site's layout that aren't true.
 I could have rewritten the script, 
 but I'm lazy and a little strapped for time,
 so I ended up replacing it with a hand-written RSS file.

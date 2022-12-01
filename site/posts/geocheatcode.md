@@ -1,11 +1,14 @@
-
 # geocheatcode
 
+<time id="post-date">2022-04-22</time>
+
+<p id="post-excerpt">
 Here is background and code
 for a trick I use to get
 Google to give me best-in-class guesses 
 for latitude and longitude,
 despite goofy and/or downright bad location searches.
+</p>
 
 ## Map all the things
 

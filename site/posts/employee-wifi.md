@@ -1,9 +1,20 @@
 # Set Up Enterprise Wifi on Arch Linux
 
+<time id="post-date">2021-09-17</time>
+
+<p id="post-excerpt">
+Most big institutions have guest and employee wifi networks.
+Guest wifi is usually fine, fast enough for the basics,
+but far inferior to employee wifi.
+On a custom-built OS, such as a fairly minimalist Linux distribution, 
+getting the employee wifi to work
+can be a beast.
+
 This was a little tricky to get working
 but very worth it,
 so here's an outline,
 mostly for my own later benefit.
+</p>
 
 This post is specific to [VUMC](https://www.vumc.org), 
 with the VUMCEmployee network.

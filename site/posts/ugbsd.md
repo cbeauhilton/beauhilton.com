@@ -1,9 +1,13 @@
 # Upgrading out-of-date OpenBSD installs
 
 
+<time id="post-date">2022-11-11</time>
+
+<p id="post-excerpt">
 First of all, don't do how I do. 
 Upgrade your installs regularly. 
 OpenBSD makes it very easy.
+</p>
 
 But, if you do happen to get behind...
 

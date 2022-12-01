@@ -1,0 +1,62 @@
+[
+  {
+    "url": "/posts/mime",
+    "page_file": "site/posts/mime.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "I've been getting back into RSS lately.\nTurns out, my own RSS feed was broken.",
+    "date": "2022-11-13",
+    "title": "fix MIME Types to unbreak RSS feeds served by OpenBSD’s\nhttpd(8)"
+  },
+  {
+    "url": "/posts/ugbsd",
+    "page_file": "site/posts/ugbsd.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "First of all, don't do how I do. \nUpgrade your installs regularly. \nOpenBSD makes it very easy.",
+    "date": "2022-11-11",
+    "title": "Upgrading out-of-date OpenBSD installs"
+  },
+  {
+    "url": "/posts/geocheatcode",
+    "page_file": "site/posts/geocheatcode.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Here is background and code\nfor a trick I use to get\nGoogle to give me best-in-class guesses \nfor latitude and longitude,\ndespite goofy and/or downright bad location searches.",
+    "date": "2022-04-22",
+    "title": "geocheatcode"
+  },
+  {
+    "url": "/posts/intake-2022-03-25",
+    "page_file": "site/posts/intake-2022-03-25.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "candidal esophagitis, achalasia, H Pylori PUD",
+    "date": "2022-03-25",
+    "title": "intake"
+  },
+  {
+    "url": "/posts/employee-wifi",
+    "page_file": "site/posts/employee-wifi.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Most big institutions have guest and employee wifi networks.\nGuest wifi is usually fine, fast enough for the basics,\nbut far inferior to employee wifi.\nOn a custom-built OS, such as a fairly minimalist Linux distribution, \ngetting the employee wifi to work\ncan be a beast.",
+    "date": "2021-09-17",
+    "title": "Set Up Enterprise Wifi on Arch Linux"
+  },
+  {
+    "url": "/posts/mr-2021",
+    "page_file": "site/posts/mr-2021.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Diagnosis is... MDS/MPN/MF NOS. \ni.e., who knows.",
+    "date": "2021-08-23",
+    "title": "Morning Report 08/23/2021"
+  }
+]
