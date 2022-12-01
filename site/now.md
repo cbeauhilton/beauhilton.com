@@ -6,6 +6,7 @@ Everyone remains well and cantankerous.
 # work
 
 I'm an oncology fellow at Vanderbilt University Medical Center.
+It's a good gig.
 
 
 # other
