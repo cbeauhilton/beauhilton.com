@@ -18,7 +18,5 @@ name = "build site on plugin change"
 path = "plugins"
 command = "rm -rf build && soupault"
 
-# [[watch]]
-# name = "serve site on rebuild"
-# path = "build/*"
-# command = "./stop 8000 && python3 -m http.server --directory build"
+# to serve: 
+# python3 -m http.server --directory build"
