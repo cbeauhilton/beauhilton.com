@@ -1,0 +1,1 @@
+echo "hi!" && soupault && rsync -av --rsync-path=openrsync build/* beau@beauhilton.com:/var/www/htdocs/www.beauhilton.com/
