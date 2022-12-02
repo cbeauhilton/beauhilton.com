@@ -58,5 +58,15 @@
     "excerpt": "Diagnosis is... MDS/MPN/MF NOS. \ni.e., who knows.",
     "date": "2021-08-23",
     "title": "Morning Report 08/23/2021"
+  },
+  {
+    "url": "/posts/rmd_py",
+    "page_file": "site/posts/rmd_py.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Turns out that a better way does exist, and it is R Markdown.",
+    "date": "2019-10-20",
+    "title": "R Markdown is my spirit animal"
   }
 ]
