@@ -45,6 +45,10 @@ html {
     font-size: 70.5%;
 }
 
+h2 {
+    font-weight: 200;
+}
+
 body {
     line-height: 1.5;
     font-size: 1.6rem;
