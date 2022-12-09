@@ -260,6 +260,7 @@ pre
 {
     box-sizing: border-box;
     overflow: auto;
+    overflow-x: scroll;
     padding: 2rem;
     margin-left: -2rem;
     margin-right: -2rem;
