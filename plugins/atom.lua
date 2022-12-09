@@ -67,7 +67,6 @@ feed_template = [[
     <email>{{feed_author_email}}</email>
   </author>
   <generator uri="https://soupault.app" version="{{soupault_version}}">soupault</generator>
-  <logo>{{feed_logo}}</logo>
   <subtitle>{{feed_subtitle}}</subtitle>
   {%- for e in entries %}
   <entry>
