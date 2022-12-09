@@ -31,7 +31,7 @@ keep_doctype = true
 md = 'pandoc -f commonmark+smart -t html --no-highlight --lua-filter=helpers/cmark-code-blocks.lua'
 
 [custom_options]
-site_url = "https://soupault.app"
+site_url = "https://beauhilton.com"
 
 [index]
 index = true
