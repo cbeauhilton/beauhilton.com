@@ -81,6 +81,8 @@ index_template = """
     <p><strong>Last update:</strong> {{e.date}}.</p>
     <p>{{e.excerpt}}</p>
     <a href="{{e.url}}">Read more</a>
+    <hr style="opacity:0.2; margin-top: 3em">
+    <br>
   {% endfor %}
   """
 
