@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/thanks",
+    "page_file": "site/posts/thanks.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "A public, running journal of \"hey, thanks\" \nto the folks who make my life better, in big and small ways. \nCheck it out <a href=\"/thanks\">here</a>.",
+    "date": "2022-12-19",
+    "title": "I made a thanks page"
+  },
+  {
     "url": "/posts/mime",
     "page_file": "site/posts/mime.md",
     "nav_path": [

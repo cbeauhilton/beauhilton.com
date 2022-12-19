@@ -57,6 +57,20 @@ body {
     padding: 13px;
 }
 
+.thanks-date {
+  font-weight:bold;
+}
+
+.thanks-to {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.thanks {
+ padding-top:1em;
+ padding-bottom:1em;
+}
+
 /* Structural blocks */
 
 #page-wrapper
