@@ -29,6 +29,102 @@ write a proper [post](/posts).
 
 <div class="thanks">
 
+  <time datetime="2022-12-24" class="thanks-date">
+  2022-12-24
+  </time>
+
+  <p class="thanks-to">
+  Benjamin
+  </p>
+
+  <p class="thanks-for">
+  Thanks for holding down the fort.
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2022-12-23" class="thanks-date">
+  2022-12-23
+  </time>
+
+  <p class="thanks-to">
+  Forrest, Moriah, Cat
+  </p>
+
+  <p class="thanks-for">
+  Thanks to Forrest, for being a furry alien. 
+  The time was too short buddy. 
+  Also, thanks to Moriah and Cat, for holding things down for me until I could talk again.
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2022-12-22" class="thanks-date">
+  2022-12-22
+  </time>
+
+  <p class="thanks-to">
+  Lori
+  </p>
+
+  <p class="thanks-for">
+  Thanks for making a magic early Christmas.
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2022-12-21" class="thanks-date">
+  2022-12-21
+  </time>
+
+  <p class="thanks-to">
+  Chase
+  </p>
+
+  <p class="thanks-for">
+  Thanks for reminding me how cool it is, all of it.
+  Especially med ed, and how it interfaces with day-to-day practice.
+  (We should totally do the sick-not-sick button thing.)
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2022-12-19" class="thanks-date">
+  2022-12-19
+  </time>
+
+  <p class="thanks-to">
+  Mark
+  </p>
+
+  <p class="thanks-for">
+  Thanks for the masterclass on secondary erythrocytosis and it’s management, 
+  and candor about how this oncology thing never really gets easier 
+  (and may even get harder, as the patients get closer to your own age).
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
   <time datetime="2022-12-18" class="thanks-date">
   2022-12-18
   </time>
@@ -57,7 +153,9 @@ write a proper [post](/posts).
   </p>
 
   <p class="thanks-for">
-  Thanks for jumping in to discuss your experiences with inpatient induction chemo for head and neck cancers - valuable insights, humane, lively.
+  Thanks for jumping in to discuss your 
+  experiences with inpatient induction chemo 
+  for head and neck cancers - valuable insights, humane, lively.
   </p>
 
 </div>
@@ -71,12 +169,12 @@ write a proper [post](/posts).
   </time>
 
   <p class="thanks-to">
-The NAVA BMT nurses
+  The NAVA BMT nurses
   </p>
 
   <p class="thanks-for">
-Thanks for sticking with me and a veteran 
-who needed to sleep off the extra milligram of sedation.
+  Thanks for sticking with me and a veteran 
+  who needed to sleep off the extra milligram of sedation.
   </p>
 
 </div>

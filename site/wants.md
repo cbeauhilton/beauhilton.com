@@ -10,27 +10,6 @@ Digital, use-anywhere gift cards are the way to go.
 
 E.g. Visa or MasterCard.
 
-## beau@beauhilton.com
-
-[fastmail](https://www.fastmail.com/) is a delightful mail service. 
-
-I'm trying to be less reliant on "free" services, such as Google, 
-and using an independent email client is a big part of that. 
-
-They charge money because 
-they're *not* doing all the stuff Google does to keep their products free,
-namely, using your info for ad targeting.
-
-It's $5 a month. 
-
-I got a few months for free, and really like it. 
-
-In addition to not selling your data, 
-they have a good facility for having your own email extension (provided you own your domain), 
-so I got `beau@beauhilton.com`.
-Any money toward supporting their service and keeping my cool new email address going would be much appreciated.
- 
-
 ## beauhilton.com
 
 I use [Vultr](https://www.vultr.com/) to host my server, 
@@ -40,6 +19,18 @@ which is a great deal for a server that I fully manage
 and is plenty powerful for a simple website.
 
 Happy to receive any funds to support this going forward.
+
+## \*.beauhilton.com
+
+There are a bunch of services I would love to add to my website.
+
+E.g. 
+[AudioBookShelf](https://github.com/advplyr/audiobookshelf) could be audiobooks.beauhilton.com, 
+[Kavita](https://wiki.kavitareader.com/en) could be books.beauhilton.com, 
+[Nextcloud](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) could be cloud.beauhilton.com, 
+etc.
+
+Would ideally use a little independent server space for each of these, e.g. a Linode.
 
 
 ## Amazon
