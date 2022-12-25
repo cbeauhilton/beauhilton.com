@@ -14,8 +14,10 @@ of Case Western Reserve University 2015-2020.
 
 ## educator
 
-Harvard Macy Institute faculty, 2018-present.
+Harvard Macy Institute faculty, 2018-2020.
 Health Care Education 2.0.
+
+<vimbook.org>
 
 
 ## data scientist
@@ -26,3 +28,12 @@ healthcare disparities in hospital medicine;
 predictive modeling of hospital readmissions and length of stay.
 
 [Google Scholar profile](https://scholar.google.com/citations?user=Ng5AgXAAAAAJ)
+
+
+## internal links
+
+If you want to know which tools I use, visit
+[/uses](/uses).
+
+If you would like to throw money at me, for whatever reason, visit
+[/pay](/pay).

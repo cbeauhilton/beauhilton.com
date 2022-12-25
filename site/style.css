@@ -32,6 +32,11 @@ img {
     max-width: 100%;
 }
 
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
 pre, code, sample {
     white-space: pre-wrap;
     hyphens: none;
