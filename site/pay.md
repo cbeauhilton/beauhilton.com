@@ -4,7 +4,7 @@
 ---
 
 
-## Cash App
+## Cash App (preferred)
 
 [![cashappQR](/images/cashapp.png#center)](https://cash.app/$cbeauhilton)
 
