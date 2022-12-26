@@ -1,5 +1,3 @@
-/** Variables **/
-
 :root
 {
   --Canvas-bg: #201b1b;
@@ -38,8 +36,21 @@ img[src*='#center'] {
 }
 
 pre, code, sample {
-    white-space: pre-wrap;
     hyphens: none;
+    color: inherit;
+}
+
+pre
+{
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: inherit;
+    padding: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    border: 1px solid var(--Pre-border);
+    background: var(--Pre-bg);
+    color: var(--Pre-color);
 }
 
 table {
@@ -278,24 +289,6 @@ pre.hl	{ color: #000000; background-color:#e0eaee; font-size: 10pt; font-family:
 .hl.kwb { color: var(--Highlight-kwb); }
 .hl.kwc { color: var(--Highlight-kwc); font-weight: bold; }
 .hl.kwd { color: var(--Highlight-kwd); }
-
-pre
-{
-    box-sizing: border-box;
-    overflow: auto;
-    overflow-x: scroll;
-    padding: 2rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    border: 1px solid var(--Pre-border);
-    background: var(--Pre-bg);
-    color: var(--Pre-color);
-}
-
-pre code
-{
-    color: inherit;
-}
 
 @media screen and (max-width: 34em)
 {

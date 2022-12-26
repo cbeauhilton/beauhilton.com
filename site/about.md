@@ -35,5 +35,10 @@ predictive modeling of hospital readmissions and length of stay.
 If you want to know which tools I use, visit
 [/uses](/uses).
 
+If you are interested in the tech stack for this website, visit
+[/colophon](/colophon).
+
 If you would like to throw money at me, for whatever reason, visit
 [/pay](/pay).
+
+
