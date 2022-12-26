@@ -17,7 +17,7 @@ of Case Western Reserve University 2015-2020.
 Harvard Macy Institute faculty, 2018-2020.
 Health Care Education 2.0.
 
-<vimbook.org>
+<https://vimbook.org>
 
 
 ## data scientist
