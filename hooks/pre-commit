@@ -1,4 +1,5 @@
 soupault && 
+cp build/atom.xml build/feed.xml &&
 rsync \
 -av \
 --rsync-path=openrsync \
