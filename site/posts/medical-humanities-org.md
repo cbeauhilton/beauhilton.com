@@ -2,7 +2,7 @@
 
 This post is a work in progress.
 
-<time id="post-date">2023-01-22</time>
+<time id="post-date">2022-12-26</time>
 
 <p id="post-excerpt">
 I made a static website as an electronic learning system and forum, 

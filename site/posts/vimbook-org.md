@@ -1,8 +1,10 @@
 # vimbook
 
-<time id="post-date">2023-01-22</time>
+<time id="post-date">2000-01-22</time>
 
 <p id="post-excerpt">
-About making the Vimbook.
+About making the Vimbook. WIP.
 </p>
+
+
 
