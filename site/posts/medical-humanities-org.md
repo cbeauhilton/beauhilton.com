@@ -1,4 +1,4 @@
-# [medical-humanities.org](https://medical-humanities.org)
+# medical-humanities.org
 
 This post is a work in progress.
 
@@ -10,6 +10,7 @@ with the option for password protected posts and a controlled editing workflow,
 for free and without a dedicated server. This post has the highlights.
 </p>
 
+It's here: [medical-humanities.org](https://medical-humanities.org)
 
 ## First, free as in beer
 
