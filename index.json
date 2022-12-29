@@ -1,5 +1,25 @@
 [
   {
+    "url": "/posts/medical-humanities-org",
+    "page_file": "site/posts/medical-humanities-org.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "About making the med hum website.",
+    "date": "2023-01-22",
+    "title": "<a href=\"https://medical-humanities.org\">medical-humanities.org</a>"
+  },
+  {
+    "url": "/posts/vimbook-org",
+    "page_file": "site/posts/vimbook-org.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "About making the Vimbook.",
+    "date": "2023-01-22",
+    "title": "vimbook"
+  },
+  {
     "url": "/posts/thanks",
     "page_file": "site/posts/thanks.md",
     "nav_path": [
