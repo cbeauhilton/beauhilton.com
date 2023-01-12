@@ -4,7 +4,7 @@
 
 <p id="post-excerpt">
 Static site generators, by and large, do not have support for password protecting individual pages. 
-This post shows a strategy that works for any SSG, that does not require server access controls.
+This post shows a strategy that works for any SSG and does not require server access controls.
 </p>
 
 [PageCrypt](https://github.com/Greenheart/pagecrypt) is the tool I went with.
