@@ -26,13 +26,11 @@ which stitches together a piece of code that creates a list of all the pages we'
 and another bit that does the encryption proper.
 
 ```json
-
 {
     "make-pw-files-file": "grep -rlF 'password_required: true' content | sed s+\\.md+\\/index.html+g | sed s+content/+public/+g > pw_file",
     "protect-files": "cat pw_file | while read f || [[ -n $f ]]; do npx pagecrypt $f $f $PAGECRYPT; done",
     "postbuild": "npm run -s make-pw-files-file && npm run -s protect-files ",
 }
-
 ```
 
 <br>
