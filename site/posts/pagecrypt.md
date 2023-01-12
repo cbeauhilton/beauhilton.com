@@ -37,10 +37,17 @@ and another bit that does the encryption proper.
 
 ```
 
+<br>
+
 ## ok, so how does it work?
+
+<br>
 
 ### `make-pw-files-file` 
 
+```sh
+grep -rlF 'password_required: true' content | sed s+\\.md+\\/index.html+g | sed s+content/+public/+g > pw_file
+```
 This part uses a few standard Unix commands, the ubiquitous `grep` and `sed`. 
 
 First it creates a list of markdown source files that have the header `password_required: true`.
@@ -89,16 +96,28 @@ Sending the list to a file is not necessary,
 could just pipe it again to the stuff in `protect-files`,
 but I was getting itchy at how long the command was getting.
 
+<br>
+
 ### `protect-files`
+
+```sh
+cat pw_file | while read f || [[ -n $f ]]; do npx pagecrypt $f $f $PAGECRYPT; done
+```
 
 This part emits the contents of `pw_file`,
 then loops through each line (`while read f || [[ -n $f ]]`)
 and encrypts the corresponding file (`do npx pagecrypt`), 
-saving it back to itself (`$f $f`).
+finally saving it back to itself (`$f $f`).
 
 `$PAGECRYPT` is an environment variable that specifies the password.
+
 You could also set a password-per-page, 
 either auto-generated (but you'd have to figure out how to get that password to your users), 
 or using something like another header value in the `.md` files that you grep for and save somewhere.
-For my use case this is simpler and scales easily.
+For my use case, this is simpler and scales well.
 
+<br>
+
+### and that's it
+
+As always, [let me know](../contact) if you have any questions or know of a better way.
