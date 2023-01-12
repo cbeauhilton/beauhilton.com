@@ -59,7 +59,7 @@ grep -rlF "text you're looking for" path/to/files/of/interest
 This will output something like:
 
 ```sh
-content/file.md
+content/file0.md
 content/file7.md
 content/yet_another_file.md
 ```
