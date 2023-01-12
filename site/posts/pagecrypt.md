@@ -25,8 +25,6 @@ First I build the site, then run the `postbuild` command,
 which stitches together a piece of code that creates a list of all the pages we'd like to encrypt
 and another bit that does the encryption proper.
 
-## give me the code already
-
 ```json
 
 {
@@ -39,11 +37,7 @@ and another bit that does the encryption proper.
 
 <br>
 
-## ok, so how does it work?
-
-<br>
-
-### `make-pw-files-file` 
+## `make-pw-files-file` 
 
 ```sh
 grep -rlF 'password_required: true' content | sed s+\\.md+\\/index.html+g | sed s+content/+public/+g > pw_file
@@ -98,7 +92,7 @@ but I was getting itchy at how long the command was getting.
 
 <br>
 
-### `protect-files`
+## `protect-files`
 
 ```sh
 cat pw_file | while read f || [[ -n $f ]]; do npx pagecrypt $f $f $PAGECRYPT; done
@@ -118,6 +112,6 @@ For my use case, this is simpler and scales well.
 
 <br>
 
-### and that's it
+## and that's it
 
 As always, [let me know](../../contact) if you have any questions or know of a better way.
