@@ -47,7 +47,9 @@ First it creates a list of markdown source files that have the header `password_
 
 Here's how that part works:
 
-`grep -rlF "text you're looking for" path/to/files/of/interest` : 
+```sh
+grep -rlF "text you're looking for" path/to/files/of/interest
+```
 
 - `-r` or `--recursive` searches though the sub-directories of whichever path you gave it
 - `l` or `--files-with-matches` prints the filenames of any files that match the search
@@ -55,31 +57,31 @@ Here's how that part works:
 
 This will output something like:
 
-`sh
+```sh
 content/file.md
 content/file7.md
 content/yet_another_file.md
-`
+```
 
 Next it passes that to `sed`, which replaces `.md` with `/index.html`\* 
 resulting in:
 
-`sh
+```sh
 content/file/index.html
 content/file7/index.html
 content/yet_another_file/index.html
-`
+```
 
 \* you'd have to adjust this command if you aren't using a page-per-folder style
 
 Then it switches out `content/` with `public/`, leading to the final list:
 
 
-`sh
+```sh
 public/file/index.html
 public/file7/index.html
 public/yet_another_file/index.html
-`
+```
 
 and sends those to a file. 
 

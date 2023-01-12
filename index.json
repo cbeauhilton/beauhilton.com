@@ -5,7 +5,7 @@
     "nav_path": [
       "posts"
     ],
-    "excerpt": "Static site generators, by and large, do not have support for password protecting individual pages. \nThis post shows a strategy that works for any SSG, that does not require server access controls.",
+    "excerpt": "Static site generators, by and large, do not have support for password protecting individual pages. \nThis post shows a strategy that works for any SSG and does not require server access controls.",
     "date": "2023-01-12",
     "title": "password protecting static web pages"
   },
