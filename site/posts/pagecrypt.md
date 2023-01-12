@@ -120,4 +120,4 @@ For my use case, this is simpler and scales well.
 
 ### and that's it
 
-As always, [let me know](../contact) if you have any questions or know of a better way.
+As always, [let me know](../../contact) if you have any questions or know of a better way.
