@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/pagecrypt",
+    "page_file": "site/posts/pagecrypt.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Static site generators, by and large, do not have support for password protecting individual pages. \nThis post shows a strategy that works for any SSG, that does not require server access controls.",
+    "date": "2023-01-12",
+    "title": "password protecting static web pages"
+  },
+  {
     "url": "/posts/oo-et-al",
     "page_file": "site/posts/oo-et-al.md",
     "nav_path": [
