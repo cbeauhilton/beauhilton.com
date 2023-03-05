@@ -15,7 +15,7 @@ Lightly modified from this [original recipe](https://www.dinneratthezoo.com/wprm
 - 1 1/2 teaspoons vanilla extract
 - 3 cups all purpose flour
 - 1/4 teaspoon salt
-- 11 ounces caramels (_we made our own, but only because the store didn't have any caramels that weren't individually wrapped)
+- 11 ounces caramels (_we made our own, but only because the store didn't have any caramels that weren't individually wrapped_)
 - 1 tablespoon evaporated milk or cream
 - 2 cups milk chocolate chips
 - 2 teaspoons shortening
