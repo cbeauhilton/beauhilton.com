@@ -108,13 +108,13 @@ and I have faith our house staff could do it well,
 would be to implement the same system and have it first trigger an alert to the primary team, 
 with a recommendation to have the convo and reach out to pall care if there is any hint of a loose end, 
 or an automated pivot to pall care if the notes don't document GOC within a certain number of days of the alert 
-(or could pop up one of those boxes we love so fucking much with a radio button asking you if you've had "the talk" yet).
+(or could pop up one of those boxes we love so...  much with a radio button asking you if you've had "the talk" yet).
 
 Anywho, 
 I'm not saying I want to actually do this project, 
 I've got other stuff going on,
 but if you're reading this you're the kind of person who is interested in what tech can do for a hospital system, 
-and this is a model combination of the very cutting edge of tech 
+and this is a model (ha) combination of the very cutting edge of tech 
 and the oldest technique we have, 
 which is to offer a hand to the dying and with them face the abyss. 
 My vision of the future is less Skynet, cold and isolated, 
