@@ -87,6 +87,8 @@ this is just what I used):
 ```shell
 paru # make sure things are up to date generally
 paru -S android-tools android-sdk-build-tools # includes adb and other goodies
+# enable multilib - not sure if this is strictly needed 
+# - https://wiki.archlinux.org/title/android#Android_Emulator
 reboot
 ```
 
