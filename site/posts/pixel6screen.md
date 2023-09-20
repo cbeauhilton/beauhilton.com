@@ -3,14 +3,14 @@
 <time id="post-date">2023-09-19</time>
 
 <p id="post-excerpt">
-The internet, up to now, says you need Windows or MacOS to calibrate the Pixel 6's fingerprint reader after installing a new screen and digitizer.
+The internet, up to now, says you need Windows or MacOS to calibrate the Pixel's fingerprint reader after installing a new screen and digitizer.
 The internet, up to now, was wrong.
 </p>
 
 ## Physical install
 
 My wife's Pixel 6's screen stopped working.
-Seemed to be ok otherwise.
+Phone seemed to be ok otherwise.
 
 We looked at the cost of replacing the phone vs repairing the screen.
 
@@ -31,9 +31,10 @@ because I didn't realize that the broken screen I removed had been separated fro
 (so the old frame was still installed and I installed the adhesive to the its top,
 rather than in the phone casing where it belongs,
 and found out when the phone wouldn't click back together with the new screen). 
-It was about $10, including shipping, for a second adhesive (also iFixit). Fits like a glove.
+It was about $10, including shipping, for a second adhesive (also iFixit). Fit like a glove.
 
-Total $140, and Verizon sent us a free new Pixel 7 anyway (long story), so now my wife has the 7 
+Total $140, and Verizon sent us a free new Pixel 7 anyway (long story), 
+so now my wife has the 7 
 and I upgraded from my old Pixel 2XL to this refurb'd 6. 
 Dang, what an upgrade. 
 Even though the Pixel 6 is widely considered the dud of the group,
@@ -51,7 +52,7 @@ If you look around the internet for troubleshooting related to this tool,
 you'll see a number of old posts recounting various problems,
 most of which seem to have been ironed out by this writing.
 
-However, the one problem I couldn't find a fix or update for was how to use that website
+However, the one problem I couldn't find a fix or happy update for was how to use that website
 if you're not running Windows or MacOS.
 
 [This Redditor couldn't get it working on Linux or Windows, bad luck?](https://www.reddit.com/r/GooglePixel/comments/xq82ri/pixel_6_fingerprint_calibration/).
@@ -59,7 +60,7 @@ if you're not running Windows or MacOS.
 [Anon is very angry at Google for not supporting Linux for the calibration (ctrl-F "linux" to find)](https://issuetracker.google.com/issues/217589152?pli=1).
 
 We no longer have anything but Linux/OpenBSD systems in the house 
-(while I love FOSS and feel some glee in this fact,
+(while I love FOSS and feel glee in this,
 it is not entirely on purpose, and I don't hate Windows or MacOS - 
 my wife's MBP met an early demise at the thrown milk cup of a boisterous toddler, 
 or I would have tried that machine first 
@@ -123,11 +124,14 @@ Almost too easy.
 
 ## Manual clean up - what, you think this is NixOS?
 
-Unless you're an Android dev, you probably won't need the tools again,
+You probably won't need these tools again,
 at least not for a long while, so:
 
 ```shell
 paru -R android-tools android-sdk-build-tools # about 156MiB, not much, but it's the principle of the thing
+sudo pacman -R $(comm -12 <(pacman -Qq | sort) <(pacman -Slq multilib | sort)) # undo the multilib stuff
+sudo sed -i 's/\[multilib\]/\#\[multilib\]/' /etc/pacman.conf # undo more of the multilib stuff
+paru # finish undoing the multilib stuff
 ```
 
 ## Next steps
