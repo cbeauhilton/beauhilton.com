@@ -34,7 +34,7 @@ and found out when the phone wouldn't click back together with the new screen).
 It was about $10, including shipping, for a second adhesive (also iFixit). Fits like a glove.
 
 Total $140, and Verizon sent us a free new Pixel 7 anyway (long story), so now my wife has the 7 
-and I upgraded from my old Pixel 2XL to this refurb'd Pixel 6. 
+and I upgraded from my old Pixel 2XL to this refurb'd 6. 
 Dang, what an upgrade. 
 Even though the Pixel 6 is widely considered the dud of the group,
 I'm loving it.
