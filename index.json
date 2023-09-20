@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/pixel6screen",
+    "page_file": "site/posts/pixel6screen.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "The internet, up to now, says you need Windows or MacOS to calibrate the Pixel 6's fingerprint reader after installing a new screen and digitizer.\nThe internet, up to now, was wrong.",
+    "date": "2023-09-19",
+    "title": "Pixel 6 DIY screen replacement, with fingerprint reader calibration\nusing Linux"
+  },
+  {
     "url": "/posts/pagecrypt",
     "page_file": "site/posts/pagecrypt.md",
     "nav_path": [
