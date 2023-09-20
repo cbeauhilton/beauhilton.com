@@ -92,9 +92,13 @@ reboot
 
 After grabbing the Android build tools listed above and rebooting,
 the website found my phone and ran the calibration software without a hitch.
-It didn't seem to work prior to rebooting, 
+The website didn't seem to work prior to rebooting,
 and I'm a lazy cretin/wizened ol' wannabe sysadmin,
 so fancy a reboot to fix all of life's woes.
+
+The phone does need at least one reboot 
+to activate the calibration and enable the fingerprint reader,
+but the calibration software tells you that, no secret magic here.
 
 I don't recall if I used vivaldi-stable or google-chrome-stable to run udfps, 
 but I think it was the prior 
@@ -102,10 +106,12 @@ but I think it was the prior
 provided the right system tools are in place).
 
 I also can't remember if I used USB-A to USB-C or dual-sided USB-C, 
-but I think it was the dual USB-C. (I did this all on a Thinkpad T14s)
+but I think it was the dual USB-C. 
 
 I do think developer mode and USB debugging active on the phone are required, 
 but I'm not completely certain.
+
+I did this all on a Thinkpad T14s.
 
 In any case, fingerprint unlock is a go!
 
