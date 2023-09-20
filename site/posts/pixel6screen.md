@@ -85,7 +85,7 @@ On Arch Linux
 distro doesn't matter, 
 this is just what I used):
 
-```shell
+```sh
 # enable multilib - see link below
 paru # make sure things are up to date generally
 paru -S android-tools android-sdk-build-tools # includes adb and other goodies
@@ -127,7 +127,7 @@ Almost too easy.
 You probably won't need these tools again,
 at least not for a long while, so:
 
-```shell
+```sh
 paru -R android-tools android-sdk-build-tools # about 156MiB, not much, but it's the principle of the thing
 sudo pacman -R $(comm -12 <(pacman -Qq | sort) <(pacman -Slq multilib | sort)) # undo the multilib stuff
 sudo sed -i 's/\[multilib\]/\#\[multilib\]/' /etc/pacman.conf # undo more of the multilib stuff
