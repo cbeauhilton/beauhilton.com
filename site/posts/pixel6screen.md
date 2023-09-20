@@ -85,12 +85,14 @@ distro doesn't matter,
 this is just what I used):
 
 ```shell
+# enable multilib - see link below
 paru # make sure things are up to date generally
 paru -S android-tools android-sdk-build-tools # includes adb and other goodies
-# enable multilib - not sure if this is strictly needed 
-# - https://wiki.archlinux.org/title/android#Android_Emulator
 reboot
 ```
+
+Re multilib - not sure if this is strictly needed - 
+see <https://wiki.archlinux.org/title/android#Android_Emulator>.
 
 After grabbing the Android build tools listed above and rebooting,
 the website found my phone and ran the calibration software without a hitch.
