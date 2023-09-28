@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/subsonic-cli",
+    "page_file": "site/posts/subsonic-cli.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Self-hosting a music server is great.\nListening to the tunes via the command line is the way.",
+    "date": "2023-09-28",
+    "title": "Command-line interfaces for self-hosted music"
+  },
+  {
     "url": "/posts/pixel6screen",
     "page_file": "site/posts/pixel6screen.md",
     "nav_path": [
