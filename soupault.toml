@@ -4,6 +4,7 @@ verbose = false
 debug = false
 site_dir = "site"
 build_dir = "build"
+caching = true
 default_template_file = "templates/main.html"
 plugin_discovery = true
 plugin_dirs = ["plugins"]

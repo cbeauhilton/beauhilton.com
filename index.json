@@ -1,23 +1,23 @@
 [
   {
-    "url": "/posts/yt-dlp",
-    "page_file": "site/posts/yt-dlp.md",
-    "nav_path": [
-      "posts"
-    ],
-    "excerpt": "Text of the post-excerpt goes here.",
-    "date": "2999-12-31",
-    "title": "Fascinating title"
-  },
-  {
     "url": "/posts/template",
     "page_file": "site/posts/template.md",
     "nav_path": [
       "posts"
     ],
     "excerpt": "Text of the post-excerpt goes here.",
-    "date": "2999-12-31",
+    "date": "2999-11-31",
     "title": "Fascinating title"
+  },
+  {
+    "url": "/posts/yt-dlp",
+    "page_file": "site/posts/yt-dlp.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "`yt-dlp` is an incredibly useful and customizable tool \nfor downloading online videos\nfrom YouTube and elsewhere.\nHere's my setup \n(declared in Nix, but easily generalizable).",
+    "date": "2023-10-19",
+    "title": "yt-dlp Nix config"
   },
   {
     "url": "/posts/subsonic-cli",

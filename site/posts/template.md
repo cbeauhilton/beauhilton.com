@@ -1,6 +1,6 @@
 # Fascinating title
 
-<time id="post-date">2999-12-31</time>
+<time id="post-date">1978-01-01</time>
 
 <p id="post-excerpt">
 Text of the post-excerpt goes here.
