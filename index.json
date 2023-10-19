@@ -5,7 +5,7 @@
     "nav_path": [
       "posts"
     ],
-    "excerpt": "`yt-dlp` is an incredibly useful and customizable tool \nfor downloading online videos\nfrom YouTube and elsewhere.\nHere's my setup \n(declared in Nix, but easily generalizable).",
+    "excerpt": "yt-dlp is an incredibly useful and customizable tool \nfor downloading online videos\nfrom YouTube and elsewhere.\nHere's my setup \n(declared in Nix, but easily generalizable).",
     "date": "2023-10-19",
     "title": "yt-dlp Nix config"
   },

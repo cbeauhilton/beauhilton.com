@@ -1,4 +1,4 @@
-# Fascinating title
+# Post Template
 
 <time id="post-date">1978-01-01</time>
 
