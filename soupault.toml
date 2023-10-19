@@ -1,6 +1,6 @@
 [settings]
 strict = true
-verbose = true
+verbose = false
 debug = false
 site_dir = "site"
 build_dir = "build"
