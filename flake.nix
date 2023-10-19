@@ -45,21 +45,9 @@
                 soupault
                 nohup simple-http-server --index --nocache -o -p 8999 ./build 2>&1 &
               '';
-              # process.implementation = "process-compose";
-              # process-manager.process-compose.config = {
-              #   serve.cmd = "simple-http-server --index --nocache -p 8999 ./build";
-              #   open-browser.cmd = "$BROWSER 0.0.0.0:8999";
-              #   oepn-browser.depends_on.serve.condition = "process_completed_successfully";
-              #   rebuild.exec = "ag -l | entr -n -s 'soupault'";
-              #   newterm.exec = "wezterm start --cwd .";
-              # };
-              # process.implementation = "process-compose";
-              processes = {
-                serve.exec = "nohup simple-http-server --index --nocache -p 8999 ./build &";
-                open-browser.exec = "$BROWSER 0.0.0.0:8999";
-                # open-browser.process-compose.depends_on.serve.condition = "process_completed_successfully";
-                #rebuild.exec = "ag -l | entr -n -s 'soupault'";
+              scripts = {
                 newterm.exec = "wezterm start --cwd .";
+                autorebuild.exec = "nohup ag -l | entr -n -s 'soupault' &> /dev/null &";
               };
             }
           ];
