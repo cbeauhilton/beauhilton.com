@@ -2,7 +2,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     systems.url = "github:nix-systems/default";
-    devenv.url = "github:cachix/devenv";
+    #devenv.url = "github:cachix/devenv";
+    devenv.url = "github:cachix/devenv/python-rewrite";
     nixpkgs-python.url = "github:cachix/nixpkgs-python"; # required to set Python version
   };
 
@@ -19,7 +20,8 @@
     ...
   } @ inputs: let
     forEachSystem = nixpkgs.lib.genAttrs (import systems);
-  in {
+  in {      
+    devenv-up = self.devShells.x86_64-linux.default.config.procfileScript;
     devShells =
       forEachSystem
       (system: let
@@ -35,17 +37,17 @@
                 pandoc
                 soupault
                 silver-searcher
+                simple-http-server
               ];
               languages.ocaml = {enable = true;};
-              languages.python = {enable = true;};
               enterShell = ''
                 rm -rf ./build
                 soupault --debug
+                #simple-http-server --index --nocache -p 8999 -o ./build
+                #ag -l | entr -s 'soupault'
               '';
               processes = {
-                server.exec = "python -m http.server 8999 --directory build";
-                open-browser.exec = "$BROWSER http://localhost:8999";
-                rebuild.exec = "ag -l | entr -s 'soupault'";
+                rebuild.exec = "ag -l | entr -n -s 'soupault'";
               };
             }
           ];

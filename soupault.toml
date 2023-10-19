@@ -33,6 +33,7 @@ md = 'pandoc -f commonmark+smart -t html --no-highlight --lua-filter=helpers/cma
 [custom_options]
 site_url = "https://beauhilton.com"
 
+
 [index]
 index = true
 sort_descending = true
@@ -41,7 +42,6 @@ strip_tags = false
 dump_json = "index.json"
 section = "posts"
 date_formats = ["%F"]
-
 
 [index.fields.title]
 selector = ["h1"]
@@ -85,6 +85,7 @@ index_template = """
     <br>
   {% endfor %}
   """
+
 
 [widgets.escape-html-in-pre]
 widget = "escape-html"
