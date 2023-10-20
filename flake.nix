@@ -57,9 +57,7 @@
                 alejandra.enable = true;
                 rsync-to-server = {
                   enable = true;
-                  name = "rsync-to-server";
-                  files = "./*";
-                  description = "rsyncs the completed site to my server";
+                  name = "rsync to server";
                   entry = ''
                     soupault &&
                     cp build/atom.xml build/feed.xml &&
