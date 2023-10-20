@@ -1,15 +1,5 @@
 [
   {
-    "url": "/posts/add-zfs-mirror",
-    "page_file": "site/posts/add-zfs-mirror.md",
-    "nav_path": [
-      "posts"
-    ],
-    "excerpt": "tl;dr: <code>zpool attach data /dev/disk/by-partlabel/zfs-3a1xx /dev/sdx0</code>. Adjust for your own pool and disks.",
-    "date": "2023-10-22",
-    "title": "How to add a mirror to a single ZFS disk"
-  },
-  {
     "url": "/posts/history-egc",
     "page_file": "site/posts/history-egc.md",
     "nav_path": [
@@ -20,13 +10,23 @@
     "title": "A timeline of esophageal cancer"
   },
   {
+    "url": "/posts/add-zfs-mirror",
+    "page_file": "site/posts/add-zfs-mirror.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "tl;dr: <code>zpool attach data /dev/disk/by-partlabel/zfs-3a1xx /dev/sdx0</code>. Adjust for your own pool and disks.",
+    "date": "2023-10-19",
+    "title": "How to add a mirror to a single ZFS disk"
+  },
+  {
     "url": "/posts/yt-dlp",
     "page_file": "site/posts/yt-dlp.md",
     "nav_path": [
       "posts"
     ],
     "excerpt": "yt-dlp is an incredibly useful and customizable tool \nfor downloading online videos\nfrom YouTube and elsewhere.\nHere's my setup \n(declared in Nix, but easily generalizable).",
-    "date": "2023-10-19",
+    "date": "2023-10-18",
     "title": "yt-dlp Nix config"
   },
   {

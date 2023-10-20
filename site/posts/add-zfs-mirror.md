@@ -1,6 +1,6 @@
 # How to add a mirror to a single ZFS disk
 
-<time id="post-date">2023-10-22</time>
+<time id="post-date">2023-10-19</time>
 
 <p id="post-excerpt">
 tl;dr:&#x2005;<code>zpool&#x2005;attach&#x2005;data&#x2005;/dev/disk/by-partlabel/zfs-3a1xx&#x2005;/dev/sdx0</code>. Adjust for your own pool and disks.

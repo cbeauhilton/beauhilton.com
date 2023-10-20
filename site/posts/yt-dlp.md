@@ -1,6 +1,6 @@
 # yt-dlp Nix config
 
-<time id="post-date">2023-10-19</time>
+<time id="post-date">2023-10-18</time>
 
 <p id="post-excerpt">
 yt-dlp is an incredibly useful and customizable tool 
