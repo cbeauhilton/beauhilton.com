@@ -19,9 +19,13 @@ I'm not interested in every small technical advance,
 only major firsts and practice-changing updates).
 
 As a side note, it would be cool if [HemOnc.org](hemonc.org) had
-tables of all drug approvals
-(with dates and indications)
+tables (*a* table? for comparative work?)
+of all oncologic drug approvals, with dates and indications,
 for every global approval agency.
+Maybe with a link to the trial that led to each approval?
+(It's not always 1:1 between trial:approval,
+but would be nice to know for the majority of cases
+where that pattern holds).
 It's a huge task,
 but would be so useful for clinicians, researchers, and investors.
 I'm amazed nobody has done this yet, 
@@ -69,7 +73,7 @@ please contact me.
   <tr>
     <td>0 BCE</td>
     <td>First description of EC, written in China.</td>
-    <td>Epidemiologic links to EC described between alcohol, hot drinks, and advanced age</td>
+    <td>Epidemiologic links to EC described between alcohol, hot drinks, and advanced age.</td>
   </tr>
   <tr>
     <td>131-200</td>
@@ -84,7 +88,7 @@ please contact me.
   <tr>
     <td>1543</td>
     <td>First detailed illustrations and descriptions of the upper gastrointestinal tract.</td>
-    <td>Vesalius, De Humanis Corporis Fabrica</td>
+    <td>Vesalius, <i>De Humanis Corporis Fabrica</i></td>
   </tr>
   <tr>
     <td>1690</td>
@@ -94,7 +98,7 @@ please contact me.
   <tr>
     <td>1770</td>
     <td>First written Western hypothesis of the epidemiologic link between alcohol and EC.</td>
-    <td>Ernst Gottfried Gyser, Medical inaugural dissertation on the fatal hunger, caused by callous narrowing of the esophagus, with phenomena worthy of attention which are detected in certain abdominal viscera.</td>
+    <td>Ernst Gottfried Gyser, <i>Medical inaugural dissertation on the fatal hunger, caused by callous narrowing of the esophagus, with phenomena worthy of attention which are detected in certain abdominal viscera.</i></td>
   </tr>
   <tr>
     <td>1857</td>
