@@ -20,7 +20,7 @@
     ...
   } @ inputs: let
     forEachSystem = nixpkgs.lib.genAttrs (import systems);
-  in {      
+  in {
     devenv-up = self.devShells.x86_64-linux.default.config.procfileScript;
     devShells =
       forEachSystem
@@ -35,19 +35,34 @@
                 entr
                 highlight
                 pandoc
+                rsync
                 soupault
                 silver-searcher
                 simple-http-server
               ];
               languages.ocaml = {enable = true;};
+
+              # fresh build every time I enter the project, happens in the background and is super snappy
               enterShell = ''
                 rm -rf ./build
                 soupault
-                nohup simple-http-server --index --nocache -o -p 8999 ./build 2>&1 &
               '';
+
               scripts = {
                 newterm.exec = "wezterm start --cwd .";
-                autorebuild.exec = "nohup ag -l | entr -n -s 'soupault' &> /dev/null &";
+                autorebuild.exec = "nohup ag -l | entr -n -s 'soupault' &> /dev/null &"; # autorebuild, uses caching so superer snappier
+                serve.exec = "nohup simple-http-server --index --nocache -o -p 8999 ./build 2>&1 &"; # the -o opens $BROWSER
+              };
+              pre-commit.hooks = {
+                alejandra.enable = true;
+                rsync-to-server = {
+                  enable = true;
+                  name = "rsync-to-server";
+                  description = "rsyncs the completed site to my server";
+                  entry = ''
+                    echo "hooooyo"
+                  '';
+                };
               };
             }
           ];
