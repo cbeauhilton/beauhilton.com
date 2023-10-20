@@ -9,10 +9,10 @@ Listening to the tunes via the command line is the way.
 
 ## Subsonic-compatible server backbone
 
-I have Navidrome installed (via Docker on NixOS).
+I have [Navidrome](https://www.navidrome.org/) installed (via Docker on NixOS).
 It's very nice.
 
-With a reverse proxy, tailscale, and LetsEncrypt set up,
+With a reverse proxy, [tailscale](https://tailscale.com/), and LetsEncrypt set up,
 I can access it via any Subsonic-compatible music player at
 <https://music.beauslab.casa> 
 (this URL is available only on my tailnet, so it will 404 for everyone else).
@@ -20,11 +20,11 @@ I can access it via any Subsonic-compatible music player at
 
 ## Desktop GUI interfaces
 
-Sublime-music is pretty good.
-I also find myself using the Navidrome web UI pretty often.
+[Sublime-music](https://sublimemusic.app/) is pretty good.
+I also often find myself using the Navidrome web UI.
 
 (On mobile, [Symfonium](https://symfonium.app/) (paid) or [SubStreamer](https://substreamerapp.com/) on Android 
-and [play:Sub](http://michaelsapps.dk/playsubapp/) (paid) or [SubStreamer](https://substreamerapp.com/) (free) on iOS are my go-tos, 
+and [play:Sub](http://michaelsapps.dk/playsubapp/) (paid) or [SubStreamer](https://substreamerapp.com/) on iOS are my go-tos, 
 though there are many [others](http://www.subsonic.org/pages/apps.jsp))
 
 ## CLI interfaces: contenders (STMP, jellycli, sksonic)
@@ -49,7 +49,7 @@ but even so the in-app nav is finicky and doesn't quite fit my brain
 It works, but isn't polished enough for daily usage 
 (though I don't expect it to be - the author states it's a personal project, 
 and I think they're doing a great job, so will keep an eye on it).
-Partial vi-key support, could pretty easily be added given the suckless style.
+Partial vi-key support, could easily be added given the suckless style.
 
 
 ## CLI interfaces: the one I picked (ncmpcpp with mopidy backend)
