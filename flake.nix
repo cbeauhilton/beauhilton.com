@@ -52,7 +52,7 @@
                 newterm.exec = "wezterm start --cwd .";
                 autorebuild.exec = "nohup ag -l | entr -n -s 'soupault' &> /dev/null &"; # autorebuild, uses caching so superer snappier
                 serve.exec = "nohup simple-http-server --index --nocache -o -p 8999 ./build 2>&1 &"; # the -o opens $BROWSER
-                upload.exec = "soupault && cp build/atom.xml build/feed.xml && rsync -avh --rsync-path=openrsync build/* beau@beauhilton.com:/var/www/htdocs/www.beauhilton.com/";
+                upload.exec = "soupault && cp build/atom.xml build/feed.xml && rsync -avht --rsync-path=openrsync build/* beau@beauhilton.com:/var/www/htdocs/www.beauhilton.com/";
               };
               pre-commit.hooks = {
                 alejandra.enable = true;
