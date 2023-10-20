@@ -60,7 +60,13 @@
                   name = "rsync-to-server";
                   description = "rsyncs the completed site to my server";
                   entry = ''
-                    echo "hooooyo"
+                    soupault &&
+                    cp build/atom.xml build/feed.xml &&
+                    rsync \
+                    -av \
+                    --rsync-path=openrsync \
+                    build/* \
+                    beau@beauhilton.com:/var/www/htdocs/www.beauhilton.com/
                   '';
                 };
               };

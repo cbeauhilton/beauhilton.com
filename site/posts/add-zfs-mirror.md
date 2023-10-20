@@ -3,7 +3,7 @@
 <time id="post-date">2023-10-22</time>
 
 <p id="post-excerpt">
-tl;dr: zpool attach data /dev/disk/by-partlabel/zfs-3a1e459c75dc9b74 /dev/sda1. Adjust for your own pool and disks.
+tl;dr:&#x2005;<code>zpool&#x2005;attach&#x2005;data&#x2005;/dev/disk/by-partlabel/zfs-3a1xx&#x2005;/dev/sdx0</code>. Adjust for your own pool and disks.
 </p>
 
 
@@ -32,6 +32,13 @@ Just plug it in.
 
 But how to specify which disks to use in the command? 
 I saw several guides that just used `/dev/sdx`, but it didn't work.
+
+I don't know what it is about my setup
+that differs from the guides I found online 
+(if you have a hint, [lmk](beauhilton.com/contact)),
+so YMMV,
+but below is some of what I tried and what eventually worked,
+mostly for my own reference.
 
 In my setup, `/dev/sdb` was my existing drive 
 and `/dev/sda` is the one I was trying to add 
@@ -105,9 +112,8 @@ zpool attach data /dev/disk/by-partlabel/zfs-3a1e459c75dc9b74 /dev/sda1
 
 ## Great success
 
-```sh
-zpool status
-
+```conf
+->> zpool status
   pool: data
  state: ONLINE
 status: One or more devices is currently being resilvered.  The pool will
@@ -126,3 +132,24 @@ config:
 
 errors: No known data errors
 ```
+
+...and the next day, after resilvering completed
+(and a reboot to make sure the disk came online):
+
+```conf
+->> zpool status
+  pool: data
+ state: ONLINE
+  scan: resilvered 3.77T in 05:13:53 with 0 errors on Thu Oct 19 22:19:19 2023
+config:
+
+        NAME                      STATE     READ WRITE CKSUM
+        data                      ONLINE       0     0     0
+          mirror-0                ONLINE       0     0     0
+            zfs-3a1e459c75dc9b74  ONLINE       0     0     0
+            zfs-e2937e0fc8ebe95a  ONLINE       0     0     0
+
+errors: No known data errors
+```
+
+(notice that what was `sda1` is now referred to by partlabel)

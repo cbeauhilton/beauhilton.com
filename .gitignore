@@ -2,3 +2,4 @@ build/
 .devenv/*
 .soupault-cache
 nohup.out
+.pre-commit-config.yaml

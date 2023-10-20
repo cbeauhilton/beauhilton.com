@@ -5,7 +5,7 @@
     "nav_path": [
       "posts"
     ],
-    "excerpt": "tl;dr: zpool attach data /dev/disk/by-partlabel/zfs-3a1e459c75dc9b74 /dev/sda1. Adjust for your own pool and disks.",
+    "excerpt": "tl;dr: <code>zpool attach data /dev/disk/by-partlabel/zfs-3a1xx /dev/sdx0</code>. Adjust for your own pool and disks.",
     "date": "2023-10-22",
     "title": "How to add a mirror to a single ZFS disk"
   },
