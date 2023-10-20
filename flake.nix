@@ -58,6 +58,7 @@
                 rsync-to-server = {
                   enable = true;
                   name = "rsync-to-server";
+                  files = "./*";
                   description = "rsyncs the completed site to my server";
                   entry = ''
                     soupault &&
