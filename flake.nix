@@ -60,6 +60,7 @@
                   enable = true;
                   name = "upload";
                   entry = "upload";
+                  verbose = true;
                 };
               };
             }
