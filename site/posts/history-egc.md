@@ -1,0 +1,281 @@
+# A timeline of esophageal cancer
+
+<time id="post-date">2023-10-20</time>
+
+<p id="post-excerpt">
+A couple of friends and I wrote a review article on the history of esophageal cancer.
+The timeline was so interesting I thought I'd share it here, in a place where it can be easily found and updated.
+</p>
+
+I'll put a link to the article when it's published.
+
+For now,
+I'm not including any references,
+and this is an abbreviated version.
+I hope to fix both of these things in the future, 
+with the goal of a definitive, comprehensive list with a clear paper trail
+(though a list such as this does require some curation -
+I'm not interested in every small technical advance,
+only major firsts and practice-changing updates).
+
+As a side note, it would be cool if [HemOnc.org](hemonc.org) had
+tables of all drug approvals
+(with dates and indications)
+for every global approval agency.
+It's a huge task,
+but would be so useful for clinicians, researchers, and investors.
+I'm amazed nobody has done this yet, 
+though there are some partial lists that were helpful.
+HemOnc does have a few wiki entries on dates of drug approvals, 
+but they're sparse.
+(It's not an easy task, particularly for the Chinese approvals - 
+the only definitive source for the Chinese NMPA 
+appears to be a pdf that is in Chinese only.
+If you read Chinese and would like to help,
+please shoot me an email - see the contact link above)
+
+If you are several steps ahead and beat me 
+to building the drug approval tables:
+brava/bravo/brave/bravi,
+please lmk
+and I'll send you a string of happy, grateful emojis,
+and we can talk about collaboration.
+
+Likewise,
+if you know of an important event in esophageal cancer history, 
+have a reference, 
+and think I should add it here, 
+please contact me.
+
+## Early History
+
+<table>
+<thead>
+  <tr>
+    <th colspan="3">Key events in the early history of esophageal cancer</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Date</td>
+    <td>Event</td>
+    <td>Notes</td>
+  </tr>
+  <tr>
+    <td>3000 BCE</td>
+    <td>First description of esophageal surgery, written in Egypt.</td>
+    <td>Smith Surgical Papyrus.</td>
+  </tr>
+  <tr>
+    <td>0 BCE</td>
+    <td>First description of EC, written in China.</td>
+    <td>Epidemiologic links to EC described between alcohol, hot drinks, and advanced age</td>
+  </tr>
+  <tr>
+    <td>131-200</td>
+    <td>First descriptions of EC written in the West.</td>
+    <td>Dates are the life of Galen, Roman Greek physician who wrote extensively. Poor prognosis described.</td>
+  </tr>
+  <tr>
+    <td>1090 - 1162</td>
+    <td>First palliative methods for EC described, including esophagogastric feeding tubes.</td>
+    <td>Dates are the life of Ibn Zuhr, Arabian physician who described these methods.</td>
+  </tr>
+  <tr>
+    <td>1543</td>
+    <td>First detailed illustrations and descriptions of the upper gastrointestinal tract.</td>
+    <td>Vesalius, De Humanis Corporis Fabrica</td>
+  </tr>
+  <tr>
+    <td>1690</td>
+    <td>First personal description of living with EC.</td>
+    <td>Diary of John Casaubon, English surgeon.</td>
+  </tr>
+  <tr>
+    <td>1770</td>
+    <td>First written Western hypothesis of the epidemiologic link between alcohol and EC.</td>
+    <td>Ernst Gottfried Gyser, Medical inaugural dissertation on the fatal hunger, caused by callous narrowing of the esophagus, with phenomena worthy of attention which are detected in certain abdominal viscera.</td>
+  </tr>
+  <tr>
+    <td>1857</td>
+    <td>First described EC operation.</td>
+    <td>Albrecht Theodor von Middeldorph, Breslau surgeon.</td>
+  </tr>
+  <tr>
+    <td>1868</td>
+    <td>Esophagoscope invented.</td>
+    <td>Adolf Kussmaul, German surgeon.</td>
+  </tr>
+  <tr>
+    <td>1872</td>
+    <td>First known esophagectomy.</td>
+    <td>Christian Billroth, Austrian surgeon, with Vincenz Czerny assisting.</td>
+  </tr>
+  <tr>
+    <td>1877</td>
+    <td>First known cervical esophagectomy.</td>
+    <td>Vincenz Czerny. Post-operative survival of 15 months.</td>
+  </tr>
+  <tr>
+    <td>1913</td>
+    <td>First known curative EC resection.</td>
+    <td>Franz Torek, United States surgeon. Post-operative survival of 12 years.</td>
+  </tr>
+  <tr>
+    <td>1933</td>
+    <td>First report on a series of EC resections.</td>
+    <td>Tohru Oshawa, Japanese surgeon. 18 resections, 56% mortality.</td>
+  </tr>
+  <tr>
+    <td>1947</td>
+    <td>First large report on a series of EC resections in the West.</td>
+    <td>Richard Sweet, United States surgeon. 213 resections, 17% mortality, 8% 5-year survival.</td>
+  </tr>
+  <tr>
+    <td>1959</td>
+    <td>First report with &lt;10% operative mortality</td>
+    <td>Komei Nakayama, Japanese surgeon. 953 resections, 5.8% mortality.</td>
+  </tr>
+  <tr>
+    <td>1981</td>
+    <td>First report with &lt;5% operative mortality</td>
+    <td>Hiroshi Akiyama, Japanese surgeon. 210 resections, 1.4% mortality, 34.6% 5-year survival.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Acronyms: BCE - Before Common Era. EC - Esophageal Cancer.</td>
+  </tr>
+</tbody>
+</table>
+
+## Key clinical trials and approvals
+
+<table>
+<thead>
+  <tr>
+    <th colspan="3">Key clinical trials and approvals</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1981</td>
+    <td>First neoadjuvant RT trial for EC</td>
+    <td>Launois et al. 40 Gy. Results were negative.</td>
+  </tr>
+  <tr>
+    <td>1984</td>
+    <td>First neoadjuvant CRT trial for EC</td>
+    <td>Leichman et al. 30 Gy, cisplatin. pCR 37%, operative mortality 27%, no survival benefit.</td>
+  </tr>
+  <tr>
+    <td>1988</td>
+    <td>First perioperative chemotherapy trial for EC</td>
+    <td>Roth et al. No benefit for cohort overall. mOS of responders 20mo, non-responders 6.2mo, surgery alone 8mo.</td>
+  </tr>
+  <tr>
+    <td>2002</td>
+    <td>First whole-cohort positive perioperative chemotherapy trial</td>
+    <td>Lancet, United Kingdom. Cisplatin+fluorouracil. mOS 16.8mo vs 13.3mo for surgery alone.</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>Trastuzumab shown to have benefit for HER2+ GC and GEJC</td>
+    <td>ToGA trial. Trastuzumab+chemotherapy. mOS 13.8mo vs 11.1mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>CROSS trial first report</td>
+    <td>Van Hagen et al. 40 Gy, carboplatin+paclitaxel. mOS 49.4mo vs 24.0mo for surgery alone.</td>
+  </tr>
+  <tr>
+    <td>2017-09-22</td>
+    <td>First FDA approval for IO for EGC</td>
+    <td>KEYNOTE-059, pembrolizumab monotherapy, approved for 3rd line. Approval was later withdrawn as pembrolizumab moved to earlier lines.</td>
+  </tr>
+  <tr>
+    <td>2019-07-30</td>
+    <td>First FDA approval for 2nd line IO for EGC</td>
+    <td>KEYNOTE-181, pembrolizumab monotherapy. ESCC with CPS &gt;=10. mOS 8.2mo vs 7.1mo for chemotherapy.</td>
+  </tr>
+  <tr>
+    <td>2020-06-10</td>
+    <td>First FDA approval for 2nd line IO for EGC, agnostic of CPS</td>
+    <td>ATTRACTION-3, nivolumab monotherapy. ESCC. mOS 10.9mo vs 8.4mo for chemotherapy.</td>
+  </tr>
+  <tr>
+    <td>2020-06-19</td>
+    <td>First NMPA approval for locally-produced IO, 2nd line camrelizumab for ESCC</td>
+    <td>ESCORT, camrelizumab monotherapy. ESCC. mOS 8.3mo vs 6.2mo for chemotherapy.</td>
+  </tr>
+  <tr>
+    <td>2021-01-15</td>
+    <td>First FDA approval for antibody drug conjugate in EGC</td>
+    <td>DESTINY-Gastric01, fam-trastuzumab deruxtecan-nxki. EGC, AC, HER2+, 2nd line. mOS 12.5mo vs 8.4mo for chemotherapy.</td>
+  </tr>
+  <tr>
+    <td>2021-03-22</td>
+    <td>First FDA approval for 1st line IO for EGC</td>
+    <td>KEYNOTE-590, pembrolizumab with chemotherapy, EGC, AC and SCC, CPS agnostic. mOS 13.9mo (ESCC w CPS &gt;=10) vs 8.8mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2021-04-16</td>
+    <td>Second FDA approval for 1st line IO for EGC</td>
+    <td>CheckMate 649, nivolumab with chemotherapy, similar setting to KEYNOTE-590. mOS 13.8 vs 11.1mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2021-05-05</td>
+    <td>First FDA approval for 1st line IO + chemotherapy + HER2-targeted therapy</td>
+    <td>KEYNOTE-811, pembrolizumab + trastuzumab + chemotherapy. ORR 74.4% vs 51.9% for trastuzumab + chemotherapy alone. CR 11.3% vs 3.1%, respectively.</td>
+  </tr>
+  <tr>
+    <td>2021-05-20</td>
+    <td>First FDA approval for adjuvant IO monotherapy</td>
+    <td>CheckMate 577, nivolumab after CROSS, EGC, AC and SCC, CPS agnostic. ESCC mDFS 29.7mo vs 11mo for placebo, EAC 19.4mo vs 11mo.</td>
+  </tr>
+  <tr>
+    <td>2021-12-10</td>
+    <td>NMPA approval for 1st line camrelizumab + chemotherapy for ESCC</td>
+    <td>ESCORT-1st, camrelizumab with chemotherapy. mOS 15.3mo vs 12.0mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2022-02-21</td>
+    <td>NMPA approval for 1st line tislelizumab monotherapy for GC and GEJC</td>
+    <td>Based on phase I/II studies.</td>
+  </tr>
+  <tr>
+    <td>2022-04-13</td>
+    <td>NMPA approval for 2nd line tislelizumab monotherapy for ESCC</td>
+    <td>RATIONALE-302, tislelizumab monotherapy vs chemotherapy, ESCC, PD-L1 agnostic. mOS 8.6mo vs 6.3mo for chemotherapy.</td>
+  </tr>
+  <tr>
+    <td>2022-05-19</td>
+    <td>NMPA approval for 1st line tislelizumab + chemotherapy for ESCC</td>
+    <td>RATIONALE-306, tislelizumab with chemotherapy, ESCC, PD-L1 agnostic. mOS 17.2mo vs 10.6mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2022-05-27</td>
+    <td>First FDA approval for 1st line dual IO</td>
+    <td>CheckMate 648, nivolumab with ipilimumab, ESCC, PD-L1 &gt;=1%. mOS 13.2mo for IO + chemotherapy vs 12.8mo for IO + IO vs 10.7mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2022-06-20</td>
+    <td>NMPA approval for 1st line sintilimab + chemotherapy for GC and GEJC, agnostic of CPS.</td>
+    <td>ORIENT-16, sintilimab + chemotherapy vs chemotherapy, AC. For CPS &gt;= 5, mOS 19.2mo vs 12.9mo for chemotherapy alone. For unselected CPS, mOS 15.2mo vs 12.3mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2023-01-24</td>
+    <td>First OS data available for HER2 vaccine therapy</td>
+    <td>HERIZON study, HER-Vaxx (IMU-131)+chemotherapy, metastatic or advanced HER2+ GC and GEJC. mOS 13.9mo for vaccine+chemotherapy vs 8.3mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td>2023-02-24</td>
+    <td>NMPA approval for 1st line tislelizumab + chemotherapy for GC and GEJC.</td>
+    <td>RATIONALE-305, tislelizumab + chemotherapy vs chemotherapy, AC. For PD-L1 &gt;=5%, mOS 17.2mo for IO + chemotherapy vs 12.6mo for chemotherapy alone.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Acronyms and abbreviations: CPS - combined positive score. (C)RT - (chemo)radiotherapy. (E)AC - (esophageal) adenocarcinoma. EC - Esophageal Cancer. EGC - esophagogastric cancers. (E)SCC - (esophageal) squamous cell carcinoma. FDA - United States Food and Drug Administration.IO - immuno-oncologic therapy. pCR - pathologic complete response. PD-L1 - programmed death-ligand 1.mDFS - median disease-free survival. mo - month(s). mOS - median overall survival. NMPA - China’s National Medical Products Administration. ORR - overall response rate.</td>
+  </tr>
+</tbody>
+</table>
+
+
+

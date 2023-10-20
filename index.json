@@ -10,6 +10,16 @@
     "title": "How to add a mirror to a single ZFS disk"
   },
   {
+    "url": "/posts/history-egc",
+    "page_file": "site/posts/history-egc.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "A couple of friends and I wrote a review article on the history of esophageal cancer.\nThe timeline was so interesting I thought I'd share it here, in a place where it can be easily found and updated.",
+    "date": "2023-10-20",
+    "title": "A timeline of esophageal cancer"
+  },
+  {
     "url": "/posts/yt-dlp",
     "page_file": "site/posts/yt-dlp.md",
     "nav_path": [
