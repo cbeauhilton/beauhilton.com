@@ -1,13 +1,14 @@
 ## husband and father
 
 Talented, beautiful people surround me.
-The [now page](beauhilton.com/now)
+The [now page](/now)
 usually has the most current updates in this arena.
 
 
 ## physician
 
 Dates are for the academic year, e.g. academic year 2026 ends in 2027.  
+
 Oncology fellow, Vanderbilt 2022-2026.  
 Internal medicine resident, Vanderbilt 2020-2022.  
 Medical school, Cleveland Clinic Lerner College of Medicine
@@ -88,7 +89,7 @@ and a part-time developer with protected time.
 
 [Google Scholar profile](https://scholar.google.com/citations?user=Ng5AgXAAAAAJ)
 
-*If you are interested data science consulting, [contact me](beauhilton.com/contact).
+*If you are interested data science consulting, [contact me](/contact).
 Current rate is listed at that link.*
 
 *If you want to see an overview of projects,
@@ -97,7 +98,6 @@ on my identity as a researcher and overall goals
 and go to the sections between the horizontal lines.
 They are in reverse chronological order (roughly), 
 newest projects at the top.*
-
 
 My research has morphed over the years,
 as everyone's does,
@@ -193,9 +193,14 @@ because it focuses on the tools rather than the subjects or goals.
 
 ---
 
-write about the abstracts project
+### disparities in cancer research across space and time
+
+TODO: write about the abstracts project
 
 ---
+
+### Cleveland Clinic Center for Clinical Artificial Intelligence 
+### explainable machine learning for readmissions, with a focus on sociodemographics
 
 While at Cleveland Clinic, 
 I was one of the founding members of the 
@@ -245,9 +250,13 @@ See what it looks like [here](https://doi.org/10.1038/s41746-020-0249-z).
 
 ---
 
+### Cleveland Clinic Taussig Cancer Institute
+### explainable machine learning for blood cancer diagnostics
+
 Initially, when I was going to be a malignant hematologist
 (I still think it is a beautiful field, but was drawn away to other pastures),
 I wanted to level the playing field for advanced diagnostics.
+
 A world-class hematopathologist together with a world-class clinician,
 preferably a whole group of these together,
 are required to make certain diagnoses,
@@ -257,6 +266,7 @@ available in simple blood samples and from the electronic medical record
 to support diagnostics, and, eventually, democratize them?
 Further, what if the answer the machine gives could be not only accurate,
 but interpretable? 
+
 What if we could get the machine to explain itself and its reasoning, 
 both as a check against biological implausibility
 (and more insidious problems such as systemic racism),
@@ -267,6 +277,7 @@ rural Arkansas/Kandahar/Mogadishu/Kushalnagar/etc.,
 instead of having to be shipped to 
 one of a handful of academic centers while the patient waits, 
 still sick, for an answer?
+
 We made [some](https://doi.org/10.1182/blood-2019-126967) 
 [progress](https://doi.org/10.1182/bloodadvances.2021004755),
 but these problems remain largely unsolved.
