@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/add-zfs-mirror",
+    "page_file": "site/posts/add-zfs-mirror.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "tl;dr: zpool attach data /dev/disk/by-partlabel/zfs-3a1e459c75dc9b74 /dev/sda1. Adjust for your own pool and disks.",
+    "date": "2023-10-22",
+    "title": "How to add a mirror to a single ZFS disk"
+  },
+  {
     "url": "/posts/yt-dlp",
     "page_file": "site/posts/yt-dlp.md",
     "nav_path": [
