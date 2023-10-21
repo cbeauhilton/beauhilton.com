@@ -1,23 +1,40 @@
 # Colophon
 
-This site is hosted on an OpenBSD server on [vultr](https://vultr.com),
+This site is hosted on an [OpenBSD](https://www.openbsd.org/) server 
+on [vultr](https://vultr.com),
 built using plain text files processed by [soupault](https://soupault.app)
-and [rsync'd](https://en.wikipedia.org/wiki/Rsync) to the server as part of a pre-commit hook.
+and auto-[rsync'd](https://en.wikipedia.org/wiki/Rsync) to the server 
+as part of a pre-commit hook.
 
 The source files are available on [my git server](https://git.beauhilton.com/site/)
 and [GitHub](https://github.com/cbeauhilton/beauhilton.com).
 
-I also use [caretaker](https://github.com/grego/caretaker) 
+I also use [entr](https://eradman.com/entrproject/) (on Nix) 
+or [caretaker](https://github.com/grego/caretaker) (on Arch) 
 during development to auto-rebuild as I edit the source files.
 
-I used to specify fonts, e.g. one of my favorites, [IBM Plex](https://www.ibm.com/plex/),
+Regarding the design,
+the focus is on simplicity and a small footprint.
+It's the kind thing to do,
+for the user and the planet.
+No Javascript, just static HTML. 
+I used to specify fonts, 
+e.g. one of my favorites, [IBM Plex](https://www.ibm.com/plex/),
 but in an effort to keep things light and tidy,
 I now just use system fonts.
 
 <https://talks.beauhilton.com> and 
 <https://notes.beauhilton.com> 
 are not part of the website proper,
-but are rather built using GitHub pages.
+but are rather generated using GitHub Pages.
+The talks are built using [slidev](https://sli.dev/),
+which translates markdown files into beautiful web-first slide decks
+(I now only use PowerPoint under great duress),
+and the notes use [quartz](https://quartz.jzhao.xyz/),
+which translates [Obsidian](https://obsidian.md/)-style markdown files 
+(see a theme here?) 
+into a website of interconnected notes
+a la [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten).
 
 ## Nix Workflow
 
