@@ -86,6 +86,8 @@ to achieve a clean editing environment.
 
 When it's ready to go live,
 I use an alias called `glazy`: `git add . && git commit -m "update" && git push`.
-This will trigger the pre-commit hook, 
-which rebuilds the site again and activates rsync,
-before pushing the source files to GitHub and my git server.
+This will trigger the pre-commit hook,
+which rebuilds the site again
+and activates rsync to send the built site to the web server,
+before pushing the source files to
+GitHub and my git server.

@@ -195,7 +195,25 @@ because it focuses on the tools rather than the subjects or goals.
 
 ### disparities in cancer research across space and time
 
-TODO: write about the abstracts project
+My current project is a work in progress,
+creating a third-party database/archive 
+of all the abstracts from the two big annual cancer meetings 
+(ASH and ASCO - as a starting point), 
+made machine-readable and hence more easily accessible en masse. 
+Here's a [rough prelim](https://ash-abstracts.vercel.app/abstracts_small/abstracts) 
+of what that will look like, 
+with an interactive map and sorting/search/export 
+(you can hit JSON or CSV endpoints trivially to get nicely formatted data, 
+as opposed to the hulking web scrapers 
+and HTML wranglers I wrote to get the data the first time). 
+First analysis will be on the authors and affiliations 
+(global mapping, with a time component), 
+how those overlap with disease states 
+(e.g. how much sickle cell research comes out of Sub-Saharan Africa? 
+We know it's bad, but nobody has quantified how bad - 
+the idea is to have a platform for answering these questions easily), 
+before branching out into things like 
+conflicts of interest and NLP on the abstract texts proper, etc.
 
 ---
 
