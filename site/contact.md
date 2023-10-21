@@ -11,12 +11,8 @@ write to the email above with "consulting" somewhere in the subject.
 
 I am currently willing to discuss engagements, pending specifics.
 
-My rate is $300/h for strictly consulting 
-(talking - phone calls, meetings, etc.),
-unless you are a student, in which case it's free.
-I may discount if you want to discuss data science
-having to do with healthcare disparities,
-particularly if you are willing to publish.
+My most recent engagement paid $325/h for strictly consulting 
+(talking - phone calls, meetings, etc.). This is about right.
 
 If you want me to write code,
 I'm not interested in any engagements worth less than $3,000.

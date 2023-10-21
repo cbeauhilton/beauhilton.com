@@ -19,7 +19,25 @@ I now just use system fonts.
 are not part of the website proper,
 but are rather built using GitHub pages.
 
-## Workflow
+## Nix Workflow
+
+As of 2023-10-10 or so, 
+I use a Nix-based workflow with flakes and [devenv.sh](https://devenv.sh/).
+The basic steps are similar to what is included below,
+though more conveniently packaged and portable.
+
+It's delightful.
+
+I may write it up at some point, but for now, 
+look at `flake.nix` in the source code.
+One of the great things about Nix 
+is that it's self-documenting and self-contained.
+
+On my non-Nix laptop running Arch, I still use the workflow below,
+though at some point I'll probably install Nix on Arch and unify my approach.
+
+
+## Non-Nix Workflow (legacy)
 
 The workflow is terminal-based
 and pretty basic.
