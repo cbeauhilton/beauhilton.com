@@ -1,3 +1,4 @@
+
 ## husband and father
 
 Talented, beautiful people surround me.
@@ -43,6 +44,7 @@ We need to help each other, and there is much to do.
 
 ## educator
 
+
 Harvard Macy Institute faculty, 2018-2020.
 Health Care Education 2.0.
 
@@ -86,18 +88,16 @@ and a part-time developer with protected time.
 
 ## data scientist
 
-
 [Google Scholar profile](https://scholar.google.com/citations?user=Ng5AgXAAAAAJ)
 
 *If you are interested data science consulting, [contact me](/contact).
 Current rate is listed at that link.*
 
-*If you want to see an overview of projects,
-skip the following pontification
-on my identity as a researcher and overall goals
-and go to the sections between the horizontal lines.
-They are in reverse chronological order (roughly), 
+*Major projects are listed below in reverse chronological order (roughly), 
 newest projects at the top.*
+
+
+### overview
 
 My research has morphed over the years,
 as everyone's does,
@@ -190,8 +190,8 @@ I will usually describe myself as a data scientist,
 which is more commonly recognized and not at all inaccurate,
 because it focuses on the tools rather than the subjects or goals.
 
-
 ---
+
 
 ### disparities in cancer research across space and time
 
@@ -216,6 +216,7 @@ before branching out into things like
 conflicts of interest and NLP on the abstract texts proper, etc.
 
 ---
+
 
 ### Cleveland Clinic Center for Clinical Artificial Intelligence 
 ### explainable machine learning for readmissions, with a focus on sociodemographics
@@ -268,6 +269,7 @@ See what it looks like [here](https://doi.org/10.1038/s41746-020-0249-z).
 
 ---
 
+
 ### Cleveland Clinic Taussig Cancer Institute
 ### explainable machine learning for blood cancer diagnostics
 
@@ -301,7 +303,6 @@ We made [some](https://doi.org/10.1182/blood-2019-126967)
 but these problems remain largely unsolved.
 
 ---
-
 
 
 ## internal links

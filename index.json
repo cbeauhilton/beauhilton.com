@@ -168,15 +168,5 @@
     "excerpt": "About making the Vimbook. WIP.",
     "date": "2000-01-22",
     "title": "vimbook"
-  },
-  {
-    "url": "/posts/template",
-    "page_file": "site/posts/template.md",
-    "nav_path": [
-      "posts"
-    ],
-    "excerpt": "Text of the post-excerpt goes here.",
-    "date": "1978-01-01",
-    "title": "Post Template"
   }
 ]
