@@ -1,5 +1,25 @@
 [
   {
+    "url": "/posts/history-egc",
+    "page_file": "site/posts/history-egc.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "A couple of friends and I wrote a review article on the history of esophageal cancer.\nThe timeline was so interesting I thought I'd share it here, in a place where it can be easily found and updated.",
+    "date": "2023-10-20",
+    "title": "A timeline of esophageal cancer"
+  },
+  {
+    "url": "/posts/add-zfs-mirror",
+    "page_file": "site/posts/add-zfs-mirror.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "tl;dr: <code>zpool attach data /dev/disk/by-partlabel/zfs-3a1xx /dev/sdx0</code>. Adjust for your own pool and disks.",
+    "date": "2023-10-19",
+    "title": "How to add a mirror to a single ZFS disk"
+  },
+  {
     "url": "/posts/yt-dlp",
     "page_file": "site/posts/yt-dlp.md",
     "nav_path": [
@@ -138,15 +158,5 @@
     "excerpt": "Turns out that a better way does exist, and it is R Markdown.",
     "date": "2019-10-20",
     "title": "R Markdown is my spirit animal"
-  },
-  {
-    "url": "/posts/vimbook-org",
-    "page_file": "site/posts/vimbook-org.md",
-    "nav_path": [
-      "posts"
-    ],
-    "excerpt": "About making the Vimbook. WIP.",
-    "date": "2000-01-22",
-    "title": "vimbook"
   }
 ]

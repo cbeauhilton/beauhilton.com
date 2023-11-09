@@ -51,7 +51,7 @@ first, curation, and second, durability)
 
 yt-dlp accepts a config file, 
 usually placed at `~/.config/yt-dlp/config`,
-so you don't have to have a super long string of flags and options 
+so you don't have to have a long string of flags and options 
 in your shell command to yt-dlp
 (you can override your config file with shell options, 
 so it's reasonable to set your defaults to your most common use 
