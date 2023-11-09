@@ -46,7 +46,7 @@ though more conveniently packaged and portable.
 It's delightful.
 
 I may write it up at some point, but for now, 
-look at `flake.nix` in the source code.
+look at [flake.nix](https://git.beauhilton.com/site/file/flake.nix.html) in the source code.
 One of the great things about Nix 
 is that it's self-documenting and self-contained.
 
