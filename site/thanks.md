@@ -1,29 +1,66 @@
 This is a "thanks page."
 
-Sections of personal sites such as [about](/about), 
+[About](/about), 
 [now](https://nownownow.com/about),
 and [uses](https://uses.tech) pages
-are nice ways for people visiting your site to get to know you better,
+are nice formulas,
+standardized yet flexible ways for people visiting your site to get to know you better,
 each from a slightly different angle.
 
-This page is also meant to bring the reader and author closer together.
-By sharing a "hey, thanks" to folks who made a difference that day,
+The thanks page is also meant to bring the reader and author closer together.
+By saying "hey, thanks" to folks who made a difference that day,
 it gets back to that old idea that we create each other in our relationships.
 The author gets to reflect on and state the positive thing, and the reader,
 whether or not he or she is the one being thanked, 
 can get a kick out of watching joy and kindness flourish in the world.
+
+It's a little more personal and permanent than a thumbs up on a post 
+on whichever social media platform dominates at the moment,
+and fits well with a 
+[Slow Web](https://www.jackcheng.com/the-slow-web/) aesthetic.
 
 If you like this idea
 and decide to make your own thanks page,
 please do,
 and [let me know](/contact). I'll link to your page here.
 
-Sincerity only - 
-if you'd like to bitch about something or someone,
-and it must be online,
-write a proper [post](/posts).
-
 <br>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2023-11-09" class="thanks-date">
+  2023-11-09
+  </time>
+
+  <p class="thanks-to">
+  Jeremy and Travis
+  </p>
+
+  <p class="thanks-for">
+  Thanks for helping with the LRP.
+  </p>
+
+</div>
+
+---
+
+<div class="thanks">
+
+  <time datetime="2023-11-08" class="thanks-date">
+  2023-11-08
+  </time>
+
+  <p class="thanks-to">
+  the internet
+  </p>
+
+  <p class="thanks-for">
+  Thanks for absorbing an infinite number of starts and stops.
+  </p>
+
+</div>
 
 ---
 
