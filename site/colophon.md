@@ -40,7 +40,7 @@ a la [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten).
 
 As of 2023-10-10 or so, 
 I use a Nix-based workflow with flakes and [devenv.sh](https://devenv.sh/).
-The basic steps are similar to what is included below,
+The basic steps are similar to what is included below in the Non-Nix section,
 though more conveniently packaged and portable.
 
 It's delightful.
@@ -76,8 +76,10 @@ $TERMINAL -e $BROWSER http://localhost:8000 &>/dev/null & disown
 ```
 
 This will open three new terminals running:
-a caretaker instance for auto-rebuild, 
-a server for preview, 
+a caretaker instance for auto-rebuild 
+(I recently activated caching in soupault, 
+rebuilds are lightning quick), 
+a web server for preview, 
 and a browser pointing to the server.
 
 At that point I will usually throw the terminals 
