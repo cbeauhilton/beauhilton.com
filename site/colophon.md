@@ -54,7 +54,7 @@ On my non-Nix laptop running Arch, I still use the workflow below,
 though at some point I'll probably install Nix on Arch and unify my approach.
 
 
-## Non-Nix Workflow (legacy)
+## Non-Nix Workflow
 
 The workflow is terminal-based
 and pretty basic.
