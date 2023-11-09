@@ -26,7 +26,7 @@ I'm trying to find a balance).
 Overall, this combination is good for the family, and for my sanity. 
 God bless the Harrison Society (this is, in every way, a sincere statement).
 
-## other
+## *et cetera*
 
 I've got my home server working about how I like it.
 
