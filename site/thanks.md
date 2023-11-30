@@ -30,6 +30,23 @@ and [let me know](/contact). I'll link to your page here.
 
 <div class="thanks">
 
+  <time datetime="2023-11-26" class="thanks-date">
+  2023-11-26
+  </time>
+
+  <p class="thanks-to">
+  Jen, Cody, et al.
+  </p>
+
+  <p class="thanks-for">
+  Thanks for hanging out and helping out! It was a blast.
+  </p>
+
+</div>
+---
+
+<div class="thanks">
+
   <time datetime="2023-11-09" class="thanks-date">
   2023-11-09
   </time>
