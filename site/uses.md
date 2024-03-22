@@ -3,13 +3,14 @@
 ## operating systems
 
 - [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) (daily driver)
-- [OpenBSD](https://www.openbsd.org/) (server)
+- [OpenBSD](https://www.openbsd.org/) (website server)
+- [NixOS](https://www.nixos.org/) (personal server + most research)
 - [macOS](https://www.apple.com/macos/) (most of the hospital stuff works better on macOS)
 
 
 ## software
 
-- window manager: [dwm](https://dwm.suckless.org/)
+- window managers: [dwm](https://dwm.suckless.org/) (on Arch), [Hyprland](https://hyprland.org/) (on NixOS)
 - $TERMINAL: [kitty](https://sw.kovidgoyal.net/kitty/)
 - $EDITOR: [Lunarvim](https://www.lunarvim.org/) 
 - shell history: [Atuin](https://github.com/ellie/atuin)
@@ -18,9 +19,9 @@
 - standalone PDF reader: [Zathura](https://pwmt.org/projects/zathura/)
 - terminal-based data file viewer (e.g. CSV): [VisiData](https://github.com/saulpw/visidata)
 - wrangling JSON: [jq](https://github.com/stedolan/jq)
-- memorizing: [Anki](https://apps.ankiweb.net/)
+- remembery: [Anki](https://apps.ankiweb.net/)
 - terminal music player: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
-- web music player: [Spotify](https://open.spotify.com/)
+- web music player: [Navidrome](https://hyprland.org/), sometimes [Spotify](https://open.spotify.com/)
 - bookmarking service: [Raindrop.io](https://raindrop.io/)
 - networking: [Tailscale](https://tailscale.com/)
 - passwords: [Bitwarden](https://bitwarden.com/)

@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/cad-fish",
+    "page_file": "site/posts/cad-fish.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "Cold agglutinin disease is a fascinating and strange phenomenon, and might happen because we're fish.",
+    "date": "2024-03-22",
+    "title": "Cold agglutinin disease: fish out of water?"
+  },
+  {
     "url": "/posts/history-egc",
     "page_file": "site/posts/history-egc.md",
     "nav_path": [
