@@ -29,7 +29,7 @@ All red blood will agglutinate at 0-5C.
 This has been known since, at the latest, 1903.
 Karl Landsteiner figured it out. 
 He's the guy who won the Nobel Prize for discovering blood types, 
-which was based on experiments with "iso-agglutination," 
+which was based on experiments with "iso-agglutination." 
 With blood typing came the ability to cross-match blood for safe transfusion,
 which resulted in a huge leap forward in our ability to help people who lose a lot of it, as in surgery and trauma.
 We think of Landsteiner as the blood typing dude, 
