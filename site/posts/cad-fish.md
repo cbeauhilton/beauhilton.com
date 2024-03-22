@@ -37,7 +37,7 @@ but it's probably more accurate and expansive to think of him as the dude
 who first exhaustively characterized the different situations in which blood agglutinates.
 
 Landsteiner's discoveries came just in time for the World Wars,
-and folks got to collecting blood in earnest, at a huge scale.
+and folks got to collecting blood in earnest, on a massive scale.
 We went from a few laboratory fridges with dozens or hundreds of blood samples for experiments,
 to blood banks worldwide, collectively full of hundreds of thousands of units of blood 
 for use in the operating room and battlefield.
