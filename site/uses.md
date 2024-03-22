@@ -21,7 +21,7 @@
 - wrangling JSON: [jq](https://github.com/stedolan/jq)
 - remembery: [Anki](https://apps.ankiweb.net/)
 - terminal music player: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
-- web music player: [Navidrome](https://hyprland.org/), sometimes [Spotify](https://open.spotify.com/)
+- web music player: [Navidrome](https://navidrome.org/), sometimes [Spotify](https://open.spotify.com/)
 - bookmarking service: [Raindrop.io](https://raindrop.io/)
 - networking: [Tailscale](https://tailscale.com/)
 - passwords: [Bitwarden](https://bitwarden.com/)
@@ -109,5 +109,4 @@
 
 ## software projects I'm watching
 
-- [Hyprland](https://github.com/hyprwm/Hyprland)
 - [Podverse](https://podverse.fm/)
