@@ -60,7 +60,7 @@ my future oncology job (hopefully not "jobs," but who knows)
 will be in private practice, where I'll see patients 3 or 4 days per week
 and do research with the other 0.5-2 days that remain.
 
-(The following paragraph is an aside on how much time is spent on what in academia,
+(The following three paragraphs are an aside on how much time is spent on what in academia,
 and touches on why I decided to leave. 
 I should probably move this out and expand it into its own post. 
 It doesn't have much to do with the core of this one.)
@@ -75,9 +75,10 @@ Even accounting for this,
 it doesn't even out to the number of patient-care days per year in private practice, 
 not by a long shot, but for most folks it isn't so freed 
 from day-to-day patient care as it is advertised on the tin.
-There are a few academics who do a few weeks of inpatient care per year and that's it,
+There are a some academics who do a few weeks of inpatient care per year and that's it,
 no clinic,
 but that's the exception.
+
 You also pay your own salary out of your research funding,
 so there's a large time burden of not doing research,
 but writing grants to convince funders that your research is cool and worth funding.
@@ -87,6 +88,7 @@ where it isn't actively working against me,
 and I'd rather pay my salary, which will be much bigger, from taking care of people in clinic 
 than working through the weekend 
 (when I may also still be on call for the hospital) to meet grant deadlines.
+
 The university infrastructure is great for basic and clinical science,
 and some flavors of data science, 
 but my scientometric stuff is truly better if done vigilante-style,
@@ -162,4 +164,4 @@ that would be insane and impossible to maintain,
 but if I pay attention to the data I use repeatedly,
 a 30-60min session adding some of these to a slide deck
 with a little explanation 
-would more than carry it's weight in future conversations.
+would more than carry its weight in future conversations.
