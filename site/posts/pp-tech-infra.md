@@ -86,8 +86,8 @@ With the research I do and am interested in continuing,
 a university infrastructure adds little, 
 where it isn't actively working against me,
 and I'd rather pay my salary, which will be much bigger, from taking care of people in clinic 
-than working through the weekend 
-(when I may also still be on call for the hospital) to meet grant deadlines.
+than working through the weekend to meet grant deadlines
+(while I may also still be on call for the hospital).
 
 The university infrastructure is great for basic and clinical science,
 and some flavors of data science, 
