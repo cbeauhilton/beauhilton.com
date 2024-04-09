@@ -45,9 +45,10 @@ has no notable physical exam findings,
 and labs are unremarkable other than mild anemia. 
 I reviewed the available cross-sectional imaging and concur with the radiologist's report.
 
-And here's the output (you'll probably have to scroll left and right to see it all):
+And here's the output:
 
-```
+---
+
 Here is a maximally billable SOAP-style medical note for the patient encounter you described:
 
 S (Subjective): 
@@ -85,7 +86,8 @@ Discussed expected toxicities including fatigue, esophagitis, nausea, neutropeni
 4. Check iron studies, B12, folate. Replace as indicated.
 5. Nutrition consult. Encourage high calorie/protein foods.
 6. RTC in 1 week to review PET/CT results and finalize treatment plan. Sooner prn for worsening dysphagia, intolerance of po.
-```
+
+---
 
 The LLM has added in a host of things I didn’t ask it for specifically but do appreciate it including, 
 which is what I hoped for when I asked for a “maximally billable note” - 
@@ -105,7 +107,8 @@ I asked Claude to replace the invented values with placeholder marks so I could 
 
 Claude obliged, creating a SOAP note template with *** all over the place. It was a bit too much, as you can see:
 
-```
+---
+
 Sure, here's the revised SOAP note with placeholder marks:
 
 S (Subjective):
@@ -143,7 +146,8 @@ Discussed expected toxicities including fatigue, esophagitis, nausea, neutropeni
 4. Check iron studies, B12, folate. Replace as indicated.
 5. Nutrition consult. Encourage high calorie/protein foods.
 6. RTC in *** week(s) to review PET/CT results and finalize treatment plan. Sooner prn for worsening dysphagia, intolerance of po.
-```
+
+---
 
 ## Round 3: The Goldilocks Zone
 
@@ -153,7 +157,8 @@ Finally, I hit what seems to be a sweet spot:
 
 It still needs fixing, but isn't so full of \*\*\* that it's jarring (or impossible to parse - what does "*** on ***" mean? Anything, and nothing, that's what.)
 
-```
+---
+
 Understood. Here's the updated SOAP note with *** placeholders for vital signs and imaging only:
 
 S (Subjective):
@@ -189,7 +194,8 @@ Discussed expected toxicities including fatigue, esophagitis, nausea, neutropeni
 4. Check iron studies, B12, folate. Replace as indicated.
 5. Nutrition consult. Encourage high calorie/protein foods.
 6. RTC in 1 week to review PET/CT results and finalize treatment plan. Sooner prn for worsening dysphagia, intolerance of po.
-```
+
+---
 
 
 ## The Verdict
