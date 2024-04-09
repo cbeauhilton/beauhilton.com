@@ -45,7 +45,7 @@ has no notable physical exam findings,
 and labs are unremarkable other than mild anemia. 
 I reviewed the available cross-sectional imaging and concur with the radiologist's report.
 
-And here's the output:
+And here's the output (you'll probably have to scroll left and right to see it all):
 
 ```
 Here is a maximally billable SOAP-style medical note for the patient encounter you described:
