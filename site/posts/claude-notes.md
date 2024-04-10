@@ -245,3 +245,12 @@ and be able to do the visual inspection myself if necessary,
 but most of the time I can just order the CBC and go on my merry way.
 
 \* ha, "token." There's an LLM dad joke for ya.
+
+P.S. I asked Claude to write a blog post summarizing my experience
+and including the prompts and outputs.
+It mostly sucked and needed a complete rewrite. 
+But then again, I didn't try very hard on the prompt.
+I've tried asking it to write insurance request letters (e.g. for the FDG-PET CT,
+which sometimes gets rejected out of hand even though it's 2024),
+consult request letters, consult response letters, and patient summary letters.
+Those were all pretty good, minimal tweaking needed.
