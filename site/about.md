@@ -64,7 +64,7 @@ Chase Webber is the faculty support, and has been amazing.
 
 It's used globally, 
 and one of my goals is to make it easier for smaller, 
-particularly international programs to have their own versions 
+particularly international programs to have their own versions.
 It uses only free and open-source software, 
 and fits comfortably into pretty much any free server 
 despite being a fairly large book with multimedia.
