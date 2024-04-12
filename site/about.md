@@ -8,9 +8,7 @@ usually has the most current updates in this arena.
 
 ## physician
 
-Dates are for the academic year, e.g. academic year 2026 ends in 2027.  
-
-Oncology fellow, Vanderbilt 2022-2026.  
+Oncology fellow, Vanderbilt 2022-2025.  
 Internal medicine resident, Vanderbilt 2020-2022.  
 Medical school, Cleveland Clinic Lerner College of Medicine
 of Case Western Reserve University 2015-2020.
@@ -110,9 +108,7 @@ to empower us to speak our own sequels.
 
 To translate that into buzzwords, 
 for your bingo game:
-I'm a data scientist,
-anthropologist,
-and oncologist
+I'm an oncologist
 who uses explainable artificial intelligence
 among other techniques
 to diagnose and address healthcare disparities,
@@ -130,7 +126,7 @@ as the goal for most scientists and anthropologists is the same:
 to make things at least a little better for someone,
 but hopefully a lot better for everyone.
 Modern anthropology is inherently activist,
-far from crusty sepia-toned image of the staid researcher 
+far from the crusty sepia-toned image of a staid researcher 
 sitting just outside the village campfire furiously scribbling in a notebook,
 and so is modern medical research
 (we all read Tuskegee and are appalled and want to do better,
@@ -159,10 +155,15 @@ gave me the better part of five years
 and a supportive environment
 to dive in deeper to computer science, machine learning, etc.
 
-Now that I am working towards becoming an independent researcher,
+Now that have the freedom to choose my own direction,
 data science projects that were informed by anthropology
 but had centroids in other disciplines have become
 squarely within the overlap of my personal Venn diagram.
+
+Additionally, as I have moved from academia to the worlds of private practice and industry,
+I am increasingly inspired toward using these interests to hit cancer where it needs it the most:
+in the clinic of the community oncologist, where the vast majority of cancer patients receive care,
+by bringing timely insights from every relevant axis to bear on every visit.
 
 [Information almost wants to be free](https://en.wikipedia.org/wiki/Information_wants_to_be_free), 
 and there is now so much of it,
@@ -172,48 +173,35 @@ that a lot can be done for free or at a low cost.
 some say,
 but there is gold in them there hills -
 [Shigeru Ban](https://en.wikipedia.org/wiki/Shigeru_Ban) is my hero).
-Whenever possible, 
-I use free and public data sources,
-free and open-source software,
-and attach permissive licensing to my own code,
-which is generally available at 
-my own git repository (link in the navigation at the top of this page)
-as well as on GitHub.
-(I'm not opposed to making money,
-but the way I see it,
-public good (government money) -> 
-public good (primary research) -> 
-public good (data science using the output from that primary research)).
-
-Though I think of myself as a digital anthropologist,
-I will usually describe myself as a data scientist,
-which is more commonly recognized and not at all inaccurate,
-because it focuses on the tools rather than the subjects or goals.
+There are abstracts from conferences aplenty describing the cutting edge of everything,
+usually seen as jots and tiddles on the march of science forward but forgotten when the journal article gets published,
+and lab values and imaging results and clinic notes generated in the usual course of patient care,
+used once or a few times and then forgotten and discarded in the wake of what comes next - 
+in all of this digital refuse I believe there are insights to be gained, efficiencies to be achieved, lives to be saved.
 
 ---
 
 
 ### disparities in cancer research across space and time
 
-My current project is a work in progress,
-creating a third-party database/archive 
+This ongoing project starts with a custom metadata archive
 of all the abstracts from the two big annual cancer meetings 
 (ASH and ASCO - as a starting point), 
 made machine-readable and hence more easily accessible en masse. 
 Here's a [rough prelim](https://ash-abstracts.vercel.app/abstracts_small/abstracts) 
-of what that will look like, 
+of what that looks like, 
 with an interactive map and sorting/search/export 
 (you can hit JSON or CSV endpoints trivially to get nicely formatted data, 
 as opposed to the hulking web scrapers 
 and HTML wranglers I wrote to get the data the first time). 
-First analysis will be on the authors and affiliations 
+Analyses are planned on the authors and affiliations 
 (global mapping, with a time component), 
-how those overlap with disease states 
+and how those overlap with disease states 
 (e.g. how much sickle cell research comes out of Sub-Saharan Africa? 
 We know it's bad, but nobody has quantified how bad - 
 the idea is to have a platform for answering these questions easily), 
 before branching out into things like 
-conflicts of interest and NLP on the abstract texts proper, etc.
+conflicts of interest and various analyses using NLP, etc.
 
 ---
 
