@@ -33,6 +33,7 @@ Alwayes after I have bine at Stoole I am for a whyle very faint or weake which I
 It is a sine of gt weakenes certainly and of insoaed decay.
 
 
+
 ## Context
 
 A couple of friends and I wrote a [paper](https://doi.org/10.3390/cancers16030618) 
@@ -41,6 +42,8 @@ mentioned elsewhere on this blog.
 
 One of the neat things in the paper is the first full transcription of a diary entry from John Casaubon,
 which is the first first-person detailing of esophageal cancer I can find.
+It's the last entry in the diary,
+and from what I could gather he died within the next week or two.
 It has been transcribed in partial form in 
 [other](https://doi.org/10.1016/j.gtc.2009.01.003) 
 [papers](https://pubmed.ncbi.nlm.nih.gov/28952239/),
