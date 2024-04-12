@@ -89,7 +89,7 @@ newest projects at the top.*
 
 ### overview
 
-My research has morphed over the years,
+My work has morphed over the years,
 as everyone's does,
 but the consistent thread and drive throughout
 has been on coaxing large, messy, complex data
