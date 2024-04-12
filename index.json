@@ -1,5 +1,25 @@
 [
   {
+    "url": "/posts/choaked",
+    "page_file": "site/posts/choaked.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "John Casaubon was an English surgeon in the late 1600s\nwho developed an esophageal tumor in late 1690 \nand wrote about it in his diary\nbefore dying in January of 1691.\nIt's harrowing, enlightening, and strangely beautiful.\nThis blog post is the only place in the world you can read the full transcription of the diary entry.",
+    "date": "2024-04-12",
+    "title": "The first detailed description of living with esophageal cancer -\nJohn Casaubon’s 1690 diary"
+  },
+  {
+    "url": "/posts/claude-notes",
+    "page_file": "site/posts/claude-notes.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "With Claude 3 Opus (a newish ChatGPT4 competitor) as my copilot, I wrote a pretty darn good SOAP note\n    for an (invented yet realistic) new consult visit. It took a little massaging to get it right,\n    but boy howdy, it did a great job. Here are the prompts and outputs. \n    This stuff has serious potential for streamlining the boring and tedious parts of the job.",
+    "date": "2024-04-09",
+    "title": "Writing clinical notes using AI - a practical experience"
+  },
+  {
     "url": "/posts/s1",
     "page_file": "site/posts/s1.md",
     "nav_path": [
