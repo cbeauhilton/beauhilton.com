@@ -93,11 +93,11 @@ and then it would flush up in spite of my hart.
 Some small humiditie or dropps of what I dranck, rather distilld, or dropt into the stomach 
 which afforded 
 
-*a bare living nourishment 
+>*a bare living nourishment 
 and on a sudden I grew lean as a skeleton and at some tymes very faint and feeble, 
 although I recouerd in some measure and had stomach 2 eate, my*
 
-meate doeth noe gt. good and I am in a kind of atrophie. 
+>meate doeth noe gt. good and I am in a kind of atrophie. 
 What warme weather may do I cant' tell, but hope well. 
 Alwayes after I have bine at Stoole I am for a whyle very faint or weake which I much wonder at. 
 It is a sine of gt weakenes certainly and of insoaed decay.
