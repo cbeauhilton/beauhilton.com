@@ -65,21 +65,13 @@ Chase Webber is the faculty support, and has been amazing.
 It's used globally, 
 and one of my goals is to make it easier for smaller, 
 particularly international programs to have their own versions 
-(I built <https://medical-humanities.org> 
-for the certificate program here, 
-partially as an exercise in creating more user-friendly tooling, 
-and it works well, 
-but I haven't been able to integrate those learnings 
-back to vimbook.org just yet). 
 It uses only free and open-source software, 
-and fits comfortably into pretty much any free tier server 
-despite being a fairly large book with multimedia, 
-but updating the content is just this side 
-of too developer-y for broad uptake 
-(login to GitHub, 
-edit some markdown files, 
-figure out how to get the formatting you want, etc.).
+and fits comfortably into pretty much any free server 
+despite being a fairly large book with multimedia.
 
+The main problem is that updating the content,
+while it is just in Markdown (a very simple text format you can learn in ~7 minutes),
+feels a little too tech-y to be comfortable for people who haven't spent time in a code text editor.
 What it really needs is funding,
 and a part-time developer with protected time.
 
