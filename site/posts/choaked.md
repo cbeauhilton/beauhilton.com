@@ -80,7 +80,8 @@ So, now, this blog post is the only public place you can find the whole transcri
 That's a bummer, I wish it was immortalized in a PubMed-indexed journal article,
 but this is the next best thing.
 
-If you are interested in what was lost, I split out the missing section below.
+If you are interested in what was omitted in the journal article's version, 
+I split out the missing section below.
 
 > At dinner I was almost choaked by swallowing a bit of a roasted Sd of mutton 
 which as I thought stuck in the passage about the mouth of the stomach. 
