@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     medical-humanities.org
+    </h1>
+    <p>
+     This post is a work in progress.
+    </p>
+    <p>
+     <time id="post-date">2022-12-26</time>
+    </p>
+    <p id="post-excerpt">
+     I made a static website as an electronic learning system and forum, 
+with the option for password protected posts and a controlled editing workflow, 
+for free and without a dedicated server. This post has the highlights.
+    </p>
+    <p>
+     It’s here: <a href="https://medical-humanities.org">medical-humanities.org</a>
+    </p>
+    <h2>
+     First, free as in beer
+    </h2>
+    <p>
+     New educational endeavors are, in my experience anyway, almost always
+bootstrapped. They start with an idea, passion, even erudition, but
+rarely with money.
+    </p>
+    <p>
+     This was no different.
+    </p>
+    <p>
+     There’s some funding coming in, including some I’m grateful for as it
+will recompense the time I spent building the website, but overall this
+thing needs to run for free.
+    </p>
+    <p>
+     Because of that, I used the best suite of free tools I know of:
+GitHub, GitHub Actions, Netlify’s free tier, NetlifyCMS, Hugo, and
+digital elbow grease.
+    </p>
+    <h2>
+     Second, free as in freedom (of speech, and the ability to choose
+what to share on the open web)
+    </h2>
+    <p>
+     While we have a strict policy against violating HIPAA, we also want
+an open forum that can be honest, vulnerable, critical if need be.
+    </p>
+    <p>
+     Though the students are encouraged to make their writing available
+for all to read, forming a kind of living magazine from the assignments,
+we also want to make it very easy to keep the assignments just within
+the group if desired.
+    </p>
+    <p>
+     This combination of desired features led to a need for selective
+password protection of certain pages, opted into or out of by each
+student writer.
+    </p>
+    <p>
+     Usually, password protection on a website is akin to a lock on a
+door, beyond which is a table that has the stuff you want to read. The
+routes to sensitive data are locked by the server, you need the key to
+get into the room, but once you get in the room you are free to wander
+over to the table and leaf through the dusty stack of papers. Since I’m
+not paying for a server I fully control, this approach is not going to
+work. Every route is accessible by the whole internet, every door is
+open. So, instead of worrying about a door and a lock, we trade the
+dusty stack of papers for a Rubix cube with a million facets, containing
+a message that only comes to light when you match up all the pieces.
+Anybody can come and check out the toy, but unless you know the secret
+to solving it, it’s just a jumble.
+    </p>
+    <p>
+     To build the Rubix cube I used <a href="https://github.com/Greenheart/pagecrypt">Pagecrypt</a>, which
+encrypts individual HTML pages and provides a dialogue to enter a
+password to decrypt it. To mark which pages should be encrypted, I used
+a simple front-matter key, which a <code>grep</code> command picks out
+on every site rebuild.
+    </p>
+    <p>
+     Another neat aspect of this is that the <em>entire</em> page is
+encrypted, even the comments section, so if a student wants to make a
+post somewhat private and have a personal conversation with the other
+members of the class, it’s comfortably hidden from the view of the
+public internet.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

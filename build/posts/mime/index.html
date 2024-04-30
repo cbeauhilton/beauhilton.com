@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     fix MIME Types to unbreak RSS feeds served by OpenBSD’s
+httpd(8)
+    </h1>
+    <p>
+     <time id="post-date">2022-11-13</time>
+    </p>
+    <h2>
+     RSS is life - but mine was broken
+    </h2>
+    <p>
+     As of today (2022-11-13) my website lives on an OpenBSD server hosted
+at <a href="https://vultr.com">vultr</a>.
+    </p>
+    <p>
+     It’s great, delightfully simple and low-resource, robust, extendable,
+low-maintenance.
+    </p>
+    <p id="post-excerpt">
+     I've been getting back into RSS lately.
+Turns out, my own RSS feed was broken.
+    </p>
+    <p>
+     I knew it was janky, but would have had no idea how broken it was if
+not for the great folks on the <a href="https://datasette.io">datasette</a> Discord, one of whom reached
+out to let me know my RSS link wasn’t working.
+    </p>
+    <p>
+     This could not stand!
+    </p>
+    <p>
+     I’ve been meaning to fix my RSS feed anyway, and now I had a good
+reason.
+    </p>
+    <h2>
+     fixing the file itself
+    </h2>
+    <p>
+     I ended up tearing out my previous RSS solution, <a href="https://romanzolotarev.com/rssg.html"><code>rssg</code></a>, which
+is great but made some assumptions about my site’s layout that aren’t
+true. I could have rewritten the script, but I’m lazy and a little
+strapped for time, so I ended up replacing it with a hand-written RSS
+file.
+    </p>
+    <p>
+     (The RSS spec is easy enough to write by hand, a little copy-paste
+and replace to add a new article - at some point I’ll probably migrate
+to <code>hugo</code> or similar and hand off the feed creation to a more
+flexible script, but for now this works).
+    </p>
+    <p>
+     After I was certain the file format was fine and had the info I
+wanted, I thought I was good.
+    </p>
+    <h2>
+     fixing the MIME Type
+    </h2>
+    <p>
+     The kind soul who reached out to let me know the RSS feed was
+malformed reached out again to let me know he was now getting a MIME
+Type error.
+    </p>
+    <p>
+     My feedreader of choice, <code>newsboat</code>, is very forgiving of
+what it accepts, and didn’t throw any errors when I tested it.
+<code>FreshRSS</code>, on the other hand, is more strict, and the feed
+would fail even though the file itself was fine.
+    </p>
+    <p>
+     I looked into it, and found out that <code>httpd(8)</code> only
+supports a handful of MIME Types by default, so my server was sending
+out <code>application/octet-stream</code> (a generic type) instead of
+the <code>rss+xml</code> type, and it was confusing the feedreader.
+    </p>
+    <h2>
+     add all the types
+    </h2>
+    <p>
+     Thank goodness, and as usual in OpenBSD, there’s a very easy way to
+add all the relevant types one might need.
+    </p>
+    <p>
+     OpenBSD has an internal MIME declaration file you can link to from
+within <code>httpd.conf(5)</code>.
+    </p>
+    <p>
+     Here’s the relevant bit, just chuck this on the end of the conf
+file:
+    </p>
+    <pre tabindex="0"><code class="language-shell">
+types {
+    include "/usr/share/misc/mime.types"
+}
+</code></pre>
+    <p>
+     And reload <code>httpd(8)</code>.
+    </p>
+    <h2>
+     great success
+    </h2>
+    <p>
+     Much thanks to my new friend on the Datasette Discord, the fantastic
+OpenBSD documentation, as always, and <a href="https://blog.lambda.cx/posts/openbsd-httpd-mime-types/">lambda.cx</a>
+for writing a post almost identical to mine (except that his had nothing
+to do with RSS - he was fixing PDF serving, which should now be fixed on
+my site as well).
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

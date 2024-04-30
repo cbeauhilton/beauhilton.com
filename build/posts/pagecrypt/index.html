@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     password protecting static web pages
+    </h1>
+    <p>
+     <time id="post-date">2023-01-12</time>
+    </p>
+    <p id="post-excerpt">
+     Static site generators, by and large, do not have support for password protecting individual pages. 
+This post shows a strategy that works for any SSG and does not require server access controls.
+    </p>
+    <p>
+     <a href="https://github.com/Greenheart/pagecrypt">PageCrypt</a> is
+the tool I went with. It’s a TypeScript library that uses the native
+<code>Web Crypto API</code> to encrypt html pages, stuff the encrypted
+gobbledigook behind a simple password form, and decrypt the page when
+the correct key is given.
+    </p>
+    <p>
+     I’m using the CLI version, but there are also native TypeScript and
+Node.js versions.
+    </p>
+    <p>
+     The basic idea is this, taken from their docs:
+    </p>
+    <pre tabindex="0"><code class="language-sh">npx pagecrypt <span class="hl opt">&lt;</span>src<span class="hl opt">&gt; &lt;</span>dest<span class="hl opt">&gt; [</span>password<span class="hl opt">] [</span>options<span class="hl opt">]</span>
+</code></pre>
+    <p>
+     Below is an excerpt from a <code>package.json</code> for a Hugo site
+I maintain. First I build the site, then run the <code>postbuild</code>
+command, which stitches together a piece of code that creates a list of
+all the pages we’d like to encrypt and another bit that does the
+encryption proper.
+    </p>
+    <pre tabindex="0"><code class="language-json"><span class="hl kwa">{</span>
+    <span class="hl kwc">"make-pw-files-file"</span><span class="hl opt">:</span> <span class="hl sng">"grep -rlF 'password_required: true' content | sed s+</span><span class="hl esc">\\</span><span class="hl sng">.md+</span><span class="hl esc">\\</span><span class="hl sng">/index.html+g | sed s+content/+public/+g &gt; pw_file"</span><span class="hl opt">,</span>
+    <span class="hl kwc">"protect-files"</span><span class="hl opt">:</span> <span class="hl sng">"cat pw_file | while read f || [[ -n $f ]]; do npx pagecrypt $f $f $PAGECRYPT; done"</span><span class="hl opt">,</span>
+    <span class="hl kwc">"postbuild"</span><span class="hl opt">:</span> <span class="hl sng">"npm run -s make-pw-files-file &amp;&amp; npm run -s protect-files "</span><span class="hl opt">,</span>
+<span class="hl kwa">}</span>
+</code></pre>
+<br>
+    <h2>
+     <code>make-pw-files-file</code>
+    </h2>
+    <pre tabindex="0"><code class="language-sh"><span class="hl kwc">grep</span> <span class="hl kwb">-rlF</span> <span class="hl sng">'password_required: true'</span> content <span class="hl opt">|</span> <span class="hl kwc">sed</span> s<span class="hl opt">+</span><span class="hl esc">\\</span>.md<span class="hl opt">+</span><span class="hl esc">\\</span><span class="hl opt">/</span>index.html<span class="hl opt">+</span>g <span class="hl opt">|</span> <span class="hl kwc">sed</span> s<span class="hl opt">+</span>content<span class="hl opt">/+</span>public<span class="hl opt">/+</span>g <span class="hl opt">&gt;</span> pw_file
+</code></pre>
+    <p>
+     This part uses a few standard Unix commands, the ubiquitous
+<code>grep</code> and <code>sed</code>.
+    </p>
+    <p>
+     First it creates a list of markdown source files that have the header
+<code>password_required: true</code>.
+    </p>
+    <p>
+     Here’s how that part works:
+    </p>
+    <pre tabindex="0"><code class="language-sh"><span class="hl kwc">grep</span> <span class="hl kwb">-rlF</span> <span class="hl sng">"text you're looking for"</span> path<span class="hl opt">/</span>to<span class="hl opt">/</span>files<span class="hl opt">/</span>of<span class="hl opt">/</span>interest
+</code></pre>
+    <ul>
+     <li>
+      <code>-r</code> or <code>--recursive</code> searches though the
+sub-directories of whichever path you gave it
+     </li>
+     <li>
+      <code>l</code> or <code>--files-with-matches</code> prints the
+filenames of any files that match the search
+     </li>
+     <li>
+      <code>F</code> or <code>--fixed-strings</code> searches for the
+exact string you ask for, not using regular expressions
+     </li>
+    </ul>
+    <p>
+     This will output something like:
+    </p>
+    <pre tabindex="0"><code class="language-sh">content<span class="hl opt">/</span>file0.md
+content<span class="hl opt">/</span>file7.md
+content<span class="hl opt">/</span>yet_another_file.md
+</code></pre>
+    <p>
+     Next it passes that to <code>sed</code>, which replaces
+<code>.md</code> with <code>/index.html</code>* resulting in:
+    </p>
+    <pre tabindex="0"><code class="language-sh">content<span class="hl opt">/</span>file<span class="hl opt">/</span>index.html
+content<span class="hl opt">/</span>file<span class="hl num">7</span><span class="hl opt">/</span>index.html
+content<span class="hl opt">/</span>yet_another_file<span class="hl opt">/</span>index.html
+</code></pre>
+    <p>
+     * you’d have to adjust this command if you aren’t using a
+page-per-folder style
+    </p>
+    <p>
+     Then it switches out <code>content/</code> with <code>public/</code>,
+leading to the final list:
+    </p>
+    <pre tabindex="0"><code class="language-sh">public<span class="hl opt">/</span>file<span class="hl opt">/</span>index.html
+public<span class="hl opt">/</span>file<span class="hl num">7</span><span class="hl opt">/</span>index.html
+public<span class="hl opt">/</span>yet_another_file<span class="hl opt">/</span>index.html
+</code></pre>
+    <p>
+     and sends those to a file.
+    </p>
+    <p>
+     Sending the list to a file is not necessary, could just pipe it again
+to the stuff in <code>protect-files</code>, but I was getting itchy at
+how long the command was getting.
+    </p>
+    <br>
+    <h2>
+     <code>protect-files</code>
+    </h2>
+    <pre tabindex="0"><code class="language-sh"><span class="hl kwc">cat</span> pw_file <span class="hl opt">|</span> <span class="hl kwa">while</span> <span class="hl kwb">read</span> f <span class="hl opt">|| [[</span> <span class="hl kwb">-n</span> <span class="hl kwd">$f</span> <span class="hl opt">]];</span> <span class="hl kwa">do</span> npx pagecrypt <span class="hl kwd">$f $f $PAGECRYPT</span><span class="hl opt">;</span> <span class="hl kwa">done</span>
+</code></pre>
+    <p>
+     This part emits the contents of <code>pw_file</code>, then loops
+through each line (<code>while read f || [[ -n $f ]]</code>) and
+encrypts the corresponding file (<code>do npx pagecrypt</code>), finally
+saving it back to itself (<code>$f $f</code>).
+    </p>
+    <p>
+     <code>$PAGECRYPT</code> is an environment variable that specifies the
+password.
+    </p>
+    <p>
+     You could also set a password-per-page, either auto-generated (but
+you’d have to figure out how to get that password to your users), or
+using something like another header value in the <code>.md</code> files
+that you grep for and save somewhere. For my use case, this is simpler
+and scales well.
+    </p>
+    <br>
+    <h2>
+     and that’s it
+    </h2>
+    <p>
+     As always, <a href="../../contact">let me know</a> if you have any
+questions or know of a better way.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

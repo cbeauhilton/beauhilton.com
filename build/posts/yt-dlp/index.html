@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     yt-dlp Nix config
+    </h1>
+    <p>
+     <time id="post-date">2023-10-18</time>
+    </p>
+    <p id="post-excerpt">
+     yt-dlp is an incredibly useful and customizable tool 
+for downloading online videos
+from YouTube and elsewhere.
+Here's my setup 
+(declared in Nix, but easily generalizable).
+    </p>
+    <p>
+     If you just want the config, scroll to the bottom (ignore the
+ramblings under the asterisk).
+    </p>
+    <h2>
+     yt-dlp
+    </h2>
+    <p>
+     youtube-dl was, for years, the de facto standard for retrieving
+videos from YouTube (and other websites - e.g. Vimeo) for local use, but
+eventually it got old and crufty.
+    </p>
+    <p>
+     <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> is a fork of
+youtube-dl that is more actively maintained, with many upgrades.
+    </p>
+    <p>
+     It has sane defaults, but I have a few things I change to make it
+suit my uses.
+    </p>
+    <p>
+     I mostly use it to download instructional videos so they’re easier to
+use: no getting interrupted by ads whenever I scrub back and forth to
+find or rewatch a particular section, and I can proceed without an
+internet connection.
+    </p>
+    <p>
+     It’s also a boon for archival of any video you use frequently for any
+reason, e.g. in an educational setting - if you have a lesson plan that
+depends on a clip from an online video, it is wise to have your own copy
+of the video, both to reduce dependence on finicky wifi and to make it
+more likely you’ll have the vid for every time you repeat this lesson in
+the future. Videos go offline for strange, sundry, and unpredictable
+reasons.
+    </p>
+    <p>
+     (I maintain that YouTube and related video sites, taken as a whole,
+are the single greatest source of procedural knowledge ever created by
+humankind* - the problems that threaten their utility are, first,
+curation, and second, durability)
+    </p>
+    <h2>
+     configuring
+    </h2>
+    <p>
+     yt-dlp accepts a config file, usually placed at
+<code>~/.config/yt-dlp/config</code>, so you don’t have to have a long
+string of flags and options in your shell command to yt-dlp (you can
+override your config file with shell options, so it’s reasonable to set
+your defaults to your most common use and not worry about messing up
+some divergent situation that may come up).
+    </p>
+    <p>
+     For example, to download the whole <a href="https://www.youtube.com/c/JohnWatsonRooney">JohnWatsonRooney
+YouTube channel</a>, all I had do was:
+    </p>
+    <pre tabindex="0"><code class="language-sh"><span class="hl kwb">cd</span> youtube<span class="hl kwb">-downloads</span><span class="hl opt">/</span>JohnWatsonRooney
+yt<span class="hl kwb">-dlp</span> <span class="hl sng">"https://www.youtube.com/c/JohnWatsonRooney"</span>
+</code></pre>
+    <p>
+     And it did something like this:
+    </p>
+    <p>
+     <img src="/images/yt-dlp-downloading-example.png" alt="yt-dlp downloading example">
+    </p>
+    <p>
+     Resulting in:
+    </p>
+    <p>
+     <img src="/images/yt-dlp-filename-example.jpg" alt="yt-dlp filename example">
+    </p>
+    <p>
+     In the second screenshot you can see that some files are still in
+process - when all the parts are downloaded, yt-dlp smushes them into an
+mkv container, so the videos/thumbnails/subtitle files are clean and
+accessible to most video players.
+    </p>
+    <h2>
+     config
+    </h2>
+    <p>
+     Here’s my config file, with some annotation.
+    </p>
+    <p>
+     I’m using Nix with Home Manager, but you can translate this into the
+usual yt-dlp config file syntax with ease.
+    </p>
+    <p>
+     One of the great things about Nix is that it lets me group
+installation and configuration for programs that make sense together -
+here, I want to use aria2 as the downloader, so I declare the aria2
+options to pass to yt-dlp, and also make sure aria2 is installed (it’s
+ok if you installed aria2 in another part of your setup - if a program
+is declared for installation in multiple places, Nix is smart enough to
+install it only once, so it’s often wise to err on the side of
+bundling).
+    </p>
+    <p>
+     If I take this config to any other machine with Nix installed, I’ll
+get the whole setup including dependencies. This example is very simple,
+just adding another program, but the principle scales to arbitrarily
+complex setups.
+    </p>
+    <pre tabindex="0"><code class="language-nix"><span class="hl opt">{</span>
+  programs<span class="hl opt">.</span>yt<span class="hl opt">-</span>dlp <span class="hl opt">= {</span>
+    enable <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span>
+    settings <span class="hl opt">= {</span>
+      embed<span class="hl opt">-</span>chapters <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span> <span class="hl slc"># embed all the things</span>
+      embed<span class="hl opt">-</span>metadata <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span>
+      embed<span class="hl opt">-</span>thumbnail <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span>
+      convert<span class="hl opt">-</span>thumbnail <span class="hl opt">=</span> <span class="hl sng">"jpg"</span><span class="hl opt">;</span> 
+      <span class="hl slc"># so every file manager can show the thumbnail - webp support is not quite universal</span>
+      embed<span class="hl opt">-</span>subs <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span>
+      sub<span class="hl opt">-</span>langs <span class="hl opt">=</span> <span class="hl sng">"all"</span><span class="hl opt">;</span> 
+      <span class="hl slc"># subtitle files are very small, </span>
+      <span class="hl slc"># and sometimes language names are declared badly, </span>
+      <span class="hl slc"># so worth it to grab them all</span>
+      downloader <span class="hl opt">=</span> <span class="hl sng">"aria2c"</span><span class="hl opt">;</span>
+      downloader<span class="hl opt">-</span>args <span class="hl opt">=</span> <span class="hl sng">"aria2c:'-c -x16 -s16 -k2M'"</span><span class="hl opt">;</span> 
+      <span class="hl slc"># -c is resume if interrupted ("continue"), </span>
+      <span class="hl slc"># -x is max connections to a server, </span>
+      <span class="hl slc"># -s is number of connections used for download of a specific file, </span>
+      <span class="hl slc"># -k is size of chunks</span>
+      download<span class="hl opt">-</span>archive <span class="hl opt">=</span> <span class="hl sng">"yt-dlp-archive.txt"</span><span class="hl opt">;</span> 
+      <span class="hl slc"># writes a file to the current directory specifying which files have already been downloaded - </span>
+      <span class="hl slc"># nice for updating your collection of a channel's videos </span>
+      <span class="hl slc"># (just run the download command again and it will grab only what you're missing)</span>
+      restrict<span class="hl opt">-</span>filenames <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span> <span class="hl slc"># disallow spaces, weird characters, etc.</span>
+      output <span class="hl opt">=</span> <span class="hl sng">"%(upload_date&gt;%Y-%m-%d)s--%(uploader)s--%(title)s--%(id)s.%(ext)s"</span><span class="hl opt">;</span> 
+      <span class="hl slc"># I like to be able to sort by date </span>
+      <span class="hl slc"># and have enough info in the filename </span>
+      <span class="hl slc"># so I don't need to open it to find out what it is, </span>
+      <span class="hl slc"># so I include the:</span>
+      <span class="hl slc"># - ISO 8601-style date</span>
+      <span class="hl slc"># - uploader's name</span>
+      <span class="hl slc"># - title of the video</span>
+      <span class="hl slc"># - video ID (for easy copy pasta if I ever want to find it online, </span>
+      <span class="hl slc"># e.g. to see the comment section or show notes.)</span>
+    <span class="hl opt">};</span>
+  <span class="hl opt">};</span>
+  programs<span class="hl opt">.</span>aria2 <span class="hl opt">= {</span>
+    enable <span class="hl opt">=</span> <span class="hl kwb">true</span><span class="hl opt">;</span>
+  <span class="hl opt">};</span>
+<span class="hl opt">}</span>
+</code></pre>
+    <h2>
+     side note
+    </h2>
+    <p>
+     * Contrary to popular belief, things that go online do <em>not</em>
+stay online forever: <a href="https://en.wikipedia.org/wiki/Digital_obsolescence">digital
+obsolescence</a> is real, and is <a href="https://blog.archive.org/2023/03/25/the-fight-continues/">probably
+going to get worse</a> before it gets better (“?better”). This section
+is under an asterisk and at the end because it is a side thought, just
+an idea that tools like yt-dlp may have import that goes beyond helping
+me write web scrapers, build saunas, etc. - maybe they have the
+primitives to help build a videographic Whole Earth Catalog for the
+ages. I don’t think everything is going to explode any time soon, but
+wouldn’t it be interesting to have a digital archive with videos, rather
+than just text, of how to do the basic things (and some not-so-basic
+things) that make life possible and enjoyable? Some kind of all-in-one
+system with redundant storage and a power-supply (hand crank? solar?),
+durable screen and speakers, to help you bootstrap the physical needs of
+a society? I’m sure the raw content is out there.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

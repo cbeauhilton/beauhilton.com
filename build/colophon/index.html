@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     Colophon
+    </h1>
+    <p>
+     This site is hosted on an <a href="https://www.openbsd.org/">OpenBSD</a> server on <a href="https://vultr.com">vultr</a>, built using plain text files
+processed by <a href="https://soupault.app">soupault</a> and auto-<a href="https://en.wikipedia.org/wiki/Rsync">rsync’d</a> to the server as
+part of a pre-commit hook.
+    </p>
+    <p>
+     The source files are available on <a href="https://git.beauhilton.com/site/">my git server</a> and <a href="https://github.com/cbeauhilton/beauhilton.com">GitHub</a>.
+    </p>
+    <p>
+     I also use <a href="https://eradman.com/entrproject/">entr</a> (on
+Nix) or <a href="https://github.com/grego/caretaker">caretaker</a> (on
+Arch) during development to auto-rebuild as I edit the source files.
+    </p>
+    <p>
+     Regarding the design, the focus is on simplicity and a small
+footprint. It’s the kind thing to do, for the user and the planet. No
+Javascript, just static HTML. I used to specify fonts, e.g. one of my
+favorites, <a href="https://www.ibm.com/plex/">IBM Plex</a>, but in an
+effort to keep things light and tidy, I now just use system fonts.
+    </p>
+    <p>
+     <a href="https://talks.beauhilton.com">https://talks.beauhilton.com</a> and
+<a href="https://notes.beauhilton.com">https://notes.beauhilton.com</a>
+are not part of the website proper, but are rather generated using
+GitHub Pages. The talks are built using <a href="https://sli.dev/">slidev</a>, which translates markdown files into
+beautiful web-first slide decks (I now only use PowerPoint under great
+duress), and the notes use <a href="https://quartz.jzhao.xyz/">quartz</a>, which translates <a href="https://obsidian.md/">Obsidian</a>-style markdown files (see a
+theme here?) into a website of interconnected notes a la <a href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkasten</a>.
+    </p>
+    <h2>
+     Nix Workflow
+    </h2>
+    <p>
+     As of 2023-10-10 or so, I use a Nix-based workflow with flakes and <a href="https://devenv.sh/">devenv.sh</a>. The basic steps are similar to
+what is included below in the Non-Nix section, though more conveniently
+packaged and portable.
+    </p>
+    <p>
+     It’s delightful.
+    </p>
+    <p>
+     I may write it up at some point, but for now, look at <a href="https://git.beauhilton.com/site/file/flake.nix.html">flake.nix</a>
+in the source code. One of the great things about Nix is that it’s
+self-documenting and self-contained.
+    </p>
+    <p>
+     On my non-Nix laptop running Arch, I still use the workflow below,
+though at some point I’ll probably install Nix on Arch and unify my
+approach.
+    </p>
+    <h2>
+     Non-Nix Workflow
+    </h2>
+    <p>
+     The workflow is terminal-based and pretty basic.
+    </p>
+    <p>
+     It amounts to:
+    </p>
+    <pre tabindex="0"><code class="language-shell">cd src/site
+./sh.sh
+$EDITOR site/gulag_archipelago.md
+</code></pre>
+    <p>
+     <code>sh.sh</code> contains the following:
+    </p>
+    <pre tabindex="0"><code class="language-shell">$TERMINAL -e caretaker &amp;&gt;/dev/null &amp; disown
+$TERMINAL -e python3 -m http.server --directory build &amp;&gt;/dev/null &amp; disown
+$TERMINAL -e $BROWSER http://localhost:8000 &amp;&gt;/dev/null &amp; disown
+</code></pre>
+    <p>
+     This will open three new terminals running: a caretaker instance for
+auto-rebuild (I recently activated caching in soupault, rebuilds are
+lightning quick), a web server for preview, and a browser pointing to
+the server.
+    </p>
+    <p>
+     At that point I will usually throw the terminals running the server
+and <code>caretaker</code> to another desktop to achieve a clean editing
+environment.
+    </p>
+    <p>
+     When it’s ready to go live, I use an alias called <code>glazy</code>:
+<code>git add . &amp;&amp; git commit -m "update" &amp;&amp; git push</code>.
+This will trigger the pre-commit hook, which rebuilds the site again and
+activates rsync to send the built site to the web server, before pushing
+the source files to GitHub and my git server.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

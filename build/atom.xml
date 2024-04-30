@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://beauhilton.com/atom.xml</id>
+  <title>beauhilton</title>
+  <updated>2024-04-12T00:00:00+00:00</updated>
+  <author>
+    <name>beau hilton</name>
+    <email>beau@beauhilton.com</email>
+  </author>
+  <generator uri="https://soupault.app" version="4.8.0">soupault</generator>
+  <subtitle>beau's website</subtitle>
+  <entry>
+    <id>https://beauhilton.com/posts/choaked</id>
+    <title>The first detailed description of living with esophageal cancer -
+John Casaubon’s 1690 diary</title>
+    <updated>2024-04-12T00:00:00+00:00</updated>
+    <content type="html">
+    John Casaubon was an English surgeon in the late 1600s
+who developed an esophageal tumor in late 1690 
+and wrote about it in his diary
+before dying in January of 1691.
+It's harrowing, enlightening, and strangely beautiful.
+This blog post is the only place in the world you can read the full transcription of the diary entry.
+    </content>
+    <link href="https://beauhilton.com/posts/choaked" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/claude-notes</id>
+    <title>Writing clinical notes using AI - a practical experience</title>
+    <updated>2024-04-09T00:00:00+00:00</updated>
+    <content type="html">
+    With Claude 3 Opus (a newish ChatGPT4 competitor) as my copilot, I wrote a pretty darn good SOAP note
+    for an (invented yet realistic) new consult visit. It took a little massaging to get it right,
+    but boy howdy, it did a great job. Here are the prompts and outputs. 
+    This stuff has serious potential for streamlining the boring and tedious parts of the job.
+    </content>
+    <link href="https://beauhilton.com/posts/claude-notes" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/s1</id>
+    <title>Drugs we can’t get: S1</title>
+    <updated>2024-03-29T00:00:00+00:00</updated>
+    <content type="html">
+    There are a number of interesting drugs used in the global market that,
+    for one reason or another, do not have FDA approval and are therefore inaccessible
+    in the US, at least outside of clinical trials. S1 is one of them: a better capecitabine.
+    </content>
+    <link href="https://beauhilton.com/posts/s1" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/pp-tech-infra</id>
+    <title>Patient-facing slide decks</title>
+    <updated>2024-03-23T00:00:00+00:00</updated>
+    <content type="html">
+    While I plan on being a physician-scientist forever, I'm not going to work in academia.
+Over the past few years I've put together very cool infrastructure for giving academic talks (click "talks" above),
+and it was making me sad that it might not get much use after I leave the university.
+But then, a ray of sunshine: Why not use my slide deck infrastructure to help in patient conversations?
+    </content>
+    <link href="https://beauhilton.com/posts/pp-tech-infra" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/cad-fish</id>
+    <title>Cold agglutinin disease: fish out of water?</title>
+    <updated>2024-03-22T00:00:00+00:00</updated>
+    <content type="html">
+    Cold agglutinin disease is a fascinating and strange phenomenon, and might happen because we're fish.
+    </content>
+    <link href="https://beauhilton.com/posts/cad-fish" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/history-egc</id>
+    <title>A timeline of esophageal cancer</title>
+    <updated>2023-10-20T00:00:00+00:00</updated>
+    <content type="html">
+    A couple of friends and I wrote a review article on the history of esophageal cancer.
+The timeline was so interesting I thought I'd share it here, in a place where it can be easily found and updated.
+    </content>
+    <link href="https://beauhilton.com/posts/history-egc" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/add-zfs-mirror</id>
+    <title>How to add a mirror to a single ZFS disk</title>
+    <updated>2023-10-19T00:00:00+00:00</updated>
+    <content type="html">
+    tl;dr: <code>zpool attach data /dev/disk/by-partlabel/zfs-3a1xx /dev/sdx0</code>. Adjust for your own pool and disks.
+    </content>
+    <link href="https://beauhilton.com/posts/add-zfs-mirror" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/yt-dlp</id>
+    <title>yt-dlp Nix config</title>
+    <updated>2023-10-18T00:00:00+00:00</updated>
+    <content type="html">
+    yt-dlp is an incredibly useful and customizable tool 
+for downloading online videos
+from YouTube and elsewhere.
+Here's my setup 
+(declared in Nix, but easily generalizable).
+    </content>
+    <link href="https://beauhilton.com/posts/yt-dlp" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/subsonic-cli</id>
+    <title>Command-line interfaces for self-hosted music</title>
+    <updated>2023-09-28T00:00:00+00:00</updated>
+    <content type="html">
+    Self-hosting a music server is great.
+Listening to the tunes via the command line is the way.
+    </content>
+    <link href="https://beauhilton.com/posts/subsonic-cli" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/pixel6screen</id>
+    <title>Pixel 6 DIY screen replacement, with fingerprint reader calibration
+using Linux</title>
+    <updated>2023-09-19T00:00:00+00:00</updated>
+    <content type="html">
+    The internet, up to now, says you need Windows or MacOS to calibrate the Pixel's fingerprint reader after installing a new screen and digitizer.
+The internet, up to now, was wrong.
+    </content>
+    <link href="https://beauhilton.com/posts/pixel6screen" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/pagecrypt</id>
+    <title>password protecting static web pages</title>
+    <updated>2023-01-12T00:00:00+00:00</updated>
+    <content type="html">
+    Static site generators, by and large, do not have support for password protecting individual pages. 
+This post shows a strategy that works for any SSG and does not require server access controls.
+    </content>
+    <link href="https://beauhilton.com/posts/pagecrypt" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/oo-et-al</id>
+    <title>good machine learning in medicine</title>
+    <updated>2022-12-29T00:00:00+00:00</updated>
+    <content type="html">
+    Because most machine learning in medicine sucks, I thought you might like to see an example of it done well.
+    </content>
+    <link href="https://beauhilton.com/posts/oo-et-al" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/medical-humanities-org</id>
+    <title>medical-humanities.org</title>
+    <updated>2022-12-26T00:00:00+00:00</updated>
+    <content type="html">
+    I made a static website as an electronic learning system and forum, 
+with the option for password protected posts and a controlled editing workflow, 
+for free and without a dedicated server. This post has the highlights.
+    </content>
+    <link href="https://beauhilton.com/posts/medical-humanities-org" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/thanks</id>
+    <title>I made a thanks page</title>
+    <updated>2022-12-19T00:00:00+00:00</updated>
+    <content type="html">
+    A public, running journal of "hey, thanks" 
+to the folks who make my life better, in big and small ways. 
+Check it out .
+    </content>
+    <link href="https://beauhilton.com/posts/thanks" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/mime</id>
+    <title>fix MIME Types to unbreak RSS feeds served by OpenBSD’s
+httpd(8)</title>
+    <updated>2022-11-13T00:00:00+00:00</updated>
+    <content type="html">
+    I've been getting back into RSS lately.
+Turns out, my own RSS feed was broken.
+    </content>
+    <link href="https://beauhilton.com/posts/mime" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/ugbsd</id>
+    <title>Upgrading out-of-date OpenBSD installs</title>
+    <updated>2022-11-11T00:00:00+00:00</updated>
+    <content type="html">
+    First of all, don't do how I do. 
+Upgrade your installs regularly. 
+OpenBSD makes it very easy.
+    </content>
+    <link href="https://beauhilton.com/posts/ugbsd" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/geocheatcode</id>
+    <title>geocheatcode</title>
+    <updated>2022-04-22T00:00:00+00:00</updated>
+    <content type="html">
+    Here is background and code
+for a trick I use to get
+Google to give me best-in-class guesses 
+for latitude and longitude,
+despite goofy and/or downright bad location searches.
+    </content>
+    <link href="https://beauhilton.com/posts/geocheatcode" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/intake-2022-03-25</id>
+    <title>Intake presentation on candidal esophagitis</title>
+    <updated>2022-03-25T00:00:00+00:00</updated>
+    <content type="html">
+    candidal esophagitis, achalasia, H Pylori PUD
+    </content>
+    <link href="https://beauhilton.com/posts/intake-2022-03-25" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/employee-wifi</id>
+    <title>Set Up Enterprise Wifi on Arch Linux</title>
+    <updated>2021-09-17T00:00:00+00:00</updated>
+    <content type="html">
+    Most big institutions have guest and employee wifi networks.
+Guest wifi is usually fine, fast enough for the basics,
+but far inferior to employee wifi.
+On a custom-built OS, such as a fairly minimalist Linux distribution, 
+getting the employee wifi to work
+can be a beast.
+    </content>
+    <link href="https://beauhilton.com/posts/employee-wifi" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/mr-2021</id>
+    <title>Morning Report 08/23/2021</title>
+    <updated>2021-08-23T00:00:00+00:00</updated>
+    <content type="html">
+    Diagnosis is... MDS/MPN/MF NOS. 
+i.e., who knows.
+    </content>
+    <link href="https://beauhilton.com/posts/mr-2021" rel="alternate"/>
+  </entry>
+  
+  <entry>
+    <id>https://beauhilton.com/posts/rmd-py</id>
+    <title>R Markdown is my spirit animal</title>
+    <updated>2019-10-20T00:00:00+00:00</updated>
+    <content type="html">
+    Turns out that a better way does exist, and it is R Markdown.
+    </content>
+    <link href="https://beauhilton.com/posts/rmd-py" rel="alternate"/>
+  </entry>
+  
+</feed>

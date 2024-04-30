@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     Upgrading out-of-date OpenBSD installs
+    </h1>
+    <p>
+     <time id="post-date">2022-11-11</time>
+    </p>
+    <p id="post-excerpt">
+     First of all, don't do how I do. 
+Upgrade your installs regularly. 
+OpenBSD makes it very easy.
+    </p>
+    <p>
+     But, if you do happen to get behind…
+    </p>
+    <p>
+     <code>sysupgrade</code> is very likely to fail.
+    </p>
+    <h2>
+     What happens when you try to upgrade a very old install?
+    </h2>
+    <p>
+     Lots of 404 errors.
+    </p>
+    <p>
+     The <code>sysupgrade</code> utility tries to grab the next version of
+the OS from one of the many mirrors (the specific one your system will
+use is in <code>/etc/installurl</code>.)
+    </p>
+    <p>
+     The default mirrors only keep the last 2 or 3 versions around, so
+when <code>sysupgrade</code> constructs the url and tries to hit it for
+downloads, it will fail.
+    </p>
+    <h2>
+     Where to get old versions?
+    </h2>
+    <p>
+     There are a couple of mirrors that keep almost all the old versions
+around.
+    </p>
+    <p>
+     <a href="https://mirror.yandex.ru/pub/OpenBSD/">https://mirror.yandex.ru/pub/OpenBSD/</a>
+has files going back to OpenBSD 2.x - they seem like the most serious
+archivists, at least of the mirrors I looked at.
+    </p>
+    <p>
+     <a href="https://mirror.sjtu.edu.cn/OpenBSD/">https://mirror.sjtu.edu.cn/OpenBSD/</a>
+has files going back to 6.5 as of this writing (2022-11-11), also not
+too shabby.
+    </p>
+    <p>
+     Do a little <code>vi /etc/installurl</code> and change the link to
+one of the above, depending on how delinquent you’ve been.
+    </p>
+    <p>
+     That should allow you to do serial <code>sysupgrade</code> commands
+until you catch up.
+    </p>
+    <p>
+     When you get close to the current version, consider switching back to
+a closer mirror, both for faster installs and to be kind to the folks
+who just saved your bacon.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

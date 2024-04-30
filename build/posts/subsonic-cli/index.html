@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     Command-line interfaces for self-hosted music
+    </h1>
+    <p>
+     <time id="post-date">2023-09-28</time>
+    </p>
+    <p id="post-excerpt">
+     Self-hosting a music server is great.
+Listening to the tunes via the command line is the way.
+    </p>
+    <h2>
+     Subsonic-compatible server backbone
+    </h2>
+    <p>
+     I have <a href="https://www.navidrome.org/">Navidrome</a> installed
+(via Docker on NixOS). It’s very nice.
+    </p>
+    <p>
+     With a reverse proxy, <a href="https://tailscale.com/">tailscale</a>,
+and LetsEncrypt set up, I can access it via any Subsonic-compatible
+music player at <a href="https://music.beauslab.casa">https://music.beauslab.casa</a> (this
+URL is available only on my tailnet, so it will 404 for everyone
+else).
+    </p>
+    <h2>
+     Desktop GUI interfaces
+    </h2>
+    <p>
+     <a href="https://sublimemusic.app/">Sublime-music</a> is pretty good.
+I also often find myself using the Navidrome web UI.
+    </p>
+    <p>
+     (On mobile, <a href="https://symfonium.app/">Symfonium</a> (paid) or
+<a href="https://substreamerapp.com/">SubStreamer</a> on Android and <a href="http://michaelsapps.dk/playsubapp/">play:Sub</a> (paid) or <a href="https://substreamerapp.com/">SubStreamer</a> on iOS are my go-tos,
+though there are many <a href="http://www.subsonic.org/pages/apps.jsp">others</a>)
+    </p>
+    <h2>
+     CLI interfaces: contenders (STMP, jellycli, sksonic)
+    </h2>
+    <p>
+     If I’m in programming mode, I prefer command-line interfaces,
+particularly if they let me use keyboard muscle-memory (i.e. vi
+bindings).
+    </p>
+    <p>
+     As such, I tried a few CLI front-ends to access and play my
+Navidrome-served tunes.
+    </p>
+    <p>
+     I’m sure there are others.
+    </p>
+    <p>
+     <a href="https://github.com/wildeyedskies/stmp/tree/main">STMP</a> is
+clean and works well, but doesn’t have vi bindings yet.
+    </p>
+    <p>
+     <a href="https://github.com/tryffel/jellycli/tree/master">jellycli</a> is
+the most polished, and uses vi bindings, but even so the in-app nav is
+finicky and doesn’t quite fit my brain (though that might be mostly due
+to conflicts with other terminal keybindings I have set up).
+    </p>
+    <p>
+     <a href="https://gitlab.com/yvelon/sksonic">sksonic</a> is a
+suckless-style implementation in C, e.g. edit config.h and recompile. It
+works, but isn’t polished enough for daily usage (though I don’t expect
+it to be - the author states it’s a personal project, and I think
+they’re doing a great job, so will keep an eye on it). Partial vi-key
+support, could easily be added given the suckless style.
+    </p>
+    <h2>
+     CLI interfaces: the one I picked (ncmpcpp with mopidy backend)
+    </h2>
+    <p>
+     After these, I found myself wishing that I could use <a href="https://github.com/ncmpcpp/ncmpcpp">ncmpcpp</a> and hook it up to
+my Subsonic back end.
+    </p>
+    <p>
+     And then I realized: hey, this is a Linux TUI, and ncmpcpp is just a
+front-end for <a href="https://www.musicpd.org/">mpd</a>, of course you
+can switch out mpd for something that’s Subsonic-aware.
+    </p>
+    <p>
+     ncmpcpp is beautiful, polished, fast, with great vi-key support, and
+I’ve been using it for years for local music playback.
+    </p>
+    <p>
+     <a href="https://mopidy.com/">mopidy</a> is a fairly drop-in mpd
+replacement that is pluggable, with a number of awesome <a href="https://mopidy.com/ext/">extensions</a>.
+    </p>
+    <p>
+     I should have looked here first. C’est la vie.
+    </p>
+    <p>
+     I perused a few blog posts to get a sense of what to do:
+    </p>
+    <ul>
+     <li>
+      <a href="https://fsylum.net/blog/setting-up-ncmpcpp-mopidy-spotify-arch-linux/">fsylum’s
+post</a>
+     </li>
+     <li>
+      <a href="https://blog.deepjyoti30.dev/using-spotify-with-ncmpcpp-mopidy-linux">Deepjyoti
+Barman’s post</a>
+     </li>
+     <li>
+      <a href="https://www.digitalneanderthal.com/post/ncmpcpp/">Digital
+Neanderthals’ post</a> (what a great online moniker, well done - his
+physical setup is also a delight, sheer cyberdeck practicality)
+     </li>
+    </ul>
+    <p>
+     It’s pretty easy.
+    </p>
+    <p>
+     The rad thing is that you can get a unified frontend for all your
+sources, e.g. Subsonic, Spotify, local files, YouTube, SoundCloud, etc.,
+just install a plugin and add a config section and you’re off to the
+races, never having to leave the terminal.
+    </p>
+    <blockquote>
+     <p>
+      Source selection (could have many more items here).
+     </p>
+    </blockquote>
+    <p>
+     <img src="/images/ncmpcpp-mopidy-selector.png" alt="Source selection">
+    </p>
+    <blockquote>
+     <p>
+      Artist selection.
+     </p>
+    </blockquote>
+    <p>
+     <img src="/images/ncmpcpp-mopidy-full.png" alt="Preview">
+    </p>
+    <blockquote>
+     <p>
+      Track view.
+     </p>
+    </blockquote>
+    <p>
+     <img src="/images/ncmpcpp-mopidy-tracks.png" alt="Track view">
+    </p>
+    <h2>
+     Set up
+    </h2>
+    <h3>
+     Install the things
+    </h3>
+    <p>
+     My main laptop still runs Arch (btw). If I ever switch to NixOS on
+this machine, or add this setup to the NixOS server, I’ll probably make
+a new post with the Nix way to do this. I bet it’s hardly different,
+other than the <code>.nix</code> files.
+    </p>
+    <p>
+     e.g. <code>paru -S ncmpcpp mopidy mopidy-subidy mopidy-mpd</code>
+    </p>
+    <p>
+     Also uninstall and stop mpd, if you’re using it.
+    </p>
+    <h3>
+     Config files
+    </h3>
+    <p>
+     (most of the what’s in the files below is unnecessary for this post,
+but I’ve never been mad that someone posted their whole config)
+    </p>
+    <p>
+     (also note that the mopidy config file doesn’t allow # comments, I
+just used them for ease of reading with syntax highlighting, will have
+to delete prior to actually using)
+    </p>
+    <p>
+     <code>~/.config/ncmpcpp/config</code>
+    </p>
+    <pre tabindex="0"><code class="language-sh">ncmpcpp_directory <span class="hl opt">=</span> ~<span class="hl opt">/</span>.config<span class="hl opt">/</span>ncmpcpp
+lyrics_directory <span class="hl opt">=</span> ~<span class="hl opt">/</span>.config<span class="hl opt">/</span>lyrics
+
+progressbar_look <span class="hl opt">= -&gt;</span>
+display_volume_level <span class="hl opt">=</span> no
+
+autocenter_mode <span class="hl opt">=</span> <span class="hl kwc">yes</span>
+message_delay_time <span class="hl opt">=</span> <span class="hl num">1</span>
+
+playlist_display_mode <span class="hl opt">=</span> columns
+playlist_editor_display_mode <span class="hl opt">=</span> columns
+browser_display_mode <span class="hl opt">=</span> columns
+
+media_library_primary_tag <span class="hl opt">=</span> album_artist
+media_library_albums_split_by_date <span class="hl opt">=</span> no
+
+ignore_leading_the <span class="hl opt">=</span> <span class="hl kwc">yes</span>
+ignore_diacritics <span class="hl opt">=</span> <span class="hl kwc">yes</span>
+external_editor <span class="hl opt">=</span> vim
+use_console_editor <span class="hl opt">=</span> <span class="hl kwc">yes</span>
+</code></pre>
+    <p>
+     <code>~/.config/mopidy/mopidy.conf</code>
+    </p>
+    <pre tabindex="0"><code class="language-sh"><span class="hl opt">[</span>core<span class="hl opt">]</span>
+cache_dir <span class="hl opt">=</span> <span class="hl kwd">$XDG_CACHE_DIR</span><span class="hl opt">/</span>mopidy
+config_dir <span class="hl opt">=</span> <span class="hl kwd">$XDG_CONFIG_DIR</span><span class="hl opt">/</span>mopidy
+data_dir <span class="hl opt">=</span> <span class="hl kwd">$XDG_DATA_DIR</span><span class="hl opt">/</span>mopidy
+max_tracklist_length <span class="hl opt">=</span> <span class="hl num">10000</span>
+restore_state <span class="hl opt">=</span> true
+
+<span class="hl opt">[</span><span class="hl kwc">file</span><span class="hl opt">]</span> <span class="hl slc"># might switch out for mopidy-local at some point, adds search support via sqlite metadata archive</span>
+enabled <span class="hl opt">=</span> true
+media_dirs <span class="hl opt">=</span> 
+  ~<span class="hl opt">/</span>media<span class="hl opt">/</span>tunes
+excluded_file_extensions <span class="hl opt">=</span> 
+ .directory
+ .html
+ .jpeg
+ .jpg
+ .log
+ .nfo
+ .pdf
+ .png
+ .txt
+ .<span class="hl kwc">zip</span>
+show_dotfiles <span class="hl opt">=</span> false
+follow_symlinks <span class="hl opt">=</span> false
+metadata_timeout <span class="hl opt">=</span> <span class="hl num">1000</span>
+
+<span class="hl opt">[</span>m3u<span class="hl opt">]</span>
+playlists_dir <span class="hl opt">=</span> <span class="hl kwd">$XDG_CONFIG_DIR</span><span class="hl opt">/</span>mopidy<span class="hl opt">/</span>playlists
+
+<span class="hl opt">[</span>mpd<span class="hl opt">]</span>
+enabled <span class="hl opt">=</span> true
+hostname <span class="hl opt">=</span> <span class="hl num">127.0.0.1</span>
+port <span class="hl opt">=</span> <span class="hl num">6600</span> <span class="hl slc"># defaults ftw - no change to ncmpcpp config needed if defaults are kept</span>
+max_connections <span class="hl opt">=</span> <span class="hl num">20</span>
+connection_timeout <span class="hl opt">=</span> <span class="hl num">60</span>
+
+<span class="hl opt">[</span>subidy<span class="hl opt">]</span>
+enabled <span class="hl opt">=</span> true
+url <span class="hl opt">=</span> https<span class="hl opt">://</span>music.beauslab.casa
+username <span class="hl opt">=</span> admin
+password <span class="hl opt">=</span> admin <span class="hl slc"># behind a tailnet anyway, come at me bro</span>
+api_version <span class="hl opt">=</span> <span class="hl num">1.16</span>
+</code></pre>
+    <h2>
+     Future goals
+    </h2>
+    <ul>
+     <li>
+      snapcast for whole-house audio (<a href="https://www.reddit.com/r/selfhosted/comments/icjmiq/a_music_server_with_a_tli_client/">Reddit
+post</a> with some good tips)
+     </li>
+    </ul>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>

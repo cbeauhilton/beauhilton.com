@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+  <title></title>
+ </head>
+ <body>
+  <div id="page-wrapper">
+   <div id="header" role="banner">
+    <header class="banner">
+     <div id="banner-text">
+      <span class="banner-title"><a href="/">beauhilton</a></span>
+     </div>
+    </header>
+    <nav>
+     <a href="/about">about</a>
+<a href="/now">now</a>
+<a href="/thanks">thanks</a>
+<a class="nav-active" href="/posts">posts</a>
+<a href="https://notes.beauhilton.com">notes</a>
+<a href="https://talks.beauhilton.com">talks</a>
+<a href="https://git.beauhilton.com">git</a>
+<a href="/contact">contact</a>
+<a href="/atom.xml">rss</a>
+    </nav>
+   </div>
+   <main>
+    <h1>
+     Pixel 6 DIY screen replacement, with fingerprint reader calibration
+using Linux
+    </h1>
+    <p>
+     <time id="post-date">2023-09-19</time>
+    </p>
+    <p id="post-excerpt">
+     The internet, up to now, says you need Windows or MacOS to calibrate the Pixel's fingerprint reader after installing a new screen and digitizer.
+The internet, up to now, was wrong.
+    </p>
+    <h2>
+     Physical install
+    </h2>
+    <p>
+     My wife’s Pixel 6’s screen stopped working. Phone seemed to be ok
+otherwise.
+    </p>
+    <p>
+     We looked at the cost of replacing the phone vs repairing the
+screen.
+    </p>
+    <p>
+     A similarly capable phone would cost quite a bit more than the
+replacement screen kit, which was ~$130 from <a href="https://www.ifixit.com/products/google-pixel-6-screen-genuine">iFixit</a>.
+    </p>
+    <p>
+     So we bought the replacement screen, watched a few videos on YouTube,
+and were off to the races.
+    </p>
+    <p>
+     The tear-down and physical installation were easy. Kudos to Google
+for making the Pixels easy to work on. I won’t give much detail here:
+just use the videos, whichever ones have a bunch of views.
+    </p>
+    <p>
+     I did waste the included screen adhesive on the first go-around,
+because I didn’t realize that the broken screen I removed had been
+separated from its frame (so the old frame was still installed and I
+installed the adhesive to the its top, rather than in the phone casing
+where it belongs, and found out when the phone wouldn’t click back
+together with the new screen). It was about $10, including shipping, for
+a second adhesive (also iFixit). Fit like a glove.
+    </p>
+    <p>
+     Total $140, and Verizon sent us a free new Pixel 7 anyway (long
+story), so now my wife has the 7 and I upgraded from my old Pixel 2XL to
+this refurb’d 6. Dang, what an upgrade. Even though the Pixel 6 is
+widely considered the dud of the group, I’m loving it.
+    </p>
+    <h2>
+     Fingerprint reader calibration is needed
+    </h2>
+    <p>
+     After it was all installed and working well, the next hurdle was
+recalibrating the fingerprint reader. The fingerprint reader is part of
+the new screen, and needs calibrated, or it will not even attempt to
+work (seems more an “activation” than a “calibration,” no?).
+    </p>
+    <p>
+     The website Google provides for calibration is <a href="https://pixelrepair.withgoogle.com/udfps">https://pixelrepair.withgoogle.com/udfps</a>.
+If you look around the internet for troubleshooting related to this
+tool, you’ll see a number of old posts recounting various problems, most
+of which seem to have been ironed out by this writing.
+    </p>
+    <p>
+     However, the one problem I couldn’t find a fix or happy update for
+was how to use that website if you’re not running Windows or MacOS.
+    </p>
+    <p>
+     <a href="https://www.reddit.com/r/GooglePixel/comments/xq82ri/pixel_6_fingerprint_calibration/">This
+Redditor couldn’t get it working on Linux or Windows, bad luck?</a>.
+    </p>
+    <p>
+     <a href="https://issuetracker.google.com/issues/217589152?pli=1">Anon
+is very angry at Google for not supporting Linux for the calibration
+(ctrl-F “linux” to find)</a>.
+    </p>
+    <p>
+     We no longer have anything but Linux/OpenBSD systems in the house
+(while I love FOSS and feel glee in this, it is not entirely on purpose,
+and I don’t hate Windows or MacOS - my wife’s MBP met an early demise at
+the thrown milk cup of a boisterous toddler, or I would have tried that
+machine first to avoid the possible headache of ironing out a solution
+for Linux for a [hopefully] one-time computing event.).
+    </p>
+    <p>
+     The udfps website was finding my phone, but refusing to go further. I
+was in fastboot. Browser didn’t matter (tried OG google-chrome-stable,
+vivaldi-stable, firefox). USB-A vs USB-C computer-side connection didn’t
+matter (some folks mentioned needing USB-A, so I tried). Activating
+Android developer mode didn’t help, and activating USB debugging within
+the developer options didn’t either.
+    </p>
+    <p>
+     I saw some posts talking about installing USB drivers to get udfps to
+work for Windows machines, so decided to poke around and see if maybe it
+was a driver issue on Linux as well.
+    </p>
+    <p>
+     It (probably) was.
+    </p>
+    <h2>
+     Android build tools to the rescue
+    </h2>
+    <p>
+     On Arch Linux (these tools are widely available, distro doesn’t
+matter, this is just what I used):
+    </p>
+    <pre tabindex="0"><code class="language-sh"><span class="hl slc"># enable multilib - see link below</span>
+paru <span class="hl slc"># make sure things are up to date generally</span>
+paru <span class="hl kwb">-S</span> android<span class="hl kwb">-tools</span> android<span class="hl kwb">-sdk-build-tools</span> <span class="hl slc"># includes adb and other goodies</span>
+reboot
+</code></pre>
+    <p>
+     Re multilib - not sure if this is strictly needed - see <a href="https://wiki.archlinux.org/title/android#Android_Emulator">https://wiki.archlinux.org/title/android#Android_Emulator</a>.
+    </p>
+    <p>
+     After grabbing the Android build tools listed above and rebooting,
+the website found my phone and ran the calibration software without a
+hitch. The website didn’t seem to work prior to rebooting, and I’m a
+lazy cretin/wizened ol’ wannabe sysadmin, so fancy a reboot to fix all
+of life’s woes.
+    </p>
+    <p>
+     The phone does need at least one reboot to activate the calibration
+and enable the fingerprint reader, but the calibration software tells
+you that, no secret magic here.
+    </p>
+    <p>
+     I don’t recall if I used vivaldi-stable or google-chrome-stable to
+run udfps, but I think it was the prior (I bet any Chromium-based
+browser would work, provided the right system tools are in place).
+    </p>
+    <p>
+     I also can’t remember if I used USB-A to USB-C or dual-sided USB-C,
+but I think it was the dual USB-C.
+    </p>
+    <p>
+     I do think developer mode and USB debugging active on the phone are
+required, but I’m not completely certain.
+    </p>
+    <p>
+     I did this all on a Thinkpad T14s.
+    </p>
+    <p>
+     In any case, fingerprint unlock is a go!
+    </p>
+    <p>
+     Almost too easy.
+    </p>
+    <h2>
+     Manual clean up - what, you think this is NixOS?
+    </h2>
+    <p>
+     You probably won’t need these tools again, at least not for a long
+while, so:
+    </p>
+    <pre tabindex="0"><code class="language-sh">paru <span class="hl kwb">-R</span> android<span class="hl kwb">-tools</span> android<span class="hl kwb">-sdk-build-tools</span> <span class="hl slc"># about 156MiB, not much, but it's the principle of the thing</span>
+sudo pacman <span class="hl kwb">-R</span> <span class="hl kwd">$(comm -12 &lt;(pacman -Qq | sort)</span> <span class="hl opt">&lt;(</span>pacman <span class="hl kwb">-Slq</span> multilib <span class="hl opt">|</span> <span class="hl kwc">sort</span><span class="hl opt">))</span> <span class="hl slc"># undo the multilib stuff</span>
+sudo <span class="hl kwc">sed</span> <span class="hl kwb">-i</span> <span class="hl sng">'s/\[multilib\]/\#\[multilib\]/'</span> <span class="hl opt">/</span>etc<span class="hl opt">/</span>pacman.conf <span class="hl slc"># undo more of the multilib stuff</span>
+paru <span class="hl slc"># finish undoing the multilib stuff</span>
+</code></pre>
+    <h2>
+     Next steps
+    </h2>
+    <h3>
+     ? 🦒 ?
+    </h3>
+    <p>
+     idk, maybe.
+    </p>
+   </main>
+   <div id="footnotes"></div>
+   <footer></footer>
+  </div>
+ </body>
+</html>
