@@ -1,5 +1,15 @@
 [
   {
+    "url": "/posts/til-llm-colbertv2",
+    "page_file": "site/posts/til-llm-colbertv2.md",
+    "nav_path": [
+      "posts"
+    ],
+    "excerpt": "There are a lot of embedding models out there for LLMs.\n  ColbertV2 is a neat one.\n  Here are some thoughts and code examples.",
+    "date": "2024-05-09",
+    "title": "Playing with ColBERTV2 Embeddings and Retrieval"
+  },
+  {
     "url": "/posts/choaked",
     "page_file": "site/posts/choaked.md",
     "nav_path": [

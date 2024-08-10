@@ -2,13 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://beauhilton.com/atom.xml</id>
   <title>beauhilton</title>
-  <updated>2024-04-12T00:00:00+00:00</updated>
+  <updated>2024-05-09T00:00:00+00:00</updated>
   <author>
     <name>beau hilton</name>
     <email>beau@beauhilton.com</email>
   </author>
   <generator uri="https://soupault.app" version="4.8.0">soupault</generator>
   <subtitle>beau's website</subtitle>
+  <entry>
+    <id>https://beauhilton.com/posts/til-llm-colbertv2</id>
+    <title>Playing with ColBERTV2 Embeddings and Retrieval</title>
+    <updated>2024-05-09T00:00:00+00:00</updated>
+    <content type="html">
+    There are a lot of embedding models out there for LLMs.
+  ColbertV2 is a neat one.
+  Here are some thoughts and code examples.
+    </content>
+    <link href="https://beauhilton.com/posts/til-llm-colbertv2" rel="alternate"/>
+  </entry>
+  
   <entry>
     <id>https://beauhilton.com/posts/choaked</id>
     <title>The first detailed description of living with esophageal cancer -
