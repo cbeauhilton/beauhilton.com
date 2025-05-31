@@ -1,22 +1,13 @@
-## home
+## moving, onward and upward
 
-6 humans, 1 dog, an ever-changing number of chickens.
+Pretty much done with fellowship.
 
-Everyone is healthy and happy.
+Selling our house in Hendersonville and buying one in Hot Springs.
 
-Summer garden is going in.
+Excited to move to the next phase.
 
-Hendersonville, TN.
-
-## work
-
-Nearing the end of the second out of three years of oncology fellowship.
-I'm going into private practice, and super psyched about it.
-We're working with some incredible groups across the South and Southeast to find the right fit.
-It's going to be tough to decide - 
-the modern oncology private practice has the potential to be a magical place,
-and so many groups are Doing Things Right.
+Everyone is well.
 
 - - -
 
-This [now page](https://nownownow.com/about) was last updated 2024-04-12.
+This [now page](https://nownownow.com/about) was last updated 2025-05-31.

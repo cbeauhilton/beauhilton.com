@@ -1,4 +1,5 @@
 .devenv/*
+.direnv
 .soupault-cache
 nohup.out
 .pre-commit-config.yaml

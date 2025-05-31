@@ -7,7 +7,7 @@
     <name>beau hilton</name>
     <email>beau@beauhilton.com</email>
   </author>
-  <generator uri="https://soupault.app" version="4.8.0">soupault</generator>
+  <generator uri="https://soupault.app" version="4.7.0">soupault</generator>
   <subtitle>beau's website</subtitle>
   <entry>
     <id>https://beauhilton.com/posts/til-llm-colbertv2</id>
